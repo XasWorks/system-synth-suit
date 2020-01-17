@@ -1,6 +1,58 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Connector_Conn_01x04_Female
+#
+DEF Connector_Conn_01x04_Female J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Conn_01x04_Female" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+A 0 -200 20 901 -901 1 1 6 N 0 -180 0 -220
+A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+A 0 100 20 901 -901 1 1 6 N 0 120 0 80
+P 2 1 1 6 -50 -200 -20 -200 N
+P 2 1 1 6 -50 -100 -20 -100 N
+P 2 1 1 6 -50 0 -20 0 N
+P 2 1 1 6 -50 100 -20 100 N
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Conn_01x04_Male
+#
+DEF Connector_Conn_01x04_Male J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Conn_01x04_Male" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -195 0 -205 1 1 6 F
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+S 34 105 0 95 1 1 6 F
+P 2 1 1 6 50 -200 34 -200 N
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+P 2 1 1 6 50 100 34 100 N
+X Pin_1 1 200 100 150 L 50 50 1 1 P
+X Pin_2 2 200 0 150 L 50 50 1 1 P
+X Pin_3 3 200 -100 150 L 50 50 1 1 P
+X Pin_4 4 200 -200 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_C
 #
 DEF Device_C C 0 10 N Y 1 F N
@@ -34,6 +86,28 @@ P 2 0 1 13 -60 -20 60 -20 N
 P 2 0 1 12 -60 20 60 20 N
 X ~ 1 0 100 80 D 50 50 1 1 P
 X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_D_Small
+#
+DEF Device_D_Small D 0 10 N N 1 F N
+F0 "D" -50 80 50 H V L CNN
+F1 "Device_D_Small" -150 -80 50 H V L CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 -30 -40 -30 40 N
+P 2 0 1 0 -30 0 30 0 N
+P 4 0 1 0 30 -40 -30 0 30 40 30 -40 N
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -104,6 +178,50 @@ DRAW
 S -40 -100 40 100 0 1 10 N
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R_Small
+#
+DEF Device_R_Small R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "Device_R_Small" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# LED_WS2812B
+#
+DEF LED_WS2812B D 0 10 Y Y 1 F N
+F0 "D" 200 225 50 H V R BNN
+F1 "LED_WS2812B" 50 -225 50 H V L TNN
+F2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" 50 -300 50 H I L TNN
+F3 "" 100 -375 50 H I L TNN
+$FPLIST
+ LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*
+$ENDFPLIST
+DRAW
+T 0 90 -165 30 0 0 0 RGB Normal 0 C C
+S 200 200 -200 -200 0 1 10 f
+P 2 0 1 0 50 -140 70 -140 N
+P 2 0 1 0 50 -100 70 -100 N
+P 2 0 1 0 185 -140 105 -140 N
+P 3 0 1 0 90 -100 50 -140 50 -120 N
+P 3 0 1 0 90 -60 50 -100 50 -80 N
+P 3 0 1 0 145 -40 145 -140 145 -160 N
+P 4 0 1 0 185 -60 105 -60 145 -140 185 -60 N
+X VDD 1 0 300 100 D 50 50 1 1 W
+X DOUT 2 300 0 100 L 50 50 1 1 O
+X VSS 3 0 -300 100 U 50 50 1 1 W
+X DIN 4 -300 0 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -194,29 +312,121 @@ X VBST 6 400 0 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# dk_PMIC-Voltage-Regulators-Linear_MIC5219-3_3YM5-TR
+# dk_Interface-Drivers-Receivers-Transceivers_MCP2551-I_SN
 #
-DEF dk_PMIC-Voltage-Regulators-Linear_MIC5219-3_3YM5-TR U 0 20 Y Y 1 F N
-F0 "U" 0 150 60 H V C CNN
-F1 "dk_PMIC-Voltage-Regulators-Linear_MIC5219-3_3YM5-TR" 0 250 60 H V C CNN
+DEF dk_Interface-Drivers-Receivers-Transceivers_MCP2551-I_SN U 0 40 Y Y 1 F N
+F0 "U" -200 350 60 H V C CNN
+F1 "dk_Interface-Drivers-Receivers-Transceivers_MCP2551-I_SN" 100 -300 60 H V L CNN
+F2 "digikey-footprints:SOIC-8_W3.9mm" 200 200 60 H I L CNN
+F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011797" 200 300 60 H I L CNN
+F4 "MCP2551-I/SN-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "MCP2551-I/SN" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "Interface - Drivers, Receivers, Transceivers" 200 700 60 H I L CNN "Family"
+F8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011797" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/microchip-technology/MCP2551-I-SN/MCP2551-I-SN-ND/509452" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC TRANSCEIVER CAN HI-SPD 8-SOIC" 200 1000 60 H I L CNN "Description"
+F11 "Microchip Technology" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -300 300 300 -200 0 1 0 f
+X TXD 1 -400 200 100 R 50 50 1 1 I
+X VSS 2 0 -300 100 U 50 50 1 1 W
+X VDD 3 0 400 100 D 50 50 1 1 W
+X RXD 4 400 100 100 L 50 50 1 1 O
+X VREF 5 400 0 100 L 50 50 1 1 O
+X CANL 6 -400 100 100 R 50 50 1 1 B
+X CANH 7 -400 0 100 R 50 50 1 1 B
+X RS 8 -400 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# dk_Logic-Gates-and-Inverters_SN74LVC1G14DBVR
+#
+DEF dk_Logic-Gates-and-Inverters_SN74LVC1G14DBVR U 0 0 Y Y 1 F N
+F0 "U" -100 140 60 H V R CNN
+F1 "dk_Logic-Gates-and-Inverters_SN74LVC1G14DBVR" -20 -150 60 H V L CNN
 F2 "digikey-footprints:SOT-753" 200 200 60 H I L CNN
-F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579712" 200 300 60 H I L CNN
-F4 "576-1281-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "MIC5219-3.3YM5-TR" 200 500 60 H I L CNN "MPN"
+F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g14" 200 300 60 H I L CNN
+F4 "296-11607-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "SN74LVC1G14DBVR" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "Logic - Gates and Inverters" 200 700 60 H I L CNN "Family"
+F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g14" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/texas-instruments/SN74LVC1G14DBVR/296-11607-1-ND/385746" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC INVERTER SCHMITT 1CH SOT23-5" 200 1000 60 H I L CNN "Description"
+F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 10 0 10 0 1 0 N
+S -200 100 100 -100 0 1 0 f
+P 2 0 1 0 -100 0 -200 0 N
+P 2 0 1 0 100 0 20 0 N
+P 4 0 1 0 -100 50 -100 -50 0 0 -100 50 N
+X NC 1 -100 0 100 R 50 50 1 1 N N
+X A 2 -300 0 100 R 50 50 1 1 I
+X GND 3 -100 -200 100 U 50 50 1 1 W
+X Y 4 200 0 100 L 50 50 1 1 O
+X VCC 5 0 200 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# dk_Motion-Sensors-IMUs-Inertial-Measurement-Units_LSM6DS3TR
+#
+DEF dk_Motion-Sensors-IMUs-Inertial-Measurement-Units_LSM6DS3TR U 0 40 Y Y 1 F N
+F0 "U" -308 436 60 H V L CNN
+F1 "dk_Motion-Sensors-IMUs-Inertial-Measurement-Units_LSM6DS3TR" 118 -353 60 H V L CNN
+F2 "digikey-footprints:LGA-14L_2.5x3mm__LSM6DS3" 200 200 60 H I L CNN
+F3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/a3/f5/4f/ae/8e/44/41/d7/DM00133076.pdf/files/DM00133076.pdf/jcr:content/translations/en.DM00133076.pdf" 200 300 60 H I L CNN
+F4 "497-15383-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "LSM6DS3TR" 200 500 60 H I L CNN "MPN"
+F6 "Sensors, Transducers" 200 600 60 H I L CNN "Category"
+F7 "Motion Sensors - IMUs (Inertial Measurement Units)" 200 700 60 H I L CNN "Family"
+F8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/a3/f5/4f/ae/8e/44/41/d7/DM00133076.pdf/files/DM00133076.pdf/jcr:content/translations/en.DM00133076.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/stmicroelectronics/LSM6DS3TR/497-15383-1-ND/5180534" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IMU ACCEL/GYRO I2C/SPI 14VFLGA" 200 1000 60 H I L CNN "Description"
+F11 "STMicroelectronics" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -300 400 400 -300 0 1 0 f
+X SDO/SA0 1 500 300 100 L 50 50 1 0 O
+X NC 10 -300 -100 100 R 50 50 1 0 N N
+X NC 11 -300 -200 100 R 50 50 1 0 N N
+X CS 12 -400 200 100 R 50 50 1 0 I
+X SCL 13 -400 100 100 R 50 50 1 0 I
+X SDA 14 500 -200 100 L 50 50 1 0 B
+X SDx 2 500 200 100 L 50 50 1 0 O
+X SCx 3 500 100 100 L 50 50 1 0 O
+X INT1 4 500 0 100 L 50 50 1 0 O
+X VDDIO 5 -400 0 100 R 50 50 1 0 B
+X GND 6 0 -400 100 U 50 50 1 0 B
+X GND 7 100 -400 100 U 50 50 1 0 B
+X VDD 8 -100 500 100 D 50 50 1 0 B
+X INT2 9 500 -100 100 L 50 50 1 0 O
+ENDDRAW
+ENDDEF
+#
+# dk_PMIC-Voltage-Regulators-Linear_MCP1700T-3302E_TT
+#
+DEF dk_PMIC-Voltage-Regulators-Linear_MCP1700T-3302E_TT U 0 20 Y Y 1 F N
+F0 "U" 0 150 60 H V C CNN
+F1 "dk_PMIC-Voltage-Regulators-Linear_MCP1700T-3302E_TT" 0 250 60 H V C CNN
+F2 "digikey-footprints:SOT-23-3" 200 200 60 H I L CNN
+F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011779" 200 300 60 H I L CNN
+F4 "MCP1700T3302ETTCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "MCP1700T-3302E/TT" 200 500 60 H I L CNN "MPN"
 F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
 F7 "PMIC - Voltage Regulators - Linear" 200 700 60 H I L CNN "Family"
-F8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579712" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/microchip-technology/MIC5219-3.3YM5-TR/576-1281-1-ND/771902" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "IC REG LINEAR 3.3V 500MA SOT23-5" 200 1000 60 H I L CNN "Description"
+F8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011779" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/microchip-technology/MCP1700T-3302E-TT/MCP1700T3302ETTCT-ND/652677" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC REG LINEAR 3.3V 250MA SOT23-3" 200 1000 60 H I L CNN "Description"
 F11 "Microchip Technology" 200 1100 60 H I L CNN "Manufacturer"
 F12 "Active" 200 1200 60 H I L CNN "Status"
 DRAW
 S -200 100 200 -200 0 1 0 f
-X IN 1 -300 0 100 R 50 50 1 1 W
-X GND 2 0 -300 100 U 50 50 1 1 W
-X EN 3 -300 -100 100 R 50 50 1 1 I
-X BYP 4 300 -100 100 L 50 50 1 1 P
-X OUT 5 300 0 100 L 50 50 1 1 w
+X GND 1 0 -300 100 U 50 50 1 1 W
+X OUT 2 300 0 100 L 50 50 1 1 w
+X IN 3 -300 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #

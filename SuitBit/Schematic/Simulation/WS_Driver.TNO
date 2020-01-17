@@ -1,0 +1,2370 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.3 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                     Transient Analysis of WS_Driver                      ***
+***                           15/01/2020 22:16:48                            ***
+********************************************************************************
+Limits
+======
+Maximum Run Time           50us
+Output Start Time (tstart) 20us
+Maximum Time Step          5ns
+Number of Points           51
+Temperature                Linear 27
+Retrace Runs               1
+Run Options                Normal
+State Variables            Zero
+Operating Point            On
+Operating Point Only       Off
+Auto Scale Ranges          On
+Accumulate Plots           Off
+Fixed Time Step            Off
+Periodic Steady State      Off
+Ignore Expression Errors   Off
+
+Monte Carlo Options
+===================
+Distribution to Use: Gauss
+Number of Runs       20
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=1                     ***
+*****************************************************
+
+Temperature=27 Case=1
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               179.845f      179.845f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=899.22480620153613m CJO=179.84496124030721f
++ EG=620.46511627905988m FC=449.61240310076806m IBV=89.922480620153621p
++ IS=899.2248062015359f M=449.61240310076806m N=899.22480620153613m
++ NBV=899.22480620153613m NBVL=899.22480620153613m NR=1.7984496124030722
++ VJ=629.45736434107528m XTI=1.7984496124030722)
+Toleranced Model Value:D4 .MODEL D74S D (AF=899.22480620153613m CJO=179.84496124030721f
++ EG=620.46511627905988m FC=449.61240310076806m IBV=89.922480620153621p
++ IS=899.2248062015359f M=449.61240310076806m N=899.22480620153613m
++ NBV=899.22480620153613m NBVL=899.22480620153613m NR=1.7984496124030722
++ VJ=629.45736434107528m XTI=1.7984496124030722)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=2                     ***
+*****************************************************
+
+Temperature=27 Case=2
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               204.651f      204.651f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=1.0232558139534713 CJO=204.65116279069426f
++ EG=706.04651162789526m FC=511.62790697673563m IBV=102.32558139534713p
++ IS=1.0232558139534715p M=511.62790697673563m N=1.0232558139534713
++ NBV=1.0232558139534713 NBVL=1.0232558139534713 NR=2.0465116279069426
++ VJ=716.27906976742997m XTI=2.0465116279069426)
+Toleranced Model Value:D4 .MODEL D74S D (AF=1.0232558139534713 CJO=204.65116279069426f
++ EG=706.04651162789526m FC=511.62790697673563m IBV=102.32558139534713p
++ IS=1.0232558139534715p M=511.62790697673563m N=1.0232558139534713
++ NBV=1.0232558139534713 NBVL=1.0232558139534713 NR=2.0465116279069426
++ VJ=716.27906976742997m XTI=2.0465116279069426)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=3                     ***
+*****************************************************
+
+Temperature=27 Case=3
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               177.209f      177.209f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=886.04651162789287m CJO=177.20930232557853f
++ EG=611.37209302324618m FC=443.02325581394643m IBV=88.604651162789281p
++ IS=886.04651162789264f M=443.02325581394643m N=886.04651162789287m
++ NBV=886.04651162789287m NBVL=886.04651162789287m NR=1.7720930232557857
++ VJ=620.23255813952494m XTI=1.7720930232557857)
+Toleranced Model Value:D4 .MODEL D74S D (AF=886.04651162789287m CJO=177.20930232557853f
++ EG=611.37209302324618m FC=443.02325581394643m IBV=88.604651162789281p
++ IS=886.04651162789264f M=443.02325581394643m N=886.04651162789287m
++ NBV=886.04651162789287m NBVL=886.04651162789287m NR=1.7720930232557857
++ VJ=620.23255813952494m XTI=1.7720930232557857)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=4                     ***
+*****************************************************
+
+Temperature=27 Case=4
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               202.171f      202.171f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=1.0108527131782779 CJO=202.17054263565555f
++ EG=697.48837209301166m FC=505.42635658913895m IBV=101.08527131782779p
++ IS=1.0108527131782779p M=505.42635658913895m N=1.0108527131782779
++ NBV=1.0108527131782779 NBVL=1.0108527131782779 NR=2.0217054263565557
++ VJ=707.59689922479436m XTI=2.0217054263565557)
+Toleranced Model Value:D4 .MODEL D74S D (AF=1.0108527131782779 CJO=202.17054263565555f
++ EG=697.48837209301166m FC=505.42635658913895m IBV=101.08527131782779p
++ IS=1.0108527131782779p M=505.42635658913895m N=1.0108527131782779
++ NBV=1.0108527131782779 NBVL=1.0108527131782779 NR=2.0217054263565557
++ VJ=707.59689922479436m XTI=2.0217054263565557)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=5                     ***
+*****************************************************
+
+Temperature=27 Case=5
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               220.620f      220.620f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=1.1031007751937798 CJO=220.62015503875594f
++ EG=761.13953488370805m FC=551.55038759688989m IBV=110.31007751937797p
++ IS=1.1031007751937798p M=551.55038759688989m N=1.1031007751937798
++ NBV=1.1031007751937798 NBVL=1.1031007751937798 NR=2.2062015503875596
++ VJ=772.1705426356458m XTI=2.2062015503875596)
+Toleranced Model Value:D4 .MODEL D74S D (AF=1.1031007751937798 CJO=220.62015503875594f
++ EG=761.13953488370805m FC=551.55038759688989m IBV=110.31007751937797p
++ IS=1.1031007751937798p M=551.55038759688989m N=1.1031007751937798
++ NBV=1.1031007751937798 NBVL=1.1031007751937798 NR=2.2062015503875596
++ VJ=772.1705426356458m XTI=2.2062015503875596)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=6                     ***
+*****************************************************
+
+Temperature=27 Case=6
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               191.628f      191.628f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=958.13953488370521m CJO=191.627906976741f
++ EG=661.11627906975662m FC=479.0697674418526m IBV=95.813953488370529p
++ IS=958.1395348837051f M=479.0697674418526m N=958.13953488370521m
++ NBV=958.13953488370521m NBVL=958.13953488370521m NR=1.9162790697674104
++ VJ=670.69767441859358m XTI=1.9162790697674104)
+Toleranced Model Value:D4 .MODEL D74S D (AF=958.13953488370521m CJO=191.627906976741f
++ EG=661.11627906975662m FC=479.0697674418526m IBV=95.813953488370529p
++ IS=958.1395348837051f M=479.0697674418526m N=958.13953488370521m
++ NBV=958.13953488370521m NBVL=958.13953488370521m NR=1.9162790697674104
++ VJ=670.69767441859358m XTI=1.9162790697674104)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=7                     ***
+*****************************************************
+
+Temperature=27 Case=7
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               175.969f      175.969f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=879.84496124029613m CJO=175.96899224805918f
++ EG=607.09302325580416m FC=439.92248062014806m IBV=87.984496124029604p
++ IS=879.8449612402959f M=439.92248062014806m N=879.84496124029613m
++ NBV=879.84496124029613m NBVL=879.84496124029613m NR=1.7596899224805922
++ VJ=615.89147286820719m XTI=1.7596899224805922)
+Toleranced Model Value:D4 .MODEL D74S D (AF=879.84496124029613m CJO=175.96899224805918f
++ EG=607.09302325580416m FC=439.92248062014806m IBV=87.984496124029604p
++ IS=879.8449612402959f M=439.92248062014806m N=879.84496124029613m
++ NBV=879.84496124029613m NBVL=879.84496124029613m NR=1.7596899224805922
++ VJ=615.89147286820719m XTI=1.7596899224805922)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=8                     ***
+*****************************************************
+
+Temperature=27 Case=8
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               204.961f      204.961f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=1.0248062015503705 CJO=204.96124031007409f
++ EG=707.11627906975559m FC=512.40310077518529m IBV=102.48062015503706p
++ IS=1.0248062015503705p M=512.40310077518529m N=1.0248062015503705
++ NBV=1.0248062015503705 NBVL=1.0248062015503705 NR=2.049612403100741
++ VJ=717.3643410852593m XTI=2.049612403100741)
+Toleranced Model Value:D4 .MODEL D74S D (AF=1.0248062015503705 CJO=204.96124031007409f
++ EG=707.11627906975559m FC=512.40310077518529m IBV=102.48062015503706p
++ IS=1.0248062015503705p M=512.40310077518529m N=1.0248062015503705
++ NBV=1.0248062015503705 NBVL=1.0248062015503705 NR=2.049612403100741
++ VJ=717.3643410852593m XTI=2.049612403100741)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=9                     ***
+*****************************************************
+
+Temperature=27 Case=9
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               177.519f      177.519f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=887.59689922479197m CJO=177.51937984495839f
++ EG=612.4418604651064m FC=443.79844961239598m IBV=88.759689922479211p
++ IS=887.59689922479185f M=443.79844961239598m N=887.59689922479197m
++ NBV=887.59689922479197m NBVL=887.59689922479197m NR=1.775193798449584
++ VJ=621.31782945735438m XTI=1.775193798449584)
+Toleranced Model Value:D4 .MODEL D74S D (AF=887.59689922479197m CJO=177.51937984495839f
++ EG=612.4418604651064m FC=443.79844961239598m IBV=88.759689922479211p
++ IS=887.59689922479185f M=443.79844961239598m N=887.59689922479197m
++ NBV=887.59689922479197m NBVL=887.59689922479197m NR=1.775193798449584
++ VJ=621.31782945735438m XTI=1.775193798449584)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=10                    ***
+*****************************************************
+
+Temperature=27 Case=10
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               187.597f      187.597f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=937.98449612401589m CJO=187.59689922480317f
++ EG=647.20930232557089m FC=468.99224806200795m IBV=93.798449612401598p
++ IS=937.98449612401566f M=468.99224806200795m N=937.98449612401589m
++ NBV=937.98449612401589m NBVL=937.98449612401589m NR=1.8759689922480318
++ VJ=656.58914728681111m XTI=1.8759689922480318)
+Toleranced Model Value:D4 .MODEL D74S D (AF=937.98449612401589m CJO=187.59689922480317f
++ EG=647.20930232557089m FC=468.99224806200795m IBV=93.798449612401598p
++ IS=937.98449612401566f M=468.99224806200795m N=937.98449612401589m
++ NBV=937.98449612401589m NBVL=937.98449612401589m NR=1.8759689922480318
++ VJ=656.58914728681111m XTI=1.8759689922480318)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=11                    ***
+*****************************************************
+
+Temperature=27 Case=11
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               196.434f      196.434f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=982.17054263564273m CJO=196.43410852712853f
++ EG=677.69767441859346m FC=491.08527131782137m IBV=98.217054263564279p
++ IS=982.17054263564273f M=491.08527131782137m N=982.17054263564273m
++ NBV=982.17054263564273m NBVL=982.17054263564273m NR=1.9643410852712855
++ VJ=687.51937984494998m XTI=1.9643410852712855)
+Toleranced Model Value:D4 .MODEL D74S D (AF=982.17054263564273m CJO=196.43410852712853f
++ EG=677.69767441859346m FC=491.08527131782137m IBV=98.217054263564279p
++ IS=982.17054263564273f M=491.08527131782137m N=982.17054263564273m
++ NBV=982.17054263564273m NBVL=982.17054263564273m NR=1.9643410852712855
++ VJ=687.51937984494998m XTI=1.9643410852712855)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=12                    ***
+*****************************************************
+
+Temperature=27 Case=12
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               207.907f      207.907f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=1.0395348837209126 CJO=207.90697674418254f
++ EG=717.27906976742975m FC=519.7674418604563m IBV=103.95348837209129p
++ IS=1.0395348837209129p M=519.7674418604563m N=1.0395348837209126
++ NBV=1.0395348837209126 NBVL=1.0395348837209126 NR=2.0790697674418253
++ VJ=727.67441860463884m XTI=2.0790697674418253)
+Toleranced Model Value:D4 .MODEL D74S D (AF=1.0395348837209126 CJO=207.90697674418254f
++ EG=717.27906976742975m FC=519.7674418604563m IBV=103.95348837209129p
++ IS=1.0395348837209129p M=519.7674418604563m N=1.0395348837209126
++ NBV=1.0395348837209126 NBVL=1.0395348837209126 NR=2.0790697674418253
++ VJ=727.67441860463884m XTI=2.0790697674418253)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=13                    ***
+*****************************************************
+
+Temperature=27 Case=13
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               196.899f      196.899f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=984.49612403099161m CJO=196.8992248061983f
++ EG=679.30232558138425m FC=492.2480620154958m IBV=98.449612403099167p
++ IS=984.49612403099161f M=492.2480620154958m N=984.49612403099161m
++ NBV=984.49612403099161m NBVL=984.49612403099161m NR=1.9689922480619833
++ VJ=689.14728682169402m XTI=1.9689922480619833)
+Toleranced Model Value:D4 .MODEL D74S D (AF=984.49612403099161m CJO=196.8992248061983f
++ EG=679.30232558138425m FC=492.2480620154958m IBV=98.449612403099167p
++ IS=984.49612403099161f M=492.2480620154958m N=984.49612403099161m
++ NBV=984.49612403099161m NBVL=984.49612403099161m NR=1.9689922480619833
++ VJ=689.14728682169402m XTI=1.9689922480619833)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=14                    ***
+*****************************************************
+
+Temperature=27 Case=14
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               175.659f      175.659f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=878.29457364339692m CJO=175.65891472867938f
++ EG=606.02325581394393m FC=439.14728682169846m IBV=87.829457364339703p
++ IS=878.2945736433968f M=439.14728682169846m N=878.29457364339692m
++ NBV=878.29457364339692m NBVL=878.29457364339692m NR=1.7565891472867938
++ VJ=614.80620155037775m XTI=1.7565891472867938)
+Toleranced Model Value:D4 .MODEL D74S D (AF=878.29457364339692m CJO=175.65891472867938f
++ EG=606.02325581394393m FC=439.14728682169846m IBV=87.829457364339703p
++ IS=878.2945736433968f M=439.14728682169846m N=878.29457364339692m
++ NBV=878.29457364339692m NBVL=878.29457364339692m NR=1.7565891472867938
++ VJ=614.80620155037775m XTI=1.7565891472867938)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=15                    ***
+*****************************************************
+
+Temperature=27 Case=15
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               206.202f      206.202f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=1.0310077519379672 CJO=206.20155038759344f
++ EG=711.39534883719739m FC=515.50387596898361m IBV=103.10077519379672p
++ IS=1.0310077519379672p M=515.50387596898361m N=1.0310077519379672
++ NBV=1.0310077519379672 NBVL=1.0310077519379672 NR=2.0620155038759345
++ VJ=721.70542635657694m XTI=2.0620155038759345)
+Toleranced Model Value:D4 .MODEL D74S D (AF=1.0310077519379672 CJO=206.20155038759344f
++ EG=711.39534883719739m FC=515.50387596898361m IBV=103.10077519379672p
++ IS=1.0310077519379672p M=515.50387596898361m N=1.0310077519379672
++ NBV=1.0310077519379672 NBVL=1.0310077519379672 NR=2.0620155038759345
++ VJ=721.70542635657694m XTI=2.0620155038759345)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=16                    ***
+*****************************************************
+
+Temperature=27 Case=16
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               160.775f      160.775f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=803.87596899223581m CJO=160.77519379844713f
++ EG=554.6744186046426m FC=401.93798449611791m IBV=80.387596899223567p
++ IS=803.87596899223558f M=401.93798449611791m N=803.87596899223581m
++ NBV=803.87596899223581m NBVL=803.87596899223581m NR=1.6077519379844716
++ VJ=562.71317829456507m XTI=1.6077519379844716)
+Toleranced Model Value:D4 .MODEL D74S D (AF=803.87596899223581m CJO=160.77519379844713f
++ EG=554.6744186046426m FC=401.93798449611791m IBV=80.387596899223567p
++ IS=803.87596899223558f M=401.93798449611791m N=803.87596899223581m
++ NBV=803.87596899223581m NBVL=803.87596899223581m NR=1.6077519379844716
++ VJ=562.71317829456507m XTI=1.6077519379844716)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=17                    ***
+*****************************************************
+
+Temperature=27 Case=17
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               208.217f      208.217f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=1.041085271317812 CJO=208.2170542635624f
++ EG=718.34883720929031m FC=520.54263565890597m IBV=104.10852713178122p
++ IS=1.041085271317812p M=520.54263565890597m N=1.041085271317812
++ NBV=1.041085271317812 NBVL=1.041085271317812 NR=2.0821705426356241
++ VJ=728.7596899224684m XTI=2.0821705426356241)
+Toleranced Model Value:D4 .MODEL D74S D (AF=1.041085271317812 CJO=208.2170542635624f
++ EG=718.34883720929031m FC=520.54263565890597m IBV=104.10852713178122p
++ IS=1.041085271317812p M=520.54263565890597m N=1.041085271317812
++ NBV=1.041085271317812 NBVL=1.041085271317812 NR=2.0821705426356241
++ VJ=728.7596899224684m XTI=2.0821705426356241)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=18                    ***
+*****************************************************
+
+Temperature=27 Case=18
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               183.101f      183.101f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=915.50387596897758m CJO=183.10077519379547f
++ EG=631.69767441859449m FC=457.75193798448879m IBV=91.55038759689775p
++ IS=915.50387596897747f M=457.75193798448879m N=915.50387596897758m
++ NBV=915.50387596897758m NBVL=915.50387596897758m NR=1.8310077519379551
++ VJ=640.85271317828415m XTI=1.8310077519379551)
+Toleranced Model Value:D4 .MODEL D74S D (AF=915.50387596897758m CJO=183.10077519379547f
++ EG=631.69767441859449m FC=457.75193798448879m IBV=91.55038759689775p
++ IS=915.50387596897747f M=457.75193798448879m N=915.50387596897758m
++ NBV=915.50387596897758m NBVL=915.50387596897758m NR=1.8310077519379551
++ VJ=640.85271317828415m XTI=1.8310077519379551)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=19                    ***
+*****************************************************
+
+Temperature=27 Case=19
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               201.240f      201.240f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=1.0062015503875803 CJO=201.240310077516f
++ EG=694.2790697674302m FC=503.10077519379013m IBV=100.62015503875801p
++ IS=1.0062015503875803p M=503.10077519379013m N=1.0062015503875803
++ NBV=1.0062015503875803 NBVL=1.0062015503875803 NR=2.0124031007751606
++ VJ=704.34108527130616m XTI=2.0124031007751606)
+Toleranced Model Value:D4 .MODEL D74S D (AF=1.0062015503875803 CJO=201.240310077516f
++ EG=694.2790697674302m FC=503.10077519379013m IBV=100.62015503875801p
++ IS=1.0062015503875803p M=503.10077519379013m N=1.0062015503875803
++ NBV=1.0062015503875803 NBVL=1.0062015503875803 NR=2.0124031007751606
++ VJ=704.34108527130616m XTI=2.0124031007751606)
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    Case=20                    ***
+*****************************************************
+
+Temperature=27 Case=20
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+PIN           0.000   VPRE          0.000   V_OUT         5.001  
+VSIG          0.000   5             3.300   X1.1       30.003MEG 
+X1.A          2.501   X1.3          2.500   X1.4         -2.500  
+X1.CAT        5.001  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D3            D4         X1.D1         X1.D2
+Using model:          D74S          D74S         X1.D1         X1.D2
+
+Capacitance Terms:
+CAP               187.907f      187.907f        0.000         0.000 
+
+Current Terms:
+ID                  0.000         0.000        30.003m       -5.011p
+
+Resistance Terms:
+REQ                25.212G       25.212G      862.054u        1.000T
+
+Voltage Terms:
+VD                  0.000         0.000       743.071u       -5.001 
+
+Power DC Terms:
+PD                  0.000         0.000        22.294u       25.057p
+PS                  0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                  0.000         0.000        30.003m       -5.011p
+
+Condition:
+State                  OFF           OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000         1.000 
+ic                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2         X1.R1         X1.R2
+V                    0.000         0.000     -30.003MEG        0.000 
+Power DC Terms:
+PD                   0.000         0.000       900.178K        0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000       -30.003m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1         X1.C1
+V                    0.000        -2.501 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:            X1.E1         X1.E2         X1.E3         X1.E4
+V                30.003MEG        5.001         2.500        -2.500 
+Power DC Terms:
+PG                900.178K        0.000       -75.007m       12.527p
+
+DC Pin Currents:
+ISource           -30.003m        0.000        30.003m        5.011p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1            V3            V4
+V                   0.000         0.000         3.300 
+Power DC Terms:
+PG                  0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource             0.000         0.000         0.000 
+
+
+Tolerance Detail
+================
+Toleranced Model Value:D3 .MODEL D74S D (AF=939.5348837209151m CJO=187.906976744183f
++ EG=648.27906976743134m FC=469.76744186045755m IBV=93.953488372091513p
++ IS=939.53488372091488f M=469.76744186045755m N=939.5348837209151m
++ NBV=939.5348837209151m NBVL=939.5348837209151m NR=1.8790697674418302
++ VJ=657.67441860464055m XTI=1.8790697674418302)
+Toleranced Model Value:D4 .MODEL D74S D (AF=939.5348837209151m CJO=187.906976744183f
++ EG=648.27906976743134m FC=469.76744186045755m IBV=93.953488372091513p
++ IS=939.53488372091488f M=469.76744186045755m N=939.5348837209151m
++ NBV=939.5348837209151m NBVL=939.5348837209151m NR=1.8790697674418302
++ VJ=657.67441860464055m XTI=1.8790697674418302)
+

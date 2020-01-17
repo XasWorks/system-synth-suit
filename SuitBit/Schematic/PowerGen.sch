@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:SuitBit-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -215,26 +216,6 @@ $EndComp
 Wire Wire Line
 	6650 3600 6650 3800
 $Comp
-L dk_PMIC-Voltage-Regulators-Linear:MIC5219-3_3YM5-TR U?
-U 1 1 5E11296E
-P 4750 5350
-F 0 "U?" H 4750 5637 60  0000 C CNN
-F 1 "MIC5219-3_3YM5-TR" H 4750 5531 60  0000 C CNN
-F 2 "digikey-footprints:SOT-753" H 4950 5550 60  0001 L CNN
-F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579712" H 4950 5650 60  0001 L CNN
-F 4 "576-1281-1-ND" H 4950 5750 60  0001 L CNN "Digi-Key_PN"
-F 5 "MIC5219-3.3YM5-TR" H 4950 5850 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 4950 5950 60  0001 L CNN "Category"
-F 7 "PMIC - Voltage Regulators - Linear" H 4950 6050 60  0001 L CNN "Family"
-F 8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579712" H 4950 6150 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/microchip-technology/MIC5219-3.3YM5-TR/576-1281-1-ND/771902" H 4950 6250 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC REG LINEAR 3.3V 500MA SOT23-5" H 4950 6350 60  0001 L CNN "Description"
-F 11 "Microchip Technology" H 4950 6450 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4950 6550 60  0001 L CNN "Status"
-	1    4750 5350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5E112B8A
 P 4750 5750
@@ -323,6 +304,26 @@ F 1 "GND" H 6655 4327 50  0000 C CNN
 F 2 "" H 6650 4500 50  0001 C CNN
 F 3 "" H 6650 4500 50  0001 C CNN
 	1    6650 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_PMIC-Voltage-Regulators-Linear:MCP1700T-3302E_TT U?
+U 1 1 5E16481B
+P 4750 5350
+F 0 "U?" H 4750 5637 60  0000 C CNN
+F 1 "MCP1700T-3302E_TT" H 4750 5531 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 4950 5550 60  0001 L CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011779" H 4950 5650 60  0001 L CNN
+F 4 "MCP1700T3302ETTCT-ND" H 4950 5750 60  0001 L CNN "Digi-Key_PN"
+F 5 "MCP1700T-3302E/TT" H 4950 5850 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 4950 5950 60  0001 L CNN "Category"
+F 7 "PMIC - Voltage Regulators - Linear" H 4950 6050 60  0001 L CNN "Family"
+F 8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011779" H 4950 6150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/microchip-technology/MCP1700T-3302E-TT/MCP1700T3302ETTCT-ND/652677" H 4950 6250 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC REG LINEAR 3.3V 250MA SOT23-3" H 4950 6350 60  0001 L CNN "Description"
+F 11 "Microchip Technology" H 4950 6450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4950 6550 60  0001 L CNN "Status"
+	1    4750 5350
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
