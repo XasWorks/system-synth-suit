@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS54332
+D 3.5A 1MHz Adjustable output Buck Regulator
+$ENDCMP
+#
+#End Doc Library
