@@ -4,10 +4,10 @@ Version=12.00
 Program=Micro-Cap
 Component Version=10.00
 Shape Version=11.00
-Screen=1920,1080
+Screen=1366,768
 MCAPVersion=12.2.0.3
 Key ID=Demo
-NLCnt=28
+NLCnt=27
 TXCnt=5
 
 [shapedef]
@@ -97,8 +97,8 @@ Current=32,16,16,16
 Name=Ground
 Definition=Ground
 Shape=Ground
-Mask=1281
-Used=265
+Mask=1793
+Used=262
 memo=Ground
 Label Offset=0,0,0,0
 PinCnt=1
@@ -109,7 +109,7 @@ Name=Voltage Source
 Definition=VSpice
 Shape=SPICE_V
 Mask=4865
-Used=43
+Used=39
 memo=Voltage Source
 Label Offset=19,13,15,13
 PinCnt=2
@@ -120,8 +120,8 @@ Pin="Minus",0,0,-20,-6
 Name=Capacitor
 Definition=Capacitor
 Shape=Capacitor
-Mask=6145
-Used=23
+Mask=7425
+Used=24
 memo=Capacitor
 Label Offset=16,12,12,12
 PinCnt=2
@@ -133,7 +133,6 @@ Name=Schmitt
 Definition=Macro
 Shape=Schmitt
 Mask=20480
-Used=2
 memo=Schmitt Trigger Macro
 Label Offset=19,25,29,25
 PinCnt=2
@@ -144,8 +143,8 @@ Pin="PinB",a,10,0,-10,-4
 Name=Resistor
 Definition=Resistor
 Shape=Resistor
-Mask=7937
-Used=154
+Mask=7425
+Used=150
 memo=Resistor
 Label Offset=18,6,8,11
 PinCnt=2
@@ -156,8 +155,8 @@ Pin="Minus",0,0,-14,-4
 Name=Diode
 Definition=Diode
 Shape=Diode
-Mask=4353
-Used=12
+Mask=5377
+Used=10
 memo=Diode
 Label Offset=17,10,12,12
 PinCnt=2
@@ -165,7 +164,7 @@ Pin="Anode",6,0,-9,-8
 Pin="Cathode",0,0,-20,-8
 
 [Circuit]
-Window Placement=0,3, -1,-1, -4,-23, 0,0,1425,583
+Window Placement=0,3, -1,-1, -4,-23, 66,66,1047,429
 Default Object=Color=#000080
 Default Object Font=Height=-15,FStyle=0,Color=#000080,Name=Arial
 Default Object Apply Border To Text=No
@@ -177,7 +176,7 @@ PowerFormat=3
 PathDelayFormat=3
 WarningFormat=3
 GridTextFormulaFormat=3
-Window Placement in Transient Analysis=0,1, -1,-1, -4,27, 0,0,953,832
+Window Placement in Transient Analysis=0,3, -1,-1, -4,-23, 66,66,1047,429
 SpiceType=AMBIGUOUS
 Title_Block_Border=None
 Title_Block=False
@@ -209,7 +208,7 @@ Style=8192
 
 [Attr]
 ON=-237,-41,VALUE
-V=DC 0 AC 0 0 Pulse 0 3.3 0 0 0 1U 2U
+V=DC 0 AC 0 0 Pulse 0 3.3 0 0 0 0.9u 1.8u
 
 [Attr]
 ON=0,0,PACKAGE
@@ -237,7 +236,7 @@ Style=256
 
 [Attr]
 ON=0,0,Saved_Pulse
-V=DC 0 AC 0 0 Pulse 0 3.3 0 0 0 1U 2U
+V=DC 0 AC 0 0 Pulse 0 3.3 0 0 0 0.9u 1.8u
 Style=256
 
 [Comp]
@@ -315,7 +314,7 @@ Style=8192
 
 [Attr]
 ON=-29,-39,RESISTANCE
-V=4k
+V=3k
 Style=8192
 
 [Attr]
@@ -441,7 +440,7 @@ Style=8192
 
 [Attr]
 ON=-29,25,RESISTANCE
-V=4k
+V=3k
 Style=8192
 
 [Attr]
@@ -466,7 +465,7 @@ Style=8192
 
 [Attr]
 ON=-95,-41,VALUE
-V=DC 3.3 AC 1 0 
+V=DC 3.3 AC 1 0
 
 [Attr]
 ON=0,0,PACKAGE
@@ -499,7 +498,7 @@ Style=256
 
 [Attr]
 ON=0,0,Saved_None
-V=DC 3.3 AC 1 0 
+V=DC 3.3 AC 1 0
 Style=256
 
 [Wire]
@@ -515,18 +514,13 @@ Pxs=704,264,752,264
 Pxs=784,312,800,312
 
 [Wire]
-Pxs=784,264,792,264
+Pxs=784,264,800,264
 
 [Wire]
 Pxs=472,232,800,232
 
-[Comp]
-Name=Ground
-Px=792,264
-Rot=5
-
 [Wire]
-Pxs=792,264,800,264
+Pxs=800,232,800,264
 
 [Grid Text]
 Text="PIn"
@@ -765,9 +759,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=423,96
+SB 3=423,199
 Scale 3=0.5
-Px=763,200
+Px=609,348
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -831,7 +825,6 @@ Type=Text
 Print=False
 Enable=True
 Name=Models
-SB 0=79,40
 Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
 Comment Color=#008000
 WinBackGround Color=#FFFFFF
@@ -941,7 +934,7 @@ SimulationLog=True
 
 [Transient]
 WinID=1
-Window Placement=0,1, -1,-1, -4,27, 953,0,1906,832
+Window Placement=0,3, -1,-1, -4,-23, 66,66,1047,429
 Font=Height=-19,FStyle=0,Color=#0000FF,Name=Arial
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
@@ -1180,7 +1173,7 @@ Seed=0
 Analysis=Transient
 TMax=50us
 TStart=20us
-TStep=5ns
+TStep=0
 NPts=51
 Temp=27
 RetraceRuns=1

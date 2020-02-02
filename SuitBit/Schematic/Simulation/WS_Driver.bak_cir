@@ -7,8 +7,8 @@ Shape Version=11.00
 Screen=1920,1080
 MCAPVersion=12.2.0.3
 Key ID=Demo
-NLCnt=26
-TXCnt=6
+NLCnt=28
+TXCnt=5
 
 [shapedef]
 Name=Capacitor
@@ -98,7 +98,7 @@ Name=Ground
 Definition=Ground
 Shape=Ground
 Mask=1281
-Used=264
+Used=265
 memo=Ground
 Label Offset=0,0,0,0
 PinCnt=1
@@ -315,7 +315,7 @@ Style=8192
 
 [Attr]
 ON=-29,-39,RESISTANCE
-V=1k
+V=4k
 Style=8192
 
 [Attr]
@@ -441,15 +441,12 @@ Style=8192
 
 [Attr]
 ON=-29,25,RESISTANCE
-V=1k
+V=4k
 Style=8192
 
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=760,360,800,360
 
 [Wire]
 Pxs=552,264,552,328
@@ -509,7 +506,7 @@ Style=256
 Pxs=472,376,552,376
 
 [Wire]
-Pxs=472,288,472,328
+Pxs=472,232,472,328
 
 [Wire]
 Pxs=704,264,752,264
@@ -518,7 +515,18 @@ Pxs=704,264,752,264
 Pxs=784,312,800,312
 
 [Wire]
-Pxs=784,264,800,264
+Pxs=784,264,792,264
+
+[Wire]
+Pxs=472,232,800,232
+
+[Comp]
+Name=Ground
+Px=792,264
+Rot=5
+
+[Wire]
+Pxs=792,264,800,264
 
 [Grid Text]
 Text="PIn"
@@ -560,14 +568,6 @@ JustifyH=Left
 JustifyV=Bottom
 CBorder=None
 
-[Grid Text]
-Text="V3.3"
-Px=792,264
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-CBorder=None
-
 [Schematic]
 CurrentSection 0=0
 CurrentSection 1=0
@@ -576,7 +576,7 @@ CurrentSection 3=0
 Splitter.xs=0
 Splitter.ys=0
 TextQuad=4099
-Scale=0.25
+Scale=0.5
 GridType=Bold5
 GridUser=10
 ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
@@ -765,9 +765,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=626,192
-Scale 3=0.25
-Px=815,240
+SB 3=423,96
+Scale 3=0.5
+Px=763,200
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -831,7 +831,7 @@ Type=Text
 Print=False
 Enable=True
 Name=Models
-SB 0=0,50
+SB 0=79,40
 Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
 Comment Color=#008000
 WinBackGround Color=#FFFFFF
@@ -892,7 +892,17 @@ Text=+ IS=1.12605E-10 M=0.495253 N=0.5 RS=0.0271341 VJ=0.47249 XTI=0.5)
 Text=*** From file C:\MC12\library\DIGIO.LIB
 Text=.MODEL D74CLMP D (CJO=5P IS=1E-14 M=.5)
 Text=*** From file C:\MC12\library\DIGIO.LIB
-Text=.MODEL D74S D (CJO=.2P EG=.69 IS=1E-12 M=.5 VJ=.7 XTI=2)
+Text=.MODEL D74S D (AF=1 LOT/1=20% DEV/1=20% BV=0 LOT/1=20% DEV/1=20%
+Text=+ CJO=.2P LOT/1=20% DEV/1=20% EG=.69 LOT/1=20% DEV/1=20%
+Text=+ FC=500m LOT/1=20% DEV/1=20% IBV=100p LOT/1=20% DEV/1=20%
+Text=+ IBVL=0 LOT/1=20% DEV/1=20% IKF=0 LOT/1=20% DEV/1=20%
+Text=+ IS=1E-12 LOT/1=20% DEV/1=20% ISR=0 LOT/1=20% DEV/1=20%
+Text=+ KF=0 LOT/1=20% DEV/1=20% M=.5 LOT/1=20% DEV/1=20% N=1 LOT/1=20% DEV/1=20%
+Text=+ NBV=1 LOT/1=20% DEV/1=20% NBVL=1 LOT/1=20% DEV/1=20% NR=2 LOT/1=20% DEV/1=20%
+Text=+ RL=0 LOT/1=20% DEV/1=20% RS=0 LOT/1=20% DEV/1=20% TBV1=0 LOT/1=20% DEV/1=20%
+Text=+ TBV2=0 LOT/1=20% DEV/1=20% TIKF=0 LOT/1=20% DEV/1=20%
+Text=+ TRS1=0 LOT/1=20% DEV/1=20% TRS2=0 LOT/1=20% DEV/1=20%
+Text=+ TT=0 LOT/1=20% DEV/1=20% VJ=.7 LOT/1=20% DEV/1=20% XTI=2 LOT/1=20% DEV/1=20%)
 Text=.SUBCKT BUCKVM DON IN OUT GND PARAMS: FS=800k L=4.7u RS=50m
 Text=* L=Primary inductance in Henries
 Text=* FS=Switching frequency in Hz
@@ -1159,11 +1169,11 @@ Name="MAIN"
 
 [Monte Carlo Options]
 Analysis=Transient
-Status=Off
+Status=On
 Zero Tolerance=False
 Eliminate Outliers=False
 Distribution=Normal
-Number of Runs=10
+Number of Runs=20
 Seed=0
 
 [Limits]
@@ -1213,10 +1223,10 @@ AliasID=4
 XExp=T
 YExp=v(vpre)
 XRng=5e-5,2e-5
-YRng=10,-2.5
+YRng=8,-2
 Options=LINEARX,LINEARY
 Range Grid X=6e-6
-Range Grid Y=2.5
+Range Grid Y=2
 Enable=Enable
 Line Color=#FF0000
 Text Color=#FF0000
@@ -1239,10 +1249,10 @@ AliasID=2
 XExp=T
 YExp=v(v_out)
 XRng=5e-5,2e-5
-YRng=10,-2.5
+YRng=8,-2
 Options=LINEARX,LINEARY
 Range Grid X=6e-6
-Range Grid Y=2.5
+Range Grid Y=2
 Enable=Enable
 Line Color=#F382F7
 Text Color=#F382F7

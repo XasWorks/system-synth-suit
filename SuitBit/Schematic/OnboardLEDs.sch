@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -17,160 +17,460 @@ $EndDescr
 $Comp
 L dk_Logic-Gates-and-Inverters:SN74LVC1G14DBVR U?
 U 1 1 5E166F6C
-P 4750 3725
+P 2400 1700
 AR Path="/5E166F6C" Ref="U?"  Part="1" 
-AR Path="/5E166E24/5E166F6C" Ref="U?"  Part="1" 
-F 0 "U?" H 4991 3778 60  0000 L CNN
-F 1 "SN74LVC1G14DBVR" H 4991 3672 60  0000 L CNN
-F 2 "digikey-footprints:SOT-753" H 4950 3925 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g14" H 4950 4025 60  0001 L CNN
-F 4 "296-11607-1-ND" H 4950 4125 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74LVC1G14DBVR" H 4950 4225 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 4950 4325 60  0001 L CNN "Category"
-F 7 "Logic - Gates and Inverters" H 4950 4425 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g14" H 4950 4525 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74LVC1G14DBVR/296-11607-1-ND/385746" H 4950 4625 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC INVERTER SCHMITT 1CH SOT23-5" H 4950 4725 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 4950 4825 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4950 4925 60  0001 L CNN "Status"
-	1    4750 3725
+AR Path="/5E166E24/5E166F6C" Ref="U301"  Part="1" 
+F 0 "U301" H 2641 1753 60  0000 L CNN
+F 1 "SN74LVC1G14DBVR" H 2650 1525 60  0000 L CNN
+F 2 "digikey-footprints:SOT-753" H 2600 1900 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g14" H 2600 2000 60  0001 L CNN
+F 4 "296-11607-1-ND" H 2600 2100 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74LVC1G14DBVR" H 2600 2200 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 2600 2300 60  0001 L CNN "Category"
+F 7 "Logic - Gates and Inverters" H 2600 2400 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g14" H 2600 2500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74LVC1G14DBVR/296-11607-1-ND/385746" H 2600 2600 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC INVERTER SCHMITT 1CH SOT23-5" H 2600 2700 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 2600 2800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2600 2900 60  0001 L CNN "Status"
+	1    2400 1700
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0302
 U 1 1 5E166F73
-P 4650 3975
-F 0 "#PWR?" H 4650 3725 50  0001 C CNN
-F 1 "GND" H 4655 3802 50  0000 C CNN
-F 2 "" H 4650 3975 50  0001 C CNN
-F 3 "" H 4650 3975 50  0001 C CNN
-	1    4650 3975
+P 2300 1950
+F 0 "#PWR0302" H 2300 1700 50  0001 C CNN
+F 1 "GND" H 2305 1777 50  0000 C CNN
+F 2 "" H 2300 1950 50  0001 C CNN
+F 3 "" H 2300 1950 50  0001 C CNN
+	1    2300 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 3925 4650 3975
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5E166F7A
-P 4750 3475
-F 0 "#PWR?" H 4750 3325 50  0001 C CNN
-F 1 "+3.3V" H 4765 3648 50  0000 C CNN
-F 2 "" H 4750 3475 50  0001 C CNN
-F 3 "" H 4750 3475 50  0001 C CNN
-	1    4750 3475
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 3475 4750 3525
-Text HLabel 3325 3725 0    50   Input ~ 0
+	2300 1900 2300 1950
+Text HLabel 975  1700 0    50   Input ~ 0
 WS_Clock
 $Comp
-L Device:C_Small C?
+L Device:C_Small C301
 U 1 1 5E167076
-P 3725 3725
-F 0 "C?" V 3675 3625 50  0000 C CNN
-F 1 "C_Small" V 3825 3650 50  0000 C CNN
-F 2 "" H 3725 3725 50  0001 C CNN
-F 3 "~" H 3725 3725 50  0001 C CNN
-	1    3725 3725
+P 1375 1700
+F 0 "C301" V 1325 1600 50  0000 C CNN
+F 1 "200pF" V 1475 1625 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1375 1700 50  0001 C CNN
+F 3 "~" H 1375 1700 50  0001 C CNN
+	1    1375 1700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3325 3725 3625 3725
-Text HLabel 3325 3950 0    50   Input ~ 0
+	975  1700 1275 1700
+Text HLabel 975  1925 0    50   Input ~ 0
 WS_Data
 Wire Wire Line
-	3825 3725 3875 3725
+	1475 1700 1525 1700
 $Comp
-L Device:R_Small R?
+L Device:R_Small R301
 U 1 1 5E167218
-P 4100 3625
-F 0 "R?" H 4159 3671 50  0000 L CNN
-F 1 "R_Small" H 4150 3575 50  0000 L CNN
-F 2 "" H 4100 3625 50  0001 C CNN
-F 3 "~" H 4100 3625 50  0001 C CNN
-	1    4100 3625
+P 1750 1600
+F 0 "R301" H 1809 1646 50  0000 L CNN
+F 1 "3k" H 1800 1550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1750 1600 50  0001 C CNN
+F 3 "~" H 1750 1600 50  0001 C CNN
+	1    1750 1600
 	1    0    0    -1  
 $EndComp
-Connection ~ 4100 3725
+Connection ~ 1750 1700
 Wire Wire Line
-	4100 3725 4450 3725
+	1750 1700 2100 1700
 $Comp
-L Device:R_Small R?
+L Device:R_Small R302
 U 1 1 5E1672DC
-P 4100 3825
-F 0 "R?" H 4159 3871 50  0000 L CNN
-F 1 "R_Small" H 4159 3780 50  0000 L CNN
-F 2 "" H 4100 3825 50  0001 C CNN
-F 3 "~" H 4100 3825 50  0001 C CNN
-	1    4100 3825
+P 1750 1800
+F 0 "R302" H 1809 1846 50  0000 L CNN
+F 1 "3k" H 1809 1755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1750 1800 50  0001 C CNN
+F 3 "~" H 1750 1800 50  0001 C CNN
+	1    1750 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3325 3950 4100 3950
+	975  1925 1750 1925
 Wire Wire Line
-	4100 3950 4100 3925
+	1750 1925 1750 1900
 $Comp
-L Device:D_Small D?
+L Device:D_Small D302
 U 1 1 5E16761A
-P 3950 3625
-F 0 "D?" V 3900 3500 50  0000 L CNN
-F 1 "D_Small" V 3825 3300 50  0000 L CNN
-F 2 "" V 3950 3625 50  0001 C CNN
-F 3 "~" V 3950 3625 50  0001 C CNN
-	1    3950 3625
+P 1600 1600
+F 0 "D302" V 1550 1475 50  0000 L CNN
+F 1 "D_Small" V 1475 1275 50  0000 L CNN
+F 2 "" V 1600 1600 50  0001 C CNN
+F 3 "~" V 1600 1600 50  0001 C CNN
+	1    1600 1600
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3950 3525 4025 3525
+	1600 1500 1675 1500
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0301
 U 1 1 5E16770A
-P 4025 3425
-F 0 "#PWR?" H 4025 3275 50  0001 C CNN
-F 1 "+3.3V" H 4040 3598 50  0000 C CNN
-F 2 "" H 4025 3425 50  0001 C CNN
-F 3 "" H 4025 3425 50  0001 C CNN
-	1    4025 3425
+P 1675 1400
+F 0 "#PWR0301" H 1675 1250 50  0001 C CNN
+F 1 "+3.3V" H 1690 1573 50  0000 C CNN
+F 2 "" H 1675 1400 50  0001 C CNN
+F 3 "" H 1675 1400 50  0001 C CNN
+	1    1675 1400
 	1    0    0    -1  
 $EndComp
-Connection ~ 3950 3725
+Connection ~ 1600 1700
 Wire Wire Line
-	3950 3725 4100 3725
+	1600 1700 1750 1700
 Wire Wire Line
-	4025 3525 4025 3425
-Connection ~ 4025 3525
+	1675 1500 1675 1400
+Connection ~ 1675 1500
 Wire Wire Line
-	4025 3525 4100 3525
+	1675 1500 1750 1500
 $Comp
-L Device:D_Small D?
+L Device:D_Small D301
 U 1 1 5E167F8E
-P 3875 4125
-F 0 "D?" V 3829 4193 50  0000 L CNN
-F 1 "D_Small" V 3920 4193 50  0000 L CNN
-F 2 "" V 3875 4125 50  0001 C CNN
-F 3 "~" V 3875 4125 50  0001 C CNN
-	1    3875 4125
+P 1525 2100
+F 0 "D301" V 1479 2168 50  0000 L CNN
+F 1 "D_Small" V 1570 2168 50  0000 L CNN
+F 2 "" V 1525 2100 50  0001 C CNN
+F 3 "~" V 1525 2100 50  0001 C CNN
+	1    1525 2100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3875 3725 3875 4025
-Connection ~ 3875 3725
+	1525 1700 1525 2000
+Connection ~ 1525 1700
 Wire Wire Line
-	3875 3725 3950 3725
+	1525 1700 1600 1700
 Wire Wire Line
-	3875 4225 3325 4225
-Text HLabel 3325 4225 0    50   Input ~ 0
+	1525 2200 975  2200
+Text HLabel 975  2200 0    50   Input ~ 0
 ~WS_Off
 $Comp
-L LED:WS2812B D?
+L LED:WS2812B D303
 U 1 1 5E168415
-P 6525 3075
-F 0 "D?" H 6866 3121 50  0000 L CNN
-F 1 "WS2812B" H 6866 3030 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 6575 2775 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6625 2700 50  0001 L TNN
-	1    6525 3075
+P 4175 1050
+F 0 "D303" H 4516 1096 50  0000 L CNN
+F 1 "WS2812B" H 4516 1005 50  0000 L CNN
+F 2 "XasPrints:IN-PI42TAS" H 4225 750 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4275 675 50  0001 L TNN
+	1    4175 1050
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+5V #PWR0303
+U 1 1 5E30B5FD
+P 2400 1425
+F 0 "#PWR0303" H 2400 1275 50  0001 C CNN
+F 1 "+5V" H 2415 1598 50  0000 C CNN
+F 2 "" H 2400 1425 50  0001 C CNN
+F 3 "" H 2400 1425 50  0001 C CNN
+	1    2400 1425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1425 2400 1500
+$Comp
+L LED:WS2812B D306
+U 1 1 5E30BE2E
+P 5100 1050
+F 0 "D306" H 5441 1096 50  0000 L CNN
+F 1 "WS2812B" H 5441 1005 50  0000 L CNN
+F 2 "XasPrints:IN-PI42TAS" H 5150 750 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5200 675 50  0001 L TNN
+	1    5100 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D309
+U 1 1 5E30BEF2
+P 6025 1050
+F 0 "D309" H 6366 1096 50  0000 L CNN
+F 1 "WS2812B" H 6366 1005 50  0000 L CNN
+F 2 "XasPrints:IN-PI42TAS" H 6075 750 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6125 675 50  0001 L TNN
+	1    6025 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D304
+U 1 1 5E30C094
+P 4175 1950
+F 0 "D304" H 4516 1996 50  0000 L CNN
+F 1 "WS2812B" H 4516 1905 50  0000 L CNN
+F 2 "XasPrints:IN-PI42TAS" H 4225 1650 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4275 1575 50  0001 L TNN
+	1    4175 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D307
+U 1 1 5E30C09B
+P 5100 1950
+F 0 "D307" H 5441 1996 50  0000 L CNN
+F 1 "WS2812B" H 5441 1905 50  0000 L CNN
+F 2 "XasPrints:IN-PI42TAS" H 5150 1650 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5200 1575 50  0001 L TNN
+	1    5100 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D310
+U 1 1 5E30C0A2
+P 6025 1950
+F 0 "D310" H 6366 1996 50  0000 L CNN
+F 1 "WS2812B" H 6366 1905 50  0000 L CNN
+F 2 "XasPrints:IN-PI42TAS" H 6075 1650 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6125 1575 50  0001 L TNN
+	1    6025 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D305
+U 1 1 5E30C2EB
+P 4175 2900
+F 0 "D305" H 4516 2946 50  0000 L CNN
+F 1 "WS2812B" H 4516 2855 50  0000 L CNN
+F 2 "XasPrints:IN-PI42TAS" H 4225 2600 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4275 2525 50  0001 L TNN
+	1    4175 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D308
+U 1 1 5E30C2F2
+P 5100 2900
+F 0 "D308" H 5441 2946 50  0000 L CNN
+F 1 "WS2812B" H 5441 2855 50  0000 L CNN
+F 2 "XasPrints:IN-PI42TAS" H 5150 2600 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5200 2525 50  0001 L TNN
+	1    5100 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D311
+U 1 1 5E30C2F9
+P 6025 2900
+F 0 "D311" H 6366 2946 50  0000 L CNN
+F 1 "WS2812B" H 6366 2855 50  0000 L CNN
+F 2 "XasPrints:IN-PI42TAS" H 6075 2600 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6125 2525 50  0001 L TNN
+	1    6025 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4475 1050 4800 1050
+Wire Wire Line
+	5400 1050 5725 1050
+Wire Wire Line
+	5400 1950 5725 1950
+Wire Wire Line
+	4475 1950 4800 1950
+Wire Wire Line
+	4475 2900 4800 2900
+Wire Wire Line
+	5400 2900 5725 2900
+Wire Wire Line
+	4175 2600 4175 2550
+Wire Wire Line
+	4175 2550 5100 2550
+Wire Wire Line
+	6025 2550 6025 2600
+Wire Wire Line
+	5100 2600 5100 2550
+Connection ~ 5100 2550
+Wire Wire Line
+	5100 2550 6025 2550
+Wire Wire Line
+	4175 3200 4175 3275
+Wire Wire Line
+	4175 3275 5100 3275
+Wire Wire Line
+	6025 3275 6025 3200
+Wire Wire Line
+	5100 3200 5100 3275
+Connection ~ 5100 3275
+Wire Wire Line
+	5100 3275 6025 3275
+$Comp
+L power:GND #PWR0304
+U 1 1 5E30D774
+P 5100 3375
+F 0 "#PWR0304" H 5100 3125 50  0001 C CNN
+F 1 "GND" H 5105 3202 50  0000 C CNN
+F 2 "" H 5100 3375 50  0001 C CNN
+F 3 "" H 5100 3375 50  0001 C CNN
+	1    5100 3375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3275 5100 3375
+Wire Wire Line
+	4175 2250 4175 2325
+Wire Wire Line
+	4175 2325 5100 2325
+Wire Wire Line
+	6025 2325 6025 2250
+Wire Wire Line
+	5100 2250 5100 2325
+Connection ~ 5100 2325
+Wire Wire Line
+	5100 2325 6025 2325
+Wire Wire Line
+	4175 1350 4175 1425
+Wire Wire Line
+	4175 1425 5100 1425
+Wire Wire Line
+	6025 1425 6025 1350
+Wire Wire Line
+	5100 1350 5100 1425
+Connection ~ 5100 1425
+Wire Wire Line
+	5100 1425 6025 1425
+Wire Wire Line
+	4175 750  4175 700 
+Wire Wire Line
+	4175 700  5100 700 
+Wire Wire Line
+	6025 700  6025 750 
+Wire Wire Line
+	5100 750  5100 700 
+Connection ~ 5100 700 
+Wire Wire Line
+	5100 700  6025 700 
+Wire Wire Line
+	4175 1650 4175 1600
+Wire Wire Line
+	4175 1600 5100 1600
+Wire Wire Line
+	6025 1600 6025 1650
+Wire Wire Line
+	5100 1650 5100 1600
+Connection ~ 5100 1600
+Wire Wire Line
+	5100 1600 6025 1600
+Wire Wire Line
+	6325 1050 6325 1500
+Wire Wire Line
+	6325 1500 3875 1500
+Wire Wire Line
+	3875 1500 3875 1950
+Wire Wire Line
+	6325 1950 6325 2425
+Wire Wire Line
+	6325 2425 3875 2425
+Wire Wire Line
+	3875 2425 3875 2900
+Wire Wire Line
+	6025 700  6550 700 
+Wire Wire Line
+	7125 700  7125 1750
+Wire Wire Line
+	7125 2550 6025 2550
+Connection ~ 6025 700 
+Connection ~ 6025 2550
+Wire Wire Line
+	6025 3275 6775 3275
+Wire Wire Line
+	6775 3275 6775 2175
+Wire Wire Line
+	6775 1500 6575 1500
+Connection ~ 6025 3275
+Connection ~ 6325 1500
+$Comp
+L Device:C_Small C302
+U 1 1 5E31575C
+P 6950 1750
+F 0 "C302" V 6721 1750 50  0000 C CNN
+F 1 "100nF" V 6812 1750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6950 1750 50  0001 C CNN
+F 3 "~" H 6950 1750 50  0001 C CNN
+	1    6950 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C303
+U 1 1 5E315825
+P 6950 2175
+F 0 "C303" V 6721 2175 50  0000 C CNN
+F 1 "100nF" V 6812 2175 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6950 2175 50  0001 C CNN
+F 3 "~" H 6950 2175 50  0001 C CNN
+	1    6950 2175
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 1750 6775 1750
+Connection ~ 6775 1750
+Wire Wire Line
+	6775 1750 6775 1500
+Wire Wire Line
+	7050 1750 7125 1750
+Connection ~ 7125 1750
+Wire Wire Line
+	7125 1750 7125 2175
+Wire Wire Line
+	7050 2175 7125 2175
+Connection ~ 7125 2175
+Wire Wire Line
+	7125 2175 7125 2550
+Wire Wire Line
+	6850 2175 6775 2175
+Connection ~ 6775 2175
+Wire Wire Line
+	6775 2175 6775 1750
+$Comp
+L power:+5V #PWR0305
+U 1 1 5E31B47E
+P 6550 700
+F 0 "#PWR0305" H 6550 550 50  0001 C CNN
+F 1 "+5V" H 6565 873 50  0000 C CNN
+F 2 "" H 6550 700 50  0001 C CNN
+F 3 "" H 6550 700 50  0001 C CNN
+	1    6550 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0306
+U 1 1 5E31B514
+P 6575 1500
+F 0 "#PWR0306" H 6575 1250 50  0001 C CNN
+F 1 "GND" H 6580 1327 50  0000 C CNN
+F 2 "" H 6575 1500 50  0001 C CNN
+F 3 "" H 6575 1500 50  0001 C CNN
+	1    6575 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 6575 1500
+Wire Wire Line
+	6575 1500 6325 1500
+Connection ~ 6550 700 
+Wire Wire Line
+	6550 700  7125 700 
+Wire Wire Line
+	2600 1700 3250 1700
+Wire Wire Line
+	3250 1700 3250 1050
+Wire Wire Line
+	3250 1050 3875 1050
+Wire Wire Line
+	6325 2900 7000 2900
+Text Label 7875 2900 2    50   ~ 0
+WS2812_EXT
+$Comp
+L Device:R_Small R303
+U 1 1 5E325298
+P 7100 2900
+F 0 "R303" V 6904 2900 50  0000 C CNN
+F 1 "220R" V 6995 2900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7100 2900 50  0001 C CNN
+F 3 "~" H 7100 2900 50  0001 C CNN
+	1    7100 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 2900 7975 2900
 $EndSCHEMATC
