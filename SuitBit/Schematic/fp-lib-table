@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name XasPrints)(type KiCad)(uri /home/xasin/Xasin/system-synth-suit/XasCode/KiCAD/XasPrints.pretty)(options "")(descr ""))
+)
