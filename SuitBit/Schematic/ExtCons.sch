@@ -139,4 +139,15 @@ Text Label 7400 3400 0    50   ~ 0
 SCL_Prot
 Wire Wire Line
 	7400 3400 7850 3400
+$Comp
+L Device:R_Pack04 RN1
+U 1 1 5E376B8A
+P 8050 4050
+F 0 "RN1" V 7633 4050 50  0000 C CNN
+F 1 "R_Pack04" V 7724 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 8325 4050 50  0001 C CNN
+F 3 "~" H 8050 4050 50  0001 C CNN
+	1    8050 4050
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

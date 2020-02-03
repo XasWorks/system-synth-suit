@@ -93,8 +93,6 @@ Wire Wire Line
 Wire Wire Line
 	3900 4200 3900 4300
 Connection ~ 3900 4300
-Wire Wire Line
-	3900 4300 4175 4300
 $Comp
 L Device:R R203
 U 1 1 5E10F013
@@ -338,11 +336,6 @@ Wire Wire Line
 Connection ~ 6150 3800
 Wire Wire Line
 	6150 3800 6650 3800
-Wire Wire Line
-	4175 4275 4175 4300
-Connection ~ 4175 4300
-Wire Wire Line
-	4175 4300 4750 4300
 $Comp
 L Connector:TestPoint_2Pole TP201
 U 1 1 5E2948BA
@@ -468,4 +461,6 @@ F 3 "~" H 5850 5350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5450 5350 5650 5350
+Wire Wire Line
+	3900 4300 4750 4300
 $EndSCHEMATC

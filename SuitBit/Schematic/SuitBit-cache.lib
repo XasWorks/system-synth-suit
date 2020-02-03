@@ -313,6 +313,31 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Interface_CAN_LIN_TCAN330
+#
+DEF Interface_CAN_LIN_TCAN330 U 0 20 Y Y 1 F N
+F0 "U" -400 350 50 H V L CNN
+F1 "Interface_CAN_LIN_TCAN330" 100 350 50 H V L CNN
+F2 "" 0 -500 50 H I C CIN
+F3 "" 0 0 50 H I C CNN
+ALIAS TCAN330G
+$FPLIST
+ *TSOT?23*
+ *SOIC*3.9x4.9mm*P1.27mm*
+$ENDFPLIST
+DRAW
+S -400 300 400 -300 0 1 10 f
+X TXD 1 -500 200 100 R 50 50 1 1 I
+X GND 2 0 -400 100 U 50 50 1 1 W
+X VCC 3 0 400 100 D 50 50 1 1 W
+X RXD 4 -500 100 100 R 50 50 1 1 T
+X SHDN 5 -500 -100 100 R 50 50 1 1 I
+X CANL 6 500 -100 100 L 50 50 1 1 B
+X CANH 7 500 100 100 L 50 50 1 1 B
+X S 8 -500 -200 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # LED_WS2812B
 #
 DEF LED_WS2812B D 0 10 Y Y 1 F N
@@ -424,35 +449,6 @@ X VIN 3 -400 100 100 R 50 50 1 1 W
 X VFB 4 400 -100 100 L 50 50 1 1 I
 X EN 5 -400 -100 100 R 50 50 1 1 I
 X VBST 6 400 0 100 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# dk_Interface-Drivers-Receivers-Transceivers_MCP2551-I_SN
-#
-DEF dk_Interface-Drivers-Receivers-Transceivers_MCP2551-I_SN U 0 40 Y Y 1 F N
-F0 "U" -200 350 60 H V C CNN
-F1 "dk_Interface-Drivers-Receivers-Transceivers_MCP2551-I_SN" 100 -300 60 H V L CNN
-F2 "digikey-footprints:SOIC-8_W3.9mm" 200 200 60 H I L CNN
-F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011797" 200 300 60 H I L CNN
-F4 "MCP2551-I/SN-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "MCP2551-I/SN" 200 500 60 H I L CNN "MPN"
-F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
-F7 "Interface - Drivers, Receivers, Transceivers" 200 700 60 H I L CNN "Family"
-F8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011797" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/microchip-technology/MCP2551-I-SN/MCP2551-I-SN-ND/509452" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "IC TRANSCEIVER CAN HI-SPD 8-SOIC" 200 1000 60 H I L CNN "Description"
-F11 "Microchip Technology" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-S -300 300 300 -200 0 1 0 f
-X TXD 1 -400 200 100 R 50 50 1 1 I
-X VSS 2 0 -300 100 U 50 50 1 1 W
-X VDD 3 0 400 100 D 50 50 1 1 W
-X RXD 4 400 100 100 L 50 50 1 1 O
-X VREF 5 400 0 100 L 50 50 1 1 O
-X CANL 6 -400 100 100 R 50 50 1 1 B
-X CANH 7 -400 0 100 R 50 50 1 1 B
-X RS 8 -400 -100 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
