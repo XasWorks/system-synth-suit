@@ -185,17 +185,6 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5200 675 50  0001 L
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED:WS2812B D309
-U 1 1 5E30BEF2
-P 6025 1050
-F 0 "D309" H 6366 1096 50  0000 L CNN
-F 1 "WS2812B" H 6366 1005 50  0000 L CNN
-F 2 "XasPrints:IN-PI42TAS" H 6075 750 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6125 675 50  0001 L TNN
-	1    6025 1050
-	1    0    0    -1  
-$EndComp
-$Comp
 L LED:WS2812B D304
 U 1 1 5E30C094
 P 4175 1950
@@ -353,11 +342,7 @@ Connection ~ 5100 1600
 Wire Wire Line
 	5100 1600 6025 1600
 Wire Wire Line
-	6325 1050 6325 1500
-Wire Wire Line
-	6325 1500 3875 1500
-Wire Wire Line
-	3875 1500 3875 1950
+	3875 1525 3875 1950
 Wire Wire Line
 	6325 1950 6325 2425
 Wire Wire Line
@@ -375,11 +360,8 @@ Connection ~ 6025 2550
 Wire Wire Line
 	6025 3275 6775 3275
 Wire Wire Line
-	6775 3275 6775 2175
-Wire Wire Line
-	6775 1500 6575 1500
+	6775 3275 6775 2325
 Connection ~ 6025 3275
-Connection ~ 6325 1500
 $Comp
 L Device:C_Small C302
 U 1 1 5E31575C
@@ -406,8 +388,6 @@ Wire Wire Line
 	6850 1750 6775 1750
 Connection ~ 6775 1750
 Wire Wire Line
-	6775 1750 6775 1500
-Wire Wire Line
 	7050 1750 7125 1750
 Connection ~ 7125 1750
 Wire Wire Line
@@ -433,20 +413,6 @@ F 3 "" H 6550 700 50  0001 C CNN
 	1    6550 700 
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0306
-U 1 1 5E31B514
-P 6575 1500
-F 0 "#PWR0306" H 6575 1250 50  0001 C CNN
-F 1 "GND" H 6580 1327 50  0000 C CNN
-F 2 "" H 6575 1500 50  0001 C CNN
-F 3 "" H 6575 1500 50  0001 C CNN
-	1    6575 1500
-	1    0    0    -1  
-$EndComp
-Connection ~ 6575 1500
-Wire Wire Line
-	6575 1500 6325 1500
 Connection ~ 6550 700 
 Wire Wire Line
 	6550 700  7125 700 
@@ -456,21 +422,48 @@ Wire Wire Line
 	3250 1700 3250 1050
 Wire Wire Line
 	3250 1050 3875 1050
-Wire Wire Line
-	6325 2900 7000 2900
-Text Label 7875 2900 2    50   ~ 0
+Text Label 7450 2900 2    50   ~ 0
 WS2812_EXT
 $Comp
-L Device:R_Small R303
-U 1 1 5E325298
-P 7100 2900
-F 0 "R303" V 6904 2900 50  0000 C CNN
-F 1 "220R" V 6995 2900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7100 2900 50  0001 C CNN
-F 3 "~" H 7100 2900 50  0001 C CNN
-	1    7100 2900
-	0    1    1    0   
+L LED:WS2812B D309
+U 1 1 5E30BEF2
+P 6025 1050
+F 0 "D309" H 6366 1096 50  0000 L CNN
+F 1 "WS2812B" H 6366 1005 50  0000 L CNN
+F 2 "XasPrints:IN-PI42TAS" H 6075 750 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6125 675 50  0001 L TNN
+	1    6025 1050
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7200 2900 7975 2900
+	6325 1050 6325 1525
+Wire Wire Line
+	6325 1525 3875 1525
+Wire Wire Line
+	6025 2325 6775 2325
+Connection ~ 6025 2325
+Connection ~ 6775 2325
+Wire Wire Line
+	6775 2325 6775 2175
+Wire Wire Line
+	6025 1425 6550 1425
+Wire Wire Line
+	6775 1425 6775 1750
+Connection ~ 6025 1425
+$Comp
+L power:GND #PWR0114
+U 1 1 5E3B96DC
+P 6550 1425
+F 0 "#PWR0114" H 6550 1175 50  0001 C CNN
+F 1 "GND" H 6555 1252 50  0000 C CNN
+F 2 "" H 6550 1425 50  0001 C CNN
+F 3 "" H 6550 1425 50  0001 C CNN
+	1    6550 1425
+	1    0    0    -1  
+$EndComp
+Connection ~ 6550 1425
+Wire Wire Line
+	6550 1425 6775 1425
+Wire Wire Line
+	6325 2900 7450 2900
 $EndSCHEMATC

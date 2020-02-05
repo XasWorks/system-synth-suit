@@ -150,4 +150,35 @@ F 3 "~" H 8050 4050 50  0001 C CNN
 	1    8050 4050
 	0    1    1    0   
 $EndComp
+Text Label 5925 3475 2    50   ~ 0
+SDA_Prot
+Text Label 5925 3975 2    50   ~ 0
+SCL_Prot
+Wire Wire Line
+	5275 3475 5375 3475
+Wire Wire Line
+	5275 3975 5375 3975
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J403
+U 1 1 5E3B1279
+P 5375 3675
+F 0 "J403" V 5379 3855 50  0000 L CNN
+F 1 "Conn_02x03_Odd_Even" V 5470 3855 50  0000 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x03_P2.00mm_Vertical" H 5375 3675 50  0001 C CNN
+F 3 "~" H 5375 3675 50  0001 C CNN
+	1    5375 3675
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5475 3475 5925 3475
+Wire Wire Line
+	5475 3975 5925 3975
+Wire Wire Line
+	5375 3475 5475 3475
+Connection ~ 5375 3475
+Connection ~ 5475 3475
+Wire Wire Line
+	5375 3975 5475 3975
+Connection ~ 5375 3975
+Connection ~ 5475 3975
 $EndSCHEMATC
