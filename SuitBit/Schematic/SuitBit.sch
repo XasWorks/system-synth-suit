@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MCU_ST_STM32F4:STM32F401CBUx U102
-U 1 1 5E10E1E9
-P 5775 3675
-F 0 "U102" H 5725 5453 50  0000 C CNN
-F 1 "STM32F401CBUx" H 5725 5362 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 5175 2175 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00086815.pdf" H 5775 3675 50  0001 C CNN
-	1    5775 3675
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 2225 3650 1025 600 
 U 5E10E2B9
@@ -133,16 +122,14 @@ CAN_H
 $Comp
 L power:GND #PWR0106
 U 1 1 5E33E335
-P 3375 1875
-F 0 "#PWR0106" H 3375 1625 50  0001 C CNN
-F 1 "GND" H 3380 1702 50  0000 C CNN
-F 2 "" H 3375 1875 50  0001 C CNN
-F 3 "" H 3375 1875 50  0001 C CNN
-	1    3375 1875
+P 3375 1975
+F 0 "#PWR0106" H 3375 1725 50  0001 C CNN
+F 1 "GND" H 3380 1802 50  0000 C CNN
+F 2 "" H 3375 1975 50  0001 C CNN
+F 3 "" H 3375 1975 50  0001 C CNN
+	1    3375 1975
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3375 1800 3375 1875
 $Comp
 L Device:C_Small C102
 U 1 1 5E33E7B9
@@ -156,8 +143,6 @@ F 3 "~" H 3700 1025 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3375 1100 3375 1025
-Wire Wire Line
-	3375 1025 3550 1025
 $Comp
 L power:+3.3V #PWR0105
 U 1 1 5E33EAE7
@@ -183,33 +168,6 @@ F 3 "" H 3900 1025 50  0001 C CNN
 	1    3900 1025
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3800 1025 3850 1025
-$Comp
-L Device:C_Small C101
-U 1 1 5E33EE86
-P 3700 875
-F 0 "C101" V 3471 875 50  0000 C CNN
-F 1 "10uF" V 3562 875 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3700 875 50  0001 C CNN
-F 3 "~" H 3700 875 50  0001 C CNN
-	1    3700 875 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3600 875  3550 875 
-Wire Wire Line
-	3550 875  3550 1025
-Connection ~ 3550 1025
-Wire Wire Line
-	3550 1025 3600 1025
-Wire Wire Line
-	3800 875  3850 875 
-Wire Wire Line
-	3850 875  3850 1025
-Connection ~ 3850 1025
-Wire Wire Line
-	3850 1025 3900 1025
 Wire Wire Line
 	2225 3750 1775 3750
 Text Label 1775 3750 0    50   ~ 0
@@ -360,4 +318,29 @@ Wire Wire Line
 	4325 1600 3875 1600
 NoConn ~ 2875 1600
 NoConn ~ 2875 1700
+Wire Wire Line
+	3375 1900 3375 1975
+Wire Wire Line
+	3375 1025 3600 1025
+Wire Wire Line
+	3800 1025 3900 1025
+Wire Wire Line
+	2875 1400 2550 1400
+Text Label 2550 1400 0    50   ~ 0
+C>MCU
+Text Label 2550 1300 0    50   ~ 0
+MCU>C
+Wire Wire Line
+	2550 1300 2875 1300
+$Comp
+L MCU_ST_STM32L4:STM32L451CEUx U102
+U 1 1 5E3B749C
+P 5775 3600
+F 0 "U102" H 5775 5178 50  0000 C CNN
+F 1 "STM32L451CEUx" H 5775 5087 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 5275 2200 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00340475.pdf" H 5775 3600 50  0001 C CNN
+	1    5775 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -352,7 +352,7 @@ Wire Wire Line
 Wire Wire Line
 	6025 700  6550 700 
 Wire Wire Line
-	7125 700  7125 1750
+	7125 700  7125 1600
 Wire Wire Line
 	7125 2550 6025 2550
 Connection ~ 6025 700 
@@ -466,4 +466,10 @@ Wire Wire Line
 	6550 1425 6775 1425
 Wire Wire Line
 	6325 2900 7450 2900
+Wire Wire Line
+	6025 1600 7125 1600
+Connection ~ 6025 1600
+Connection ~ 7125 1600
+Wire Wire Line
+	7125 1600 7125 1750
 $EndSCHEMATC
