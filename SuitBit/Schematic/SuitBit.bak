@@ -236,7 +236,7 @@ Wire Wire Line
 Wire Wire Line
 	8650 2925 8650 2875
 $Sheet
-S 6725 1175 1425 850 
+S 6950 1050 1425 850 
 U 5E35B5BB
 F0 "Externals" 50
 F1 "ExtCons.sch" 50
@@ -333,14 +333,109 @@ MCU>C
 Wire Wire Line
 	2550 1300 2875 1300
 $Comp
-L MCU_ST_STM32L4:STM32L451CEUx U?
+L MCU_ST_STM32L4:STM32L451CEUx U102
 U 1 1 5E3B749C
 P 5775 3600
-F 0 "U?" H 5775 5178 50  0000 C CNN
-F 1 "STM32L451CEUx" H 5775 5087 50  0000 C CNN
+F 0 "U102" H 6150 5025 50  0000 C CNN
+F 1 "STM32L451CEUx" H 6350 4950 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 5275 2200 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00340475.pdf" H 5775 3600 50  0001 C CNN
 	1    5775 3600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5575 5100 5675 5100
+Connection ~ 5675 5100
+Wire Wire Line
+	5675 5100 5775 5100
+Connection ~ 5775 5100
+Wire Wire Line
+	5775 5100 5875 5100
+Connection ~ 5875 5100
+Wire Wire Line
+	5875 5100 5975 5100
+Wire Wire Line
+	5775 5100 5775 5300
+$Comp
+L power:GND #PWR?
+U 1 1 5E3BF9B7
+P 5775 5300
+F 0 "#PWR?" H 5775 5050 50  0001 C CNN
+F 1 "GND" H 5780 5127 50  0000 C CNN
+F 2 "" H 5775 5300 50  0001 C CNN
+F 3 "" H 5775 5300 50  0001 C CNN
+	1    5775 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5675 2200 5775 2200
+Connection ~ 5775 2200
+Wire Wire Line
+	5775 2200 5875 2200
+Wire Wire Line
+	5775 2200 5775 1925
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E3C0F72
+P 5775 1775
+F 0 "#PWR?" H 5775 1625 50  0001 C CNN
+F 1 "+3.3V" H 5790 1948 50  0000 C CNN
+F 2 "" H 5775 1775 50  0001 C CNN
+F 3 "" H 5775 1775 50  0001 C CNN
+	1    5775 1775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5775 1925 5600 1925
+Connection ~ 5775 1925
+Wire Wire Line
+	5775 1925 5775 1775
+$Comp
+L Device:C_Small C?
+U 1 1 5E3C17E9
+P 5500 1925
+F 0 "C?" V 5271 1925 50  0000 C CNN
+F 1 "0.1uF" V 5362 1925 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5500 1925 50  0001 C CNN
+F 3 "~" H 5500 1925 50  0001 C CNN
+	1    5500 1925
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E3C1C67
+P 5350 1925
+F 0 "#PWR?" H 5350 1675 50  0001 C CNN
+F 1 "GND" V 5355 1797 50  0000 R CNN
+F 2 "" H 5350 1925 50  0001 C CNN
+F 3 "" H 5350 1925 50  0001 C CNN
+	1    5350 1925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 1925 5400 1925
+Wire Wire Line
+	6375 3900 6925 3900
+Wire Wire Line
+	6375 4100 6925 4100
+Text Label 6925 3900 2    50   ~ 0
+SPI_CLK
+Text Label 6925 4100 2    50   ~ 0
+SPI_MOSI
+Wire Wire Line
+	5175 4300 4650 4300
+Wire Wire Line
+	5175 4200 4650 4200
+Text GLabel 4650 4300 0    50   Input ~ 0
+TWI_SDA
+Text GLabel 4650 4200 0    50   Input ~ 0
+TWI_SCL
+Wire Wire Line
+	6375 4400 6925 4400
+Text Label 6925 4400 2    50   ~ 0
+C>MCU
+Wire Wire Line
+	6925 4300 6375 4300
+Text Label 6925 4300 2    50   ~ 0
+MCU>C
 $EndSCHEMATC
