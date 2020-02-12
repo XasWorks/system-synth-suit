@@ -1,0 +1,15 @@
+#JSGF V1.0;
+grammar MainControl;
+
+<commands> = <lights> | set my alarm;
+<quickCommands> = i am back home | i am leaving now | how are you doing | (red | green | blue) switched in |
+	good night and sweet dreams | (enable | disable) voice control please | (red | blue | stand down) alert |
+	what time is it;
+
+
+<lights> = turn (on|off) the light | light temperature to <numberSequence> [brightness <percentage>]|
+	light color to [<percentage> red] [<percentage> green] [<percentage> blue] |
+	light to daylight;
+
+
+public <commandSequence> = dial up modem;

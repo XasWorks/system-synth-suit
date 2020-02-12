@@ -1,0 +1,7 @@
+#JSGF V1.0;
+grammar MainControl;
+
+<meme> = %{memes};
+<group> = %{groups};
+
+public <commandSequence> = <meme> [from <group>];
