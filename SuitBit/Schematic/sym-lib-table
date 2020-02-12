@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Local)(type Legacy)(uri /home/xasin/Xasin/system-synth-suit/SuitBit/Schematic/Local.lib)(options "")(descr ""))
+  (lib (name XasParts)(type Legacy)(uri /home/xasin/Xasin/system-synth-suit/XasCode/KiCAD/XasParts.lib)(options "")(descr ""))
 )

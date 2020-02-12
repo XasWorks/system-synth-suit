@@ -172,28 +172,6 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_D_Small
-#
-DEF Device_D_Small D 0 10 N N 1 F N
-F0 "D" -50 80 50 H V L CNN
-F1 "Device_D_Small" -150 -80 50 H V L CNN
-F2 "" 0 0 50 V I C CNN
-F3 "" 0 0 50 V I C CNN
-$FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 -30 -40 -30 40 N
-P 2 0 1 0 -30 0 30 0 N
-P 4 0 1 0 30 -40 -30 0 30 40 30 -40 N
-X K 1 -100 0 70 R 50 50 1 1 P
-X A 2 100 0 70 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_Fuse
 #
 DEF Device_Fuse F 0 0 N Y 1 F N
@@ -209,6 +187,21 @@ S -30 -100 30 100 0 1 10 N
 P 2 0 1 0 0 100 0 -100 N
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Jumper_NO_Small
+#
+DEF Device_Jumper_NO_Small JP 0 30 N N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "Device_Jumper_NO_Small" 10 -60 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -40 0 20 0 1 0 N
+C 40 0 20 0 1 0 N
+X 1 1 -100 0 40 R 50 50 0 1 P
+X 2 2 100 0 40 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
@@ -337,6 +330,25 @@ DRAW
 S -30 70 30 -70 0 1 8 N
 X ~ 1 0 100 30 D 50 50 1 1 P
 X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Graphic_SYM_Hot_Small
+#
+DEF ~Graphic_SYM_Hot_Small #SYM 0 40 Y N 1 F N
+F0 "#SYM" 0 140 50 H I C CNN
+F1 "Graphic_SYM_Hot_Small" 0 -125 50 H I C CNN
+F2 "" 0 -175 50 H I C CNN
+F3 "" 30 -200 50 H I C CNN
+DRAW
+A -50 -25 25 -369 369 0 1 10 N -30 -40 -30 -10
+A -20 -25 25 -369 369 0 1 10 N 0 -40 0 -10
+A -10 5 25 1431 -1431 0 1 10 N -30 20 -30 -10
+A 10 -25 25 -369 369 0 1 10 N 30 -40 30 -10
+A 20 5 25 1431 -1431 0 1 10 N 0 20 0 -10
+A 50 5 25 1431 -1431 0 1 10 N 30 20 30 -10
+P 2 0 1 10 50 -55 -50 -55 N
+P 4 0 1 10 -100 -75 100 -75 0 100 -100 -75 f
 ENDDRAW
 ENDDEF
 #
@@ -479,33 +491,68 @@ X VBST 6 400 0 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# dk_Logic-Gates-and-Inverters_SN74LVC1G14DBVR
+# Switch_SW_Push_45deg
 #
-DEF dk_Logic-Gates-and-Inverters_SN74LVC1G14DBVR U 0 0 Y Y 1 F N
-F0 "U" -100 140 60 H V R CNN
-F1 "dk_Logic-Gates-and-Inverters_SN74LVC1G14DBVR" -20 -150 60 H V L CNN
-F2 "digikey-footprints:SOT-753" 200 200 60 H I L CNN
-F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g14" 200 300 60 H I L CNN
-F4 "296-11607-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "SN74LVC1G14DBVR" 200 500 60 H I L CNN "MPN"
-F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
-F7 "Logic - Gates and Inverters" 200 700 60 H I L CNN "Family"
-F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g14" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/texas-instruments/SN74LVC1G14DBVR/296-11607-1-ND/385746" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "IC INVERTER SCHMITT 1CH SOT23-5" 200 1000 60 H I L CNN "Description"
-F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+DEF Switch_SW_Push_45deg SW 0 40 N N 1 F N
+F0 "SW" 120 40 50 H V L CNN
+F1 "Switch_SW_Push_45deg" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -46 46 20 0 1 0 N
+C 45 -47 20 0 1 0 N
+P 2 0 1 0 -20 100 100 -20 N
+P 2 0 1 0 40 40 80 80 N
+P 3 0 1 0 -100 100 -60 60 -60 60 N
+P 4 0 1 0 60 -60 100 -100 100 -100 100 -100 N
+X 1 1 -100 100 0 R 50 50 0 1 P
+X 2 2 100 -100 0 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# XasParts_SI7060
+#
+DEF XasParts_SI7060 U 0 20 Y Y 1 F N
+F0 "U" -250 550 50 H V C CNN
+F1 "XasParts_SI7060" -150 650 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Package_TO_SOT_SMD:SOT-23-5
+$ENDFPLIST
+DRAW
+S 150 50 -200 500 0 1 0 f
+X SDA 1 -400 400 200 R 50 50 1 1 C
+X GND 2 50 -150 200 U 50 50 1 1 W
+X SCL 3 -400 300 200 R 50 50 1 1 C
+X Vdd 4 50 700 200 D 50 50 1 1 W
+X Alert 5 -400 150 200 R 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# dk_Alarms-Buzzers-and-Sirens_PKMCS0909E4000-R1
+#
+DEF dk_Alarms-Buzzers-and-Sirens_PKMCS0909E4000-R1 BZ 0 1 Y Y 1 F N
+F0 "BZ" 0 200 60 H V L CNN
+F1 "dk_Alarms-Buzzers-and-Sirens_PKMCS0909E4000-R1" -100 -100 60 H V L CNN
+F2 "digikey-footprints:Piezo_9x9mm_PKMCS0909E4000-R1" 200 200 60 H I L CNN
+F3 "https://www.murata.com/~/media/webrenewal/products/sound/sounder/vppt-buzj083-d.ashx" 200 300 60 H I L CNN
+F4 "490-9647-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "PKMCS0909E4000-R1" 200 500 60 H I L CNN "MPN"
+F6 "Audio Products" 200 600 60 H I L CNN "Category"
+F7 "Alarms, Buzzers, and Sirens" 200 700 60 H I L CNN "Family"
+F8 "https://www.murata.com/~/media/webrenewal/products/sound/sounder/vppt-buzj083-d.ashx" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/murata-electronics-north-america/PKMCS0909E4000-R1/490-9647-1-ND/4878401" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "AUDIO PIEZO TRANSDUCER 12.5V SMD" 200 1000 60 H I L CNN "Description"
+F11 "Murata Electronics North America" 200 1100 60 H I L CNN "Manufacturer"
 F12 "Active" 200 1200 60 H I L CNN "Status"
 DRAW
-C 10 0 10 0 1 0 N
-S -200 100 100 -100 0 1 0 f
-P 2 0 1 0 -100 0 -200 0 N
-P 2 0 1 0 100 0 20 0 N
-P 4 0 1 0 -100 50 -100 -50 0 0 -100 50 N
-X NC 1 -100 0 100 R 50 50 1 1 N N
-X A 2 -300 0 100 R 50 50 1 1 I
-X GND 3 -100 -200 100 U 50 50 1 1 W
-X Y 4 200 0 100 L 50 50 1 1 O
-X VCC 5 0 200 100 D 50 50 1 1 W
+A 200 50 71 450 -450 0 1 0 N 250 100 250 0
+A 200 50 112 634 -634 0 1 0 N 250 150 250 -50
+S 0 150 100 -50 0 1 0 f
+P 5 0 1 0 100 100 200 150 200 -50 100 0 100 100 f
+X ~ 1 -100 100 100 R 50 50 1 1 I
+X ~ 2 -100 0 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -565,6 +612,36 @@ S -200 100 200 -200 0 1 0 f
 X GND 1 0 -300 100 U 50 50 1 1 W
 X OUT 2 300 0 100 L 50 50 1 1 w
 X IN 3 -300 0 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# dk_Transistors-Bipolar-BJT-Single_PMBT2222A_215
+#
+DEF dk_Transistors-Bipolar-BJT-Single_PMBT2222A_215 Q 0 0 Y Y 1 F N
+F0 "Q" -126 166 60 H V L CNN
+F1 "dk_Transistors-Bipolar-BJT-Single_PMBT2222A_215" 206 0 60 V V C CNN
+F2 "digikey-footprints:SOT-23-3" 200 200 60 H I L CNN
+F3 "https://assets.nexperia.com/documents/data-sheet/PMBT2222_PMBT2222A.pdf" 200 300 60 H I L CNN
+F4 "1727-2956-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "PMBT2222A,215" 200 500 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
+F7 "Transistors - Bipolar (BJT) - Single" 200 700 60 H I L CNN "Family"
+F8 "https://assets.nexperia.com/documents/data-sheet/PMBT2222_PMBT2222A.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/nexperia-usa-inc/PMBT2222A,215/1727-2956-1-ND/763512" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TRANS NPN 40V 0.6A SOT23" 200 1000 60 H I L CNN "Description"
+F11 "Nexperia USA Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 0 0 128 0 1 0 f
+P 2 0 1 0 -150 0 -100 0 N
+P 2 0 1 0 -140 0 0 0 N
+P 2 0 1 0 0 -50 100 -100 N
+P 2 0 1 0 0 50 100 100 N
+P 2 0 1 0 0 100 0 -100 N
+P 4 0 1 0 60 -50 80 -90 40 -100 60 -50 F
+X B 1 -200 0 100 R 50 50 1 1 I
+X E 2 100 -200 100 U 50 50 1 1 P
+X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
