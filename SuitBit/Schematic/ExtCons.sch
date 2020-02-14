@@ -181,4 +181,123 @@ Wire Wire Line
 	5375 3975 5475 3975
 Connection ~ 5375 3975
 Connection ~ 5475 3975
+Wire Wire Line
+	8250 3850 8650 3850
+Wire Wire Line
+	8250 3950 8650 3950
+Wire Wire Line
+	8250 4050 8650 4050
+Wire Wire Line
+	8250 4150 8650 4150
+Wire Wire Line
+	7850 3850 7400 3850
+Wire Wire Line
+	7400 3950 7850 3950
+Wire Wire Line
+	7850 4050 7400 4050
+Wire Wire Line
+	7400 4150 7850 4150
+Text Label 7400 3850 0    50   ~ 0
+PIO0
+Text Label 7400 3950 0    50   ~ 0
+PIO1
+Text Label 7400 4050 0    50   ~ 0
+PIO2
+Text Label 7400 4150 0    50   ~ 0
+PIO3
+Text HLabel 8650 3850 2    50   Input ~ 0
+IO0
+Text HLabel 8650 4050 2    50   Input ~ 0
+IO2
+Text HLabel 8650 4150 2    50   Input ~ 0
+IO3
+Text HLabel 8650 3950 2    50   Input ~ 0
+IO1
+$Comp
+L Connector:Conn_01x04_Male J404
+U 1 1 5E45E35A
+P 7200 3950
+F 0 "J404" H 7306 4228 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 7306 4137 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 7200 3950 50  0001 C CNN
+F 3 "~" H 7200 3950 50  0001 C CNN
+	1    7200 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J405
+U 1 1 5E45EE15
+P 7200 4550
+F 0 "J405" H 7306 4828 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 7306 4737 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 7200 4550 50  0001 C CNN
+F 3 "~" H 7200 4550 50  0001 C CNN
+	1    7200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J406
+U 1 1 5E45EE59
+P 7925 4550
+F 0 "J406" H 8031 4828 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 8031 4737 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 7925 4550 50  0001 C CNN
+F 3 "~" H 7925 4550 50  0001 C CNN
+	1    7925 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4450 7400 4500
+Wire Wire Line
+	7400 4650 7400 4700
+Wire Wire Line
+	8125 4450 8125 4550
+Connection ~ 8125 4550
+Wire Wire Line
+	8125 4550 8125 4600
+Connection ~ 8125 4650
+Wire Wire Line
+	8125 4650 8125 4750
+$Comp
+L power:+3.3V #PWR0128
+U 1 1 5E45FB41
+P 7400 4500
+F 0 "#PWR0128" H 7400 4350 50  0001 C CNN
+F 1 "+3.3V" V 7415 4628 50  0000 L CNN
+F 2 "" H 7400 4500 50  0001 C CNN
+F 3 "" H 7400 4500 50  0001 C CNN
+	1    7400 4500
+	0    1    1    0   
+$EndComp
+Connection ~ 7400 4500
+Wire Wire Line
+	7400 4500 7400 4550
+$Comp
+L power:+5V #PWR0129
+U 1 1 5E45FC23
+P 7400 4700
+F 0 "#PWR0129" H 7400 4550 50  0001 C CNN
+F 1 "+5V" V 7415 4828 50  0000 L CNN
+F 2 "" H 7400 4700 50  0001 C CNN
+F 3 "" H 7400 4700 50  0001 C CNN
+	1    7400 4700
+	0    1    1    0   
+$EndComp
+Connection ~ 7400 4700
+Wire Wire Line
+	7400 4700 7400 4750
+$Comp
+L power:GND #PWR0130
+U 1 1 5E45FCA6
+P 8125 4600
+F 0 "#PWR0130" H 8125 4350 50  0001 C CNN
+F 1 "GND" V 8130 4472 50  0000 R CNN
+F 2 "" H 8125 4600 50  0001 C CNN
+F 3 "" H 8125 4600 50  0001 C CNN
+	1    8125 4600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8125 4600
+Wire Wire Line
+	8125 4600 8125 4650
 $EndSCHEMATC
