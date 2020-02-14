@@ -4,4 +4,7 @@ grammar MainControl;
 <meme> = %{memes};
 <group> = %{groups};
 
-public <commandSequence> = <meme> [from <group>];
+<group_list> = <group> [and <group_list>];
+
+public <commandSequence> = <meme> [from <group_list>] | select groups <group_list>
+	| kill sounds;

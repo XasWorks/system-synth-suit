@@ -72,16 +72,21 @@ def begin_recording()
 	$outFile = File.open("/tmp/Memeinator.raw", "wb");
 end
 
+$active_threads = [];
 def play(name)
-	puts "Gonna play: #{name}"
+	program, groups = name.split(" from ");
+	groups ||= "";
+	groups = groups.split(" and ");
 
-	return unless (effect = $memeHash[name]);
+	local_score = $group_scoring.merge(groups.map { |g| [g, 2] }.to_h);
+
+	return unless (effect = $memeHash[program]);
 
 	tgt_sounds = nil;
 	best_score = -10;
 
 	effect.each do |file, groups|
-		score = groups.sum { |g| $group_scoring[g] || 0 }
+		score = groups.sum { |g| local_score[g] || 0 }
 
 		if(score > best_score)
 			tgt_sounds = [file]
@@ -92,7 +97,12 @@ def play(name)
 	end
 
 	Thread.new do
-		system("play --volume 0.3 #{tgt_sounds.sample}");
+		fork_pid = fork {
+			exec("play --volume 0.3 #{tgt_sounds.sample}");
+		}
+		$active_threads << fork_pid;
+		Process.waitpid(fork_pid);
+		$active_threads.delete fork_pid
 	end
 end
 
@@ -105,8 +115,16 @@ def end_recording()
 
 	myFile.close();
 	$pocket_reader.recognize('/tmp/Memeinator.raw') do |t|
+		puts "\n\n RECOGNIZED: #{t}"
 
-		play(t);
+		case t
+		when /select groups (.+)/
+			$group_scoring = $1.split(" and ").map { |g| [g, 1] }.to_h
+		when /kill sounds/
+			$active_threads.each { |pid| Process.kill("QUIT", pid) };
+		else
+			play(t);
+		end
 	end
 end
 

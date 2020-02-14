@@ -1,7 +1,10 @@
 #JSGF V1.0;
 grammar MainControl;
 
-<meme> = hello | do not blame you | mess with me | hello stranger | are you still there | stop that | uh hello | power ensured | sarcasm complete | power up end | smooth jazz | return to your bed | good | interpret vague answer | stare at the art | corruption seventy | power up start | corruption fifty | response | explosion imminent | stalemate detected | corruption hundred | stalemate resolved | not stopping | having a laugh | laugh | laughter | clap | oh it is you | you are kidding me | yes i see you and i do not care | i do not care | let us act like humans | yes i see you | if you do not succeed | long time | clap processor;
-<group> = portal | turret | defective turret | polite | announcer | glad os | wheatley | cave johnson;
+<meme> = hello | do not blame you | mess with me | hello stranger | are you still there | stop that | uh hello | power ensured | sarcasm complete | power up end | smooth jazz | return to your bed | good | interpret vague answer | stare at the art | corruption seventy | power up start | corruption fifty | response | explosion imminent | stalemate detected | corruption hundred | stalemate resolved | not stopping | having a laugh | laugh | laughter | clap | oh it is you | you are kidding me | yes i see you and i do not care | i do not care | let us act like humans | yes i see you | if you do not succeed | long time | clap processor | three corder | red alert | blue alert;
+<group> = portal | turret | defective turret | polite | announcer | glad os | wheatley | cave johnson | star trek | next generation | voyager;
 
-public <commandSequence> = <meme> [from <group>];
+<group_list> = <group> [and <group_list>];
+
+public <commandSequence> = <meme> [from <group_list>] | select groups <group_list>
+	| kill sounds;
