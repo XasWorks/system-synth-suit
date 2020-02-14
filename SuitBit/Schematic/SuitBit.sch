@@ -180,7 +180,6 @@ Text Label 2075 1325 2    50   ~ 0
 B_UNFUSED
 Text Label 2075 1975 2    50   ~ 0
 B_UNFUSED
-NoConn ~ 8500 5575
 Text GLabel 8375 5675 0    50   Input ~ 0
 TWI_SCL
 Text GLabel 9500 5975 2    50   Input ~ 0
@@ -246,7 +245,7 @@ F2 "Fan_PWM" I L 9100 1725 50
 F3 "WS_EXT" I L 9100 1250 50 
 $EndSheet
 Wire Wire Line
-	8800 5275 8800 5150
+	8800 5275 8800 5250
 $Comp
 L power:+3.3V #PWR0111
 U 1 1 5E377A79
@@ -738,4 +737,96 @@ Wire Wire Line
 Wire Wire Line
 	8900 4200 8900 4300
 NoConn ~ 9100 4200
+NoConn ~ 9400 5875
+NoConn ~ 9400 5775
+Wire Wire Line
+	8500 5775 8450 5775
+Wire Wire Line
+	8450 5775 8450 5575
+Wire Wire Line
+	8450 5250 8800 5250
+Connection ~ 8800 5250
+Wire Wire Line
+	8800 5250 8800 5150
+Wire Wire Line
+	8500 5575 8450 5575
+Connection ~ 8450 5575
+Wire Wire Line
+	8450 5575 8450 5250
+Wire Wire Line
+	9400 5675 9400 5575
+Connection ~ 9400 5575
+Wire Wire Line
+	9400 5575 9400 5475
+Wire Wire Line
+	8800 5250 9400 5250
+Wire Wire Line
+	9400 5250 9400 5475
+Connection ~ 9400 5475
+$Comp
+L Mechanical:MountingHole_Pad H104
+U 1 1 5E47E0B3
+P 1650 7200
+F 0 "H104" H 1650 7375 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1750 7160 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 1650 7200 50  0001 C CNN
+F 3 "~" H 1650 7200 50  0001 C CNN
+	1    1650 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H103
+U 1 1 5E47E170
+P 1475 7200
+F 0 "H103" H 1475 7375 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1575 7160 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 1475 7200 50  0001 C CNN
+F 3 "~" H 1475 7200 50  0001 C CNN
+	1    1475 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H102
+U 1 1 5E47E29C
+P 1300 7200
+F 0 "H102" H 1300 7375 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1400 7160 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 1300 7200 50  0001 C CNN
+F 3 "~" H 1300 7200 50  0001 C CNN
+	1    1300 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H101
+U 1 1 5E47E4CD
+P 1125 7200
+F 0 "H101" H 1125 7375 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1225 7160 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 1125 7200 50  0001 C CNN
+F 3 "~" H 1125 7200 50  0001 C CNN
+	1    1125 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1125 7300 1300 7300
+Connection ~ 1300 7300
+Wire Wire Line
+	1300 7300 1400 7300
+Connection ~ 1475 7300
+Wire Wire Line
+	1475 7300 1650 7300
+$Comp
+L power:GND #PWR0131
+U 1 1 5E48230D
+P 1400 7300
+F 0 "#PWR0131" H 1400 7050 50  0001 C CNN
+F 1 "GND" H 1405 7127 50  0000 C CNN
+F 2 "" H 1400 7300 50  0001 C CNN
+F 3 "" H 1400 7300 50  0001 C CNN
+	1    1400 7300
+	1    0    0    -1  
+$EndComp
+Connection ~ 1400 7300
+Wire Wire Line
+	1400 7300 1475 7300
 $EndSCHEMATC

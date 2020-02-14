@@ -180,7 +180,6 @@ Text Label 2075 1325 2    50   ~ 0
 B_UNFUSED
 Text Label 2075 1975 2    50   ~ 0
 B_UNFUSED
-NoConn ~ 8500 5575
 Text GLabel 8375 5675 0    50   Input ~ 0
 TWI_SCL
 Text GLabel 9500 5975 2    50   Input ~ 0
@@ -246,7 +245,7 @@ F2 "Fan_PWM" I L 9100 1725 50
 F3 "WS_EXT" I L 9100 1250 50 
 $EndSheet
 Wire Wire Line
-	8800 5275 8800 5150
+	8800 5275 8800 5250
 $Comp
 L power:+3.3V #PWR0111
 U 1 1 5E377A79
@@ -679,24 +678,17 @@ F 3 "https://www.silabs.com/documents/public/data-sheets/Si7020-A20.pdf" H 8800 
 	1    9000 3900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8900 4200 9000 4200
 $Comp
 L power:GND #PWR0123
 U 1 1 5E44B4A0
-P 9000 4275
-F 0 "#PWR0123" H 9000 4025 50  0001 C CNN
-F 1 "GND" H 9005 4102 50  0000 C CNN
-F 2 "" H 9000 4275 50  0001 C CNN
-F 3 "" H 9000 4275 50  0001 C CNN
-	1    9000 4275
+P 8900 4300
+F 0 "#PWR0123" H 8900 4050 50  0001 C CNN
+F 1 "GND" H 8905 4127 50  0000 C CNN
+F 2 "" H 8900 4300 50  0001 C CNN
+F 3 "" H 8900 4300 50  0001 C CNN
+	1    8900 4300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9000 4200 9000 4275
-Connection ~ 9000 4200
-Wire Wire Line
-	9000 4200 9100 4200
 Wire Wire Line
 	9000 3600 9000 3550
 $Comp
@@ -742,4 +734,99 @@ F 3 "" H 3775 3400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3775 3400 3800 3400
+Wire Wire Line
+	8900 4200 8900 4300
+NoConn ~ 9100 4200
+NoConn ~ 9400 5875
+NoConn ~ 9400 5775
+Wire Wire Line
+	8500 5775 8450 5775
+Wire Wire Line
+	8450 5775 8450 5575
+Wire Wire Line
+	8450 5250 8800 5250
+Connection ~ 8800 5250
+Wire Wire Line
+	8800 5250 8800 5150
+Wire Wire Line
+	8500 5575 8450 5575
+Connection ~ 8450 5575
+Wire Wire Line
+	8450 5575 8450 5250
+Wire Wire Line
+	9400 5675 9400 5575
+Connection ~ 9400 5575
+Wire Wire Line
+	9400 5575 9400 5475
+Wire Wire Line
+	8800 5250 9400 5250
+Wire Wire Line
+	9400 5250 9400 5475
+Connection ~ 9400 5475
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5E47E0B3
+P 1650 7200
+F 0 "H?" H 1650 7375 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1750 7160 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 1650 7200 50  0001 C CNN
+F 3 "~" H 1650 7200 50  0001 C CNN
+	1    1650 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5E47E170
+P 1475 7200
+F 0 "H?" H 1475 7375 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1575 7160 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 1475 7200 50  0001 C CNN
+F 3 "~" H 1475 7200 50  0001 C CNN
+	1    1475 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5E47E29C
+P 1300 7200
+F 0 "H?" H 1300 7375 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1400 7160 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 1300 7200 50  0001 C CNN
+F 3 "~" H 1300 7200 50  0001 C CNN
+	1    1300 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5E47E4CD
+P 1125 7200
+F 0 "H?" H 1125 7375 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1225 7160 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 1125 7200 50  0001 C CNN
+F 3 "~" H 1125 7200 50  0001 C CNN
+	1    1125 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1125 7300 1300 7300
+Connection ~ 1300 7300
+Wire Wire Line
+	1300 7300 1400 7300
+Connection ~ 1475 7300
+Wire Wire Line
+	1475 7300 1650 7300
+$Comp
+L power:GND #PWR?
+U 1 1 5E48230D
+P 1400 7300
+F 0 "#PWR?" H 1400 7050 50  0001 C CNN
+F 1 "GND" H 1405 7127 50  0000 C CNN
+F 2 "" H 1400 7300 50  0001 C CNN
+F 3 "" H 1400 7300 50  0001 C CNN
+	1    1400 7300
+	1    0    0    -1  
+$EndComp
+Connection ~ 1400 7300
+Wire Wire Line
+	1400 7300 1475 7300
 $EndSCHEMATC
