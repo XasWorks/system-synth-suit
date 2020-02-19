@@ -24,13 +24,13 @@ $EndSheet
 $Comp
 L Connector:Conn_01x04_Male J101
 U 1 1 5E16611C
-P 1375 1325
-F 0 "J101" H 1481 1603 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 1481 1512 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 1375 1325 50  0001 C CNN
-F 3 "~" H 1375 1325 50  0001 C CNN
-	1    1375 1325
-	1    0    0    -1  
+P 1375 1425
+F 0 "J101" H 1481 1703 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 1481 1612 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 1375 1425 50  0001 C CNN
+F 3 "~" H 1375 1425 50  0001 C CNN
+	1    1375 1425
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	1575 1225 2150 1225
@@ -107,13 +107,13 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J102
 U 1 1 5E33DCB0
-P 1375 1975
-F 0 "J102" H 1481 2253 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 1481 2162 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 1375 1975 50  0001 C CNN
-F 3 "~" H 1375 1975 50  0001 C CNN
-	1    1375 1975
-	1    0    0    -1  
+P 1375 2075
+F 0 "J102" H 1481 2353 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 1481 2262 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 1375 2075 50  0001 C CNN
+F 3 "~" H 1375 2075 50  0001 C CNN
+	1    1375 2075
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	3875 1400 4325 1400
@@ -662,7 +662,7 @@ U 1 1 5E495733
 P 825 7475
 F 0 "SYM101" H 825 7615 50  0001 C CNN
 F 1 "SYM_Hot_Small" H 825 7350 50  0001 C CNN
-F 2 "XasPrints:DragonIcon" H 825 7300 50  0001 C CNN
+F 2 "XasPrints:DragonIcon_25mm" H 825 7300 50  0001 C CNN
 F 3 "~" H 855 7275 50  0001 C CNN
 	1    825  7475
 	1    0    0    -1  
