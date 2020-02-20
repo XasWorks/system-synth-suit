@@ -1548,3 +1548,1762 @@ However, this IP can be configured manually.
 2020-02-10 16:11:40,460 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
 2020-02-10 16:11:40,462 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
 2020-02-10 16:11:40,689 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:21:01,133 [INFO] Activator:176 - 
+
+
+2020-02-19 21:21:01,137 [INFO] Activator:177 - !SESSION log4j initialized
+2020-02-19 21:21:14,934 [INFO] ApplicationProperties:181 - Using Application install path: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541
+2020-02-19 21:21:14,950 [INFO] DbMcusXml:68 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//mcu/
+2020-02-19 21:21:14,954 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/boardmanager/
+2020-02-19 21:21:14,955 [INFO] DbMcus:265 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/images/
+2020-02-19 21:21:14,955 [INFO] DbBoards:232 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/images/
+2020-02-19 21:21:14,957 [INFO] APIGFXSelector:72 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/mcu/
+2020-02-19 21:21:14,962 [INFO] DbMcusAds:72 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-19 21:21:14,963 [INFO] DbMcusDocs:92 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-19 21:21:14,966 [INFO] DbMcusJson:59 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-19 21:21:14,967 [INFO] DbBoardsDocs:84 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-19 21:21:14,968 [INFO] DbBoardsJson:51 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-19 21:21:15,024 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-02-19 21:21:15,167 [INFO] RulesReader:52 - Compatibility file has been processed (179 Rules)
+2020-02-19 21:21:15,303 [INFO] MicroXplorer:570 - Detected Java Version = 1.8.0_202
+2020-02-19 21:21:15,304 [INFO] DbMcusXml:68 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//mcu/
+2020-02-19 21:21:15,304 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/boardmanager/
+2020-02-19 21:21:15,306 [INFO] DbMcus:265 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/images/
+2020-02-19 21:21:15,307 [INFO] DbBoards:232 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/images/
+2020-02-19 21:21:15,311 [INFO] APIGFXSelector:72 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/mcu/
+2020-02-19 21:21:15,312 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-19 21:21:15,313 [INFO] DbMcusAds:72 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-19 21:21:15,313 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-19 21:21:15,313 [INFO] DbMcusDocs:92 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-19 21:21:15,314 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-19 21:21:15,314 [INFO] DbMcusJson:59 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-19 21:21:15,315 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-19 21:21:15,315 [INFO] DbBoardsDocs:84 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-19 21:21:15,315 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-19 21:21:15,316 [INFO] DbBoardsJson:51 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-19 21:21:15,316 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-19 21:21:15,317 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-19 21:21:15,317 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-02-19 21:21:15,404 [INFO] MainPanel:185 - HeapMemory: 301989888
+2020-02-19 21:21:15,509 [INFO] DbMcusXml:68 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//mcu/
+2020-02-19 21:21:15,509 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/boardmanager/
+2020-02-19 21:21:15,510 [INFO] DbMcus:265 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/images/
+2020-02-19 21:21:15,510 [INFO] DbBoards:232 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/images/
+2020-02-19 21:21:15,510 [INFO] APIGFXSelector:72 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/mcu/
+2020-02-19 21:21:15,511 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-19 21:21:15,511 [INFO] DbMcusAds:72 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-19 21:21:15,512 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-19 21:21:15,512 [INFO] DbMcusDocs:92 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-19 21:21:15,512 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-19 21:21:15,512 [INFO] DbMcusJson:59 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-19 21:21:15,513 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-19 21:21:15,513 [INFO] DbBoardsDocs:84 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-19 21:21:15,513 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-19 21:21:15,514 [INFO] DbBoardsJson:51 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-19 21:21:15,514 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-19 21:21:15,514 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-19 21:21:15,515 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-02-19 21:21:15,530 [INFO] ApplicationProperties:181 - Using Application install path: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541
+2020-02-19 21:21:15,533 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=]
+2020-02-19 21:21:15,534 [INFO] PluginManage:292 - Check plugin analytics
+2020-02-19 21:21:15,541 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2020-02-19 21:21:15,542 [INFO] PluginManage:292 - Check plugin clock
+2020-02-19 21:21:15,556 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2020-02-19 21:21:15,556 [INFO] PluginManage:292 - Check plugin ddr
+2020-02-19 21:21:15,560 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2020-02-19 21:21:15,560 [INFO] PluginManage:292 - Check plugin filemanager
+2020-02-19 21:21:15,688 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2020-02-19 21:21:15,689 [INFO] PluginManage:292 - Check plugin ipmanager
+2020-02-19 21:21:15,696 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2020-02-19 21:21:15,696 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2020-02-19 21:21:15,706 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2020-02-19 21:21:15,706 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2020-02-19 21:21:15,726 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2020-02-19 21:21:15,727 [INFO] PluginManage:292 - Check plugin power
+2020-02-19 21:21:15,736 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2020-02-19 21:21:15,736 [INFO] PluginManage:292 - Check plugin projectmanager
+2020-02-19 21:21:15,755 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2020-02-19 21:21:15,755 [INFO] PluginManage:292 - Check plugin thirdparty
+2020-02-19 21:21:15,815 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 33 ms. number of Sw pack : 12
+2020-02-19 21:21:15,866 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2020-02-19 21:21:15,866 [INFO] PluginManage:292 - Check plugin tools
+2020-02-19 21:21:15,868 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2020-02-19 21:21:15,869 [INFO] PluginManage:292 - Check plugin updater
+2020-02-19 21:21:15,883 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2020-02-19 21:21:15,884 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2020-02-19 21:21:16,073 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2020-02-19 21:21:16,152 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,153 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2020-02-19 21:21:16,157 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,158 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2020-02-19 21:21:16,162 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,163 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2020-02-19 21:21:16,164 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,165 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2020-02-19 21:21:16,172 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,173 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2020-02-19 21:21:16,175 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,176 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2020-02-19 21:21:16,178 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,178 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2020-02-19 21:21:16,182 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,183 [INFO] PluginManager:200 - loadIPPluginJar : add gfxsimulator
+2020-02-19 21:21:16,186 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,186 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2020-02-19 21:21:16,188 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,188 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2020-02-19 21:21:16,190 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,191 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2020-02-19 21:21:16,193 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,194 [INFO] PluginManager:200 - loadIPPluginJar : add gtzc
+2020-02-19 21:21:16,195 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,196 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2020-02-19 21:21:16,198 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,199 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2020-02-19 21:21:16,204 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,204 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2020-02-19 21:21:16,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,207 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2020-02-19 21:21:16,209 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,209 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2020-02-19 21:21:16,211 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,211 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2020-02-19 21:21:16,216 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,216 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2020-02-19 21:21:16,218 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,218 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2020-02-19 21:21:16,220 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,221 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2020-02-19 21:21:16,225 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,225 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2020-02-19 21:21:16,231 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,234 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2020-02-19 21:21:16,238 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,238 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2020-02-19 21:21:16,240 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,240 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2020-02-19 21:21:16,245 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,245 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2020-02-19 21:21:16,252 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,252 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2020-02-19 21:21:16,254 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,254 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2020-02-19 21:21:16,257 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,257 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2020-02-19 21:21:16,263 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,264 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2020-02-19 21:21:16,266 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,267 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2020-02-19 21:21:16,268 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,269 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2020-02-19 21:21:16,271 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,271 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2020-02-19 21:21:16,274 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,274 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2020-02-19 21:21:16,276 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,276 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2020-02-19 21:21:16,278 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,278 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2020-02-19 21:21:16,280 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,281 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2020-02-19 21:21:16,285 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:16,285 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2020-02-19 21:21:16,453 [INFO] BoardConnectionPanel:220 - [DDR PANEL] osNameString: Linux
+2020-02-19 21:21:16,680 [INFO] BoardConnectionPanel:3149 - [DDR PANEL] STM32CubeIDE environment
+2020-02-19 21:21:16,681 [INFO] MainDdrPanel:100 - [DDR PANEL] GETTER - cubeProgrammerPath is: null
+2020-02-19 21:21:16,871 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-02-19 21:21:17,180 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-02-19 21:21:17,189 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2020-02-19 21:21:17,190 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-02-19 21:21:17,194 [INFO] BoardConnectionPanel:3149 - [DDR PANEL] STM32CubeIDE environment
+2020-02-19 21:21:17,194 [INFO] MainDdrPanel:100 - [DDR PANEL] GETTER - cubeProgrammerPath is: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.linux64_1.1.0.201910081157/tools/bin
+2020-02-19 21:21:17,198 [INFO] ProgrammerExecThread:148 - [ProgrammerAPI] CubeProgrammer command construction: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.linux64_1.1.0.201910081157/tools/bin/STM32_Programmer_CLI -l
+2020-02-19 21:21:17,298 [INFO] MainDdrPanel:90 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.linux64_1.1.0.201910081157/tools/bin
+2020-02-19 21:21:17,302 [INFO] Updater:886 - Updater Version found : 5.4.0
+2020-02-19 21:21:17,324 [INFO] ApplicationProperties:181 - Using Application install path: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541
+2020-02-19 21:21:17,521 [INFO] MainUpdater:2232 - connection check result : 10
+2020-02-19 21:21:17,522 [INFO] MainUpdater:236 - Updater Check For Update Now.
+2020-02-19 21:21:17,522 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2020-02-19 21:21:17,564 [INFO] CheckServerUpdateThread:92 - End of CheckServer Thread
+2020-02-19 21:21:17,742 [INFO] MainUpdater:2232 - connection check result : 10
+2020-02-19 21:21:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2020-02-19 21:21:17,922 [INFO] MicroXplorer:390 - Change Database Path : 
+2020-02-19 21:21:17,923 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2020-02-19 21:21:17,929 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2020-02-19 21:21:17,930 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 223632768 Bytes (301989888)
+2020-02-19 21:21:17,931 [INFO] MicroXplorer:390 - Change Database Path : 
+2020-02-19 21:21:17,931 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2020-02-19 21:21:17,931 [INFO] OpenFileManager:269 - Change cursor
+2020-02-19 21:21:18,910 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-02-19 21:21:18,974 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 5 ms. number of Sw pack : 12
+2020-02-19 21:21:18,974 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-02-19 21:21:18,990 [INFO] IntegrityCheckThread:97 - End integrity checks thread
+2020-02-19 21:21:21,104 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Rank) has Id (1#ChannelRegularConversion) currently not set
+2020-02-19 21:21:21,104 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Channel) has Id (1#ChannelRegularConversion) currently not set
+2020-02-19 21:21:21,105 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (SamplingTime) has Id (1#ChannelRegularConversion) currently not set
+2020-02-19 21:21:21,105 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (OffsetNumber) has Id (1#ChannelRegularConversion) currently not set
+2020-02-19 21:21:21,375 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 414454112 Bytes (679477248)
+2020-02-19 21:21:21,386 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 5 ms. number of Sw pack : 12
+2020-02-19 21:21:21,464 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2020-02-19 21:21:21,464 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2020-02-19 21:21:21,464 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2020-02-19 21:21:21,464 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2020-02-19 21:21:21,464 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.1.0
+2020-02-19 21:21:21,464 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 5.0.0
+2020-02-19 21:21:21,465 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 1.0.0
+2020-02-19 21:21:21,465 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 4.0.0
+2020-02-19 21:21:21,465 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.1
+2020-02-19 21:21:21,465 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 1.0.0
+2020-02-19 21:21:21,465 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.13.0
+2020-02-19 21:21:21,465 [INFO] ThirdParty:897 - CMSIS Pack Vendor :ARM CMSIS 5.6.0
+2020-02-19 21:21:21,805 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2020-02-19 21:21:21,807 [INFO] PinOutPanel:1367 - setPackage(STM32L451CCUx,UFQFPN48)
+2020-02-19 21:21:22,400 [INFO] UtilMem:74 - Before build in PCC Used Memory: 536416944 Bytes (679477248)
+2020-02-19 21:21:22,720 [INFO] SharedServices:71 - Folder for power plug-in: /home/xasin/.stm32cubemx/plugins/power
+2020-02-19 21:21:22,742 [INFO] UtilMem:74 - After build in PCC Used Memory: 555813560 Bytes (679477248)
+2020-02-19 21:21:22,755 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:21:22,756 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,756 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,756 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,756 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,757 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,757 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,757 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,758 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,758 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,758 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,759 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,759 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,759 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,759 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,760 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,760 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,760 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,761 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,761 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,761 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,761 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,762 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,762 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,762 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,763 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,763 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,763 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,763 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,764 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,764 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,764 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,764 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,765 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,766 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,766 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,766 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,767 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,767 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,767 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-19 21:21:22,903 [INFO] ApiDbMcu:445 - Load IP Config File for FREERTOS
+2020-02-19 21:21:22,909 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:21:22,924 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2020-02-19 21:21:23,015 [INFO] OpenFileManager:289 - Restore cursor
+2020-02-19 21:21:23,020 [INFO] DbMcusXml:106 - Load MCU database from /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//mcu/families.xml
+2020-02-19 21:21:23,384 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:21:23,510 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:21:24,083 [INFO] DbMcusJson:87 - JSON generation date=Tue Feb 11 16:02:54 CET 2020 (1581433374)
+2020-02-19 21:21:25,318 [INFO] DbMcus:193 - Found 1544 MCUs (1504 are supported by CubeMX, 1504 are visible in CubeMX)
+2020-02-19 21:21:25,318 [INFO] ApiDb:147 - User favorites file not found: /home/xasin/.stm32cubemx/favorites.mcus.txt
+2020-02-19 21:21:25,319 [INFO] DbMcus:204 - Set 0 / 0 favorites MCUs
+2020-02-19 21:21:51,655 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:21:51,766 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:21:55,384 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:21:55,404 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:10,939 [INFO] ParamManager:955 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2020-02-19 21:22:10,943 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,944 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,944 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,945 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,945 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,946 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,947 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,947 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,948 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,948 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,948 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,949 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,949 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,949 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,950 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,950 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,950 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,950 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,951 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:10,961 [INFO] ParamManager:955 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2020-02-19 21:22:10,984 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,420 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:11,425 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,426 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,426 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,427 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,427 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,428 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,428 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,428 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,429 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,429 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,429 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,430 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,430 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,430 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,431 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,431 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,431 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,431 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,431 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,504 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:11,600 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:13,322 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:13,327 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,327 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,328 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,328 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,329 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,329 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,330 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,330 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,330 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,331 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,331 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,331 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,332 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,332 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,332 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,332 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,333 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,333 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,333 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,471 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,541 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,542 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,542 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,542 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,542 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,543 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,543 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,543 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,543 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,544 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,544 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,544 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,544 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,545 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,545 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,545 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,545 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,545 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,545 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,564 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,566 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,567 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,568 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,569 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,571 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,572 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,573 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,574 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,576 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,577 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,578 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,579 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,581 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,582 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,584 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,585 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,586 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,586 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,587 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,587 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:13,587 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,748 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:13,752 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,753 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,753 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,753 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,754 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,754 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,754 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,754 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,754 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,755 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,755 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,755 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,755 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,755 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,756 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,756 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,756 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,756 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,756 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,757 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,757 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,757 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,757 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,757 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,758 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,758 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,758 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,758 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,758 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,759 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,759 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,759 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,759 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,759 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,760 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,760 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,760 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,760 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,760 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,761 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,761 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,761 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,761 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,762 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,762 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,762 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,762 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,762 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,763 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,763 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,763 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,763 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,763 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,763 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,764 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,764 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,764 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,764 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,820 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:13,899 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:16,032 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:16,046 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:17,820 [INFO] ParamManager:955 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2020-02-19 21:22:17,830 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,831 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,831 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,831 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,831 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,832 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,832 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,832 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,832 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,832 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,833 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,833 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,833 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,833 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,834 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,834 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,834 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,834 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,834 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-19 21:22:17,844 [INFO] ParamManager:955 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2020-02-19 21:22:17,871 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,162 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:18,167 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,167 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,167 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,167 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,168 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,168 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,168 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,168 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,168 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,169 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,169 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,169 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,169 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,169 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,169 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,170 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,170 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,170 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,170 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,225 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:18,311 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:20,319 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:20,332 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:22,858 [INFO] ParamManager:955 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2020-02-19 21:22:22,867 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,867 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,868 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,868 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,868 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,868 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,869 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,869 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,869 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,869 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,870 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,870 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,870 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,870 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,871 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,871 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,872 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,872 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,872 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:22,881 [INFO] ParamManager:955 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2020-02-19 21:22:22,906 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,194 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:23,198 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,198 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,199 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,199 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,199 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,199 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,199 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,200 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,200 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,200 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,200 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,200 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,201 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,201 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,201 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,201 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,201 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,201 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,201 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,256 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:23,330 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:25,148 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:25,163 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:27,206 [INFO] ParamManager:955 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2020-02-19 21:22:27,215 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,215 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,216 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,216 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,216 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,216 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,217 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,217 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,217 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,217 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,217 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,217 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,218 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,218 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,218 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,218 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,218 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,219 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,219 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,227 [INFO] ParamManager:955 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2020-02-19 21:22:27,254 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,527 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:27,531 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,531 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,531 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,532 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,532 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,532 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,532 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,532 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,532 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,533 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,533 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,533 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,533 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,533 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,533 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,534 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,534 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,534 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,534 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,586 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:27,657 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:29,379 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:29,390 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:31,900 [INFO] ParamManager:955 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2020-02-19 21:22:31,909 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,909 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,910 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,910 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,910 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,910 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,910 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,911 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,911 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,911 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,911 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,911 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,912 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,912 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,912 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,912 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,912 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,913 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,913 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:31,921 [INFO] ParamManager:955 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2020-02-19 21:22:31,973 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,260 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:32,264 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,264 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,265 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,265 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,265 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,265 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,265 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,265 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,266 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,266 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,266 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,266 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,266 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,266 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,266 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,267 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,267 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,267 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,267 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,326 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-19 21:22:32,398 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:34,583 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:34,594 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:59,095 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:22:59,263 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:23:06,476 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 21:23:06,597 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-19 22:09:50,587 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 459295848 Bytes (758120448)
+2020-02-19 22:09:51,944 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-20 14:36:21,878 [INFO] Activator:176 - 
+
+
+2020-02-20 14:36:21,882 [INFO] Activator:177 - !SESSION log4j initialized
+2020-02-20 14:36:34,753 [INFO] ApplicationProperties:181 - Using Application install path: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541
+2020-02-20 14:36:34,770 [INFO] DbMcusXml:68 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//mcu/
+2020-02-20 14:36:34,775 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/boardmanager/
+2020-02-20 14:36:34,775 [INFO] DbMcus:265 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/images/
+2020-02-20 14:36:34,776 [INFO] DbBoards:232 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/images/
+2020-02-20 14:36:34,777 [INFO] APIGFXSelector:72 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/mcu/
+2020-02-20 14:36:34,786 [INFO] DbMcusAds:72 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 14:36:34,787 [INFO] DbMcusDocs:92 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 14:36:34,789 [INFO] DbMcusJson:59 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 14:36:34,790 [INFO] DbBoardsDocs:84 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 14:36:34,792 [INFO] DbBoardsJson:51 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 14:36:34,945 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-02-20 14:36:35,079 [INFO] RulesReader:52 - Compatibility file has been processed (179 Rules)
+2020-02-20 14:36:35,164 [INFO] MicroXplorer:570 - Detected Java Version = 1.8.0_202
+2020-02-20 14:36:35,165 [INFO] DbMcusXml:68 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//mcu/
+2020-02-20 14:36:35,165 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/boardmanager/
+2020-02-20 14:36:35,167 [INFO] DbMcus:265 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/images/
+2020-02-20 14:36:35,167 [INFO] DbBoards:232 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/images/
+2020-02-20 14:36:35,168 [INFO] APIGFXSelector:72 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/mcu/
+2020-02-20 14:36:35,168 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 14:36:35,168 [INFO] DbMcusAds:72 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 14:36:35,169 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 14:36:35,169 [INFO] DbMcusDocs:92 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 14:36:35,169 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 14:36:35,170 [INFO] DbMcusJson:59 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 14:36:35,170 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 14:36:35,171 [INFO] DbBoardsDocs:84 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 14:36:35,171 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 14:36:35,171 [INFO] DbBoardsJson:51 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 14:36:35,172 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 14:36:35,172 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 14:36:35,172 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-02-20 14:36:35,255 [INFO] MainPanel:185 - HeapMemory: 289406976
+2020-02-20 14:36:35,359 [INFO] DbMcusXml:68 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//mcu/
+2020-02-20 14:36:35,360 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/boardmanager/
+2020-02-20 14:36:35,360 [INFO] DbMcus:265 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/images/
+2020-02-20 14:36:35,360 [INFO] DbBoards:232 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/images/
+2020-02-20 14:36:35,361 [INFO] APIGFXSelector:72 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//plugins/mcufinder/mcu/
+2020-02-20 14:36:35,361 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 14:36:35,362 [INFO] DbMcusAds:72 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 14:36:35,362 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 14:36:35,362 [INFO] DbMcusDocs:92 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 14:36:35,362 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 14:36:35,363 [INFO] DbMcusJson:59 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 14:36:35,363 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 14:36:35,363 [INFO] DbBoardsDocs:84 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 14:36:35,364 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 14:36:35,364 [INFO] DbBoardsJson:51 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 14:36:35,364 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 14:36:35,365 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 14:36:35,365 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-02-20 14:36:35,382 [INFO] ApplicationProperties:181 - Using Application install path: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541
+2020-02-20 14:36:35,384 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=]
+2020-02-20 14:36:35,386 [INFO] PluginManage:292 - Check plugin analytics
+2020-02-20 14:36:35,392 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2020-02-20 14:36:35,393 [INFO] PluginManage:292 - Check plugin clock
+2020-02-20 14:36:35,403 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2020-02-20 14:36:35,404 [INFO] PluginManage:292 - Check plugin ddr
+2020-02-20 14:36:35,407 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2020-02-20 14:36:35,407 [INFO] PluginManage:292 - Check plugin filemanager
+2020-02-20 14:36:35,570 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2020-02-20 14:36:35,570 [INFO] PluginManage:292 - Check plugin ipmanager
+2020-02-20 14:36:35,578 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2020-02-20 14:36:35,579 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2020-02-20 14:36:35,590 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2020-02-20 14:36:35,590 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2020-02-20 14:36:35,610 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2020-02-20 14:36:35,610 [INFO] PluginManage:292 - Check plugin power
+2020-02-20 14:36:35,622 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2020-02-20 14:36:35,622 [INFO] PluginManage:292 - Check plugin projectmanager
+2020-02-20 14:36:35,640 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2020-02-20 14:36:35,640 [INFO] PluginManage:292 - Check plugin thirdparty
+2020-02-20 14:36:35,696 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 32 ms. number of Sw pack : 12
+2020-02-20 14:36:35,723 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2020-02-20 14:36:35,723 [INFO] PluginManage:292 - Check plugin tools
+2020-02-20 14:36:35,725 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2020-02-20 14:36:35,726 [INFO] PluginManage:292 - Check plugin updater
+2020-02-20 14:36:35,738 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2020-02-20 14:36:35,739 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2020-02-20 14:36:35,918 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2020-02-20 14:36:36,031 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,031 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2020-02-20 14:36:36,035 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,035 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2020-02-20 14:36:36,039 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,039 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2020-02-20 14:36:36,041 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,041 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2020-02-20 14:36:36,047 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,048 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2020-02-20 14:36:36,051 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,051 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2020-02-20 14:36:36,053 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,054 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2020-02-20 14:36:36,058 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,058 [INFO] PluginManager:200 - loadIPPluginJar : add gfxsimulator
+2020-02-20 14:36:36,061 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,062 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2020-02-20 14:36:36,063 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,064 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2020-02-20 14:36:36,065 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,066 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2020-02-20 14:36:36,068 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,069 [INFO] PluginManager:200 - loadIPPluginJar : add gtzc
+2020-02-20 14:36:36,070 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,070 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2020-02-20 14:36:36,073 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,073 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2020-02-20 14:36:36,078 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,079 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2020-02-20 14:36:36,081 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,081 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2020-02-20 14:36:36,083 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,084 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2020-02-20 14:36:36,086 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,087 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2020-02-20 14:36:36,091 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,092 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2020-02-20 14:36:36,093 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,093 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2020-02-20 14:36:36,095 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,095 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2020-02-20 14:36:36,099 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,099 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2020-02-20 14:36:36,105 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,108 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2020-02-20 14:36:36,111 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,112 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2020-02-20 14:36:36,114 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,114 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2020-02-20 14:36:36,119 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,119 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2020-02-20 14:36:36,126 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,126 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2020-02-20 14:36:36,128 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,128 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2020-02-20 14:36:36,130 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,131 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2020-02-20 14:36:36,136 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,136 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2020-02-20 14:36:36,138 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,139 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2020-02-20 14:36:36,140 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,141 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2020-02-20 14:36:36,143 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,143 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2020-02-20 14:36:36,146 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,147 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2020-02-20 14:36:36,148 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,149 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2020-02-20 14:36:36,151 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,151 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2020-02-20 14:36:36,154 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,154 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2020-02-20 14:36:36,159 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:36,159 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2020-02-20 14:36:36,304 [INFO] BoardConnectionPanel:220 - [DDR PANEL] osNameString: Linux
+2020-02-20 14:36:36,440 [INFO] BoardConnectionPanel:3149 - [DDR PANEL] STM32CubeIDE environment
+2020-02-20 14:36:36,441 [INFO] MainDdrPanel:100 - [DDR PANEL] GETTER - cubeProgrammerPath is: null
+2020-02-20 14:36:36,731 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-02-20 14:36:36,969 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-02-20 14:36:36,981 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2020-02-20 14:36:36,983 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-02-20 14:36:36,986 [INFO] BoardConnectionPanel:3149 - [DDR PANEL] STM32CubeIDE environment
+2020-02-20 14:36:36,987 [INFO] MainDdrPanel:100 - [DDR PANEL] GETTER - cubeProgrammerPath is: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.linux64_1.1.0.201910081157/tools/bin
+2020-02-20 14:36:36,994 [INFO] ProgrammerExecThread:148 - [ProgrammerAPI] CubeProgrammer command construction: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.linux64_1.1.0.201910081157/tools/bin/STM32_Programmer_CLI -l
+2020-02-20 14:36:37,094 [INFO] MainDdrPanel:90 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.linux64_1.1.0.201910081157/tools/bin
+2020-02-20 14:36:37,098 [INFO] Updater:886 - Updater Version found : 5.4.0
+2020-02-20 14:36:37,125 [INFO] ApplicationProperties:181 - Using Application install path: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541
+2020-02-20 14:36:37,371 [INFO] MainUpdater:2232 - connection check result : 10
+2020-02-20 14:36:37,372 [INFO] MainUpdater:236 - Updater Check For Update Now.
+2020-02-20 14:36:37,372 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2020-02-20 14:36:37,414 [INFO] CheckServerUpdateThread:92 - End of CheckServer Thread
+2020-02-20 14:36:37,576 [INFO] MainUpdater:2232 - connection check result : 10
+2020-02-20 14:36:37,577 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2020-02-20 14:36:37,753 [INFO] MicroXplorer:390 - Change Database Path : 
+2020-02-20 14:36:37,754 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2020-02-20 14:36:37,763 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2020-02-20 14:36:37,764 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 209138352 Bytes (289406976)
+2020-02-20 14:36:37,765 [INFO] MicroXplorer:390 - Change Database Path : 
+2020-02-20 14:36:37,765 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2020-02-20 14:36:37,766 [INFO] OpenFileManager:269 - Change cursor
+2020-02-20 14:36:38,803 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-02-20 14:36:38,984 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 51 ms. number of Sw pack : 12
+2020-02-20 14:36:38,984 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-02-20 14:36:38,999 [INFO] IntegrityCheckThread:97 - End integrity checks thread
+2020-02-20 14:36:41,205 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 446309208 Bytes (673185792)
+2020-02-20 14:36:41,222 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 9 ms. number of Sw pack : 12
+2020-02-20 14:36:41,293 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2020-02-20 14:36:41,294 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2020-02-20 14:36:41,294 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2020-02-20 14:36:41,294 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2020-02-20 14:36:41,294 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.1.0
+2020-02-20 14:36:41,294 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 5.0.0
+2020-02-20 14:36:41,294 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 1.0.0
+2020-02-20 14:36:41,294 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 4.0.0
+2020-02-20 14:36:41,295 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.1
+2020-02-20 14:36:41,295 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 1.0.0
+2020-02-20 14:36:41,295 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.13.0
+2020-02-20 14:36:41,295 [INFO] ThirdParty:897 - CMSIS Pack Vendor :ARM CMSIS 5.6.0
+2020-02-20 14:36:41,656 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2020-02-20 14:36:41,658 [INFO] PinOutPanel:1367 - setPackage(STM32L451CCUx,UFQFPN48)
+2020-02-20 14:36:42,247 [INFO] UtilMem:74 - Before build in PCC Used Memory: 567745712 Bytes (673185792)
+2020-02-20 14:36:42,598 [INFO] SharedServices:71 - Folder for power plug-in: /home/xasin/.stm32cubemx/plugins/power
+2020-02-20 14:36:42,623 [INFO] UtilMem:74 - After build in PCC Used Memory: 214375600 Bytes (673185792)
+2020-02-20 14:36:42,634 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-20 14:36:42,635 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,635 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,635 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,636 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,636 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,636 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,636 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,638 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,638 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,638 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,639 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,639 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,639 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,640 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,640 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,640 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,642 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,642 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,642 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,643 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,643 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,643 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,644 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,644 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,644 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,645 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,645 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,645 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,645 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,646 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,646 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,646 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,647 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,647 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,647 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,648 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,648 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,648 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2020-02-20 14:36:42,799 [INFO] ApiDbMcu:445 - Load IP Config File for FREERTOS
+2020-02-20 14:36:42,807 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-20 14:36:42,826 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2020-02-20 14:36:42,932 [INFO] OpenFileManager:289 - Restore cursor
+2020-02-20 14:36:42,937 [INFO] DbMcusXml:106 - Load MCU database from /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//mcu/families.xml
+2020-02-20 14:36:42,937 [INFO] DbMcusXml:106 - Load MCU database from /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.4.0.201910091541//db//mcu/families.xml
+2020-02-20 14:36:44,010 [INFO] DbMcusJson:87 - JSON generation date=Tue Feb 11 16:02:54 CET 2020 (1581433374)
+2020-02-20 14:36:44,068 [INFO] DbMcusJson:87 - JSON generation date=Tue Feb 11 16:02:54 CET 2020 (1581433374)
+2020-02-20 14:36:45,763 [INFO] DbMcus:193 - Found 1544 MCUs (1504 are supported by CubeMX, 1504 are visible in CubeMX)
+2020-02-20 14:36:45,764 [INFO] ApiDb:147 - User favorites file not found: /home/xasin/.stm32cubemx/favorites.mcus.txt
+2020-02-20 14:36:45,764 [INFO] DbMcus:193 - Found 1544 MCUs (1504 are supported by CubeMX, 1504 are visible in CubeMX)
+2020-02-20 14:36:45,764 [INFO] DbMcus:204 - Set 0 / 0 favorites MCUs
+2020-02-20 14:36:45,764 [INFO] ApiDb:147 - User favorites file not found: /home/xasin/.stm32cubemx/favorites.mcus.txt
+2020-02-20 14:36:45,764 [INFO] DbMcus:204 - Set 0 / 0 favorites MCUs
+2020-02-20 14:36:46,044 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-20 14:36:46,156 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-20 14:38:30,188 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Tab changed to: Project Manager
+2020-02-20 14:38:51,636 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Tab changed to: Tools
+2020-02-20 14:38:55,092 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Tab changed to: Clock Configuration
+2020-02-20 14:39:00,343 [INFO] I2cTimingTraitement:320 - 0x30408CFF
+2020-02-20 14:39:00,352 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Tab changed to: Pinout & Configuration
+2020-02-20 14:39:00,388 [INFO] I2cTimingTraitement:320 - 0x30408CFF
+2020-02-20 16:52:41,133 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2020-02-20 16:52:51,877 [INFO] Activator:176 - 
+
+
+2020-02-20 16:52:51,882 [INFO] Activator:177 - !SESSION log4j initialized
+2020-02-20 22:31:39,939 [INFO] Activator:176 - 
+
+
+2020-02-20 22:31:39,944 [INFO] Activator:177 - !SESSION log4j initialized
+2020-02-20 22:51:09,699 [INFO] ApplicationProperties:181 - Using Application install path: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511
+2020-02-20 22:51:09,715 [INFO] DbMcusXml:69 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//mcu/
+2020-02-20 22:51:09,720 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//plugins/boardmanager/
+2020-02-20 22:51:09,721 [INFO] DbMcus:264 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//plugins/mcufinder/images/
+2020-02-20 22:51:09,721 [INFO] DbBoards:232 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//plugins/mcufinder/images/
+2020-02-20 22:51:09,722 [INFO] APIGFXSelector:72 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//plugins/mcufinder/mcu/
+2020-02-20 22:51:09,741 [INFO] DbMcusAds:72 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 22:51:09,742 [INFO] DbMcusDocs:92 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 22:51:09,744 [INFO] DbMcusJson:59 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 22:51:09,745 [INFO] DbBoardsDocs:84 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 22:51:09,747 [INFO] DbBoardsJson:51 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 22:51:09,809 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-02-20 22:51:09,968 [INFO] RulesReader:52 - Compatibility file has been processed (205 Rules)
+2020-02-20 22:51:10,053 [INFO] MicroXplorer:570 - Detected Java Version = 1.8.0_202
+2020-02-20 22:51:10,053 [INFO] DbMcusXml:69 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//mcu/
+2020-02-20 22:51:10,054 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//plugins/boardmanager/
+2020-02-20 22:51:10,055 [INFO] DbMcus:264 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//plugins/mcufinder/images/
+2020-02-20 22:51:10,055 [INFO] DbBoards:232 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//plugins/mcufinder/images/
+2020-02-20 22:51:10,055 [INFO] APIGFXSelector:72 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//plugins/mcufinder/mcu/
+2020-02-20 22:51:10,056 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 22:51:10,056 [INFO] DbMcusAds:72 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 22:51:10,056 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 22:51:10,056 [INFO] DbMcusDocs:92 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 22:51:10,056 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 22:51:10,057 [INFO] DbMcusJson:59 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 22:51:10,057 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 22:51:10,057 [INFO] DbBoardsDocs:84 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 22:51:10,057 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 22:51:10,057 [INFO] DbBoardsJson:51 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 22:51:10,058 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 22:51:10,058 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 22:51:10,058 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-02-20 22:51:10,140 [INFO] MainPanel:180 - HeapMemory: 329252864
+2020-02-20 22:51:10,230 [INFO] DbMcusXml:69 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//mcu/
+2020-02-20 22:51:10,231 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//plugins/boardmanager/
+2020-02-20 22:51:10,231 [INFO] DbMcus:264 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//plugins/mcufinder/images/
+2020-02-20 22:51:10,231 [INFO] DbBoards:232 - Set plugin images path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//plugins/mcufinder/images/
+2020-02-20 22:51:10,231 [INFO] APIGFXSelector:72 - Set database path to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//plugins/mcufinder/mcu/
+2020-02-20 22:51:10,232 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 22:51:10,232 [INFO] DbMcusAds:72 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 22:51:10,232 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 22:51:10,232 [INFO] DbMcusDocs:92 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 22:51:10,233 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 22:51:10,233 [INFO] DbMcusJson:59 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 22:51:10,233 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 22:51:10,233 [INFO] DbBoardsDocs:84 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 22:51:10,233 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 22:51:10,233 [INFO] DbBoardsJson:51 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/
+2020-02-20 22:51:10,234 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 22:51:10,234 [WARN] DbFile:31 - Overriding database path with different value: /home/xasin/.stmcufinder/plugins/mcufinder/ => /home/xasin/.stmcufinder/plugins/mcufinder
+2020-02-20 22:51:10,234 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/xasin/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-02-20 22:51:10,252 [INFO] ApplicationProperties:181 - Using Application install path: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511
+2020-02-20 22:51:10,254 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=]
+2020-02-20 22:51:10,255 [INFO] PluginManage:292 - Check plugin analytics
+2020-02-20 22:51:10,262 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2020-02-20 22:51:10,280 [INFO] PluginManage:292 - Check plugin clock
+2020-02-20 22:51:10,293 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2020-02-20 22:51:10,293 [INFO] PluginManage:292 - Check plugin ddr
+2020-02-20 22:51:10,297 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2020-02-20 22:51:10,297 [INFO] PluginManage:292 - Check plugin filemanager
+2020-02-20 22:51:10,446 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2020-02-20 22:51:10,446 [INFO] PluginManage:292 - Check plugin ipmanager
+2020-02-20 22:51:10,454 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2020-02-20 22:51:10,454 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2020-02-20 22:51:10,463 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2020-02-20 22:51:10,463 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2020-02-20 22:51:10,489 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2020-02-20 22:51:10,489 [INFO] PluginManage:292 - Check plugin power
+2020-02-20 22:51:10,499 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2020-02-20 22:51:10,499 [INFO] PluginManage:292 - Check plugin projectmanager
+2020-02-20 22:51:10,521 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2020-02-20 22:51:10,522 [INFO] PluginManage:292 - Check plugin thirdparty
+2020-02-20 22:51:10,580 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 25 ms. number of Sw pack : 12
+2020-02-20 22:51:10,604 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2020-02-20 22:51:10,604 [INFO] PluginManage:292 - Check plugin tools
+2020-02-20 22:51:10,607 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2020-02-20 22:51:10,607 [INFO] PluginManage:292 - Check plugin updater
+2020-02-20 22:51:10,626 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2020-02-20 22:51:10,627 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2020-02-20 22:51:10,821 [INFO] PinOutPanel:1399 - setPackage(No Configuration,No Configuration)
+2020-02-20 22:51:10,894 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,895 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2020-02-20 22:51:10,899 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,899 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2020-02-20 22:51:10,903 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,903 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2020-02-20 22:51:10,904 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,904 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2020-02-20 22:51:10,910 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,910 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2020-02-20 22:51:10,912 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,912 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2020-02-20 22:51:10,913 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,913 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2020-02-20 22:51:10,919 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,919 [INFO] PluginManager:200 - loadIPPluginJar : add gfxsimulator
+2020-02-20 22:51:10,921 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,922 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2020-02-20 22:51:10,923 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,923 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2020-02-20 22:51:10,925 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,925 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2020-02-20 22:51:10,927 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,927 [INFO] PluginManager:200 - loadIPPluginJar : add gtzc
+2020-02-20 22:51:10,928 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,928 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2020-02-20 22:51:10,930 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,930 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2020-02-20 22:51:10,935 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,935 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2020-02-20 22:51:10,937 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,938 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2020-02-20 22:51:10,939 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,940 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2020-02-20 22:51:10,941 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,942 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2020-02-20 22:51:10,946 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,946 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2020-02-20 22:51:10,948 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,948 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2020-02-20 22:51:10,950 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,950 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2020-02-20 22:51:10,954 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,954 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2020-02-20 22:51:10,960 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,962 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2020-02-20 22:51:10,965 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,965 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2020-02-20 22:51:10,968 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,968 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2020-02-20 22:51:10,972 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,973 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2020-02-20 22:51:10,979 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,979 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2020-02-20 22:51:10,981 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,981 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2020-02-20 22:51:10,984 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,984 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2020-02-20 22:51:10,989 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,989 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2020-02-20 22:51:10,991 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,991 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2020-02-20 22:51:10,992 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,993 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2020-02-20 22:51:10,994 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,994 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2020-02-20 22:51:10,997 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:10,997 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2020-02-20 22:51:11,000 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:11,001 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2020-02-20 22:51:11,003 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:11,003 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2020-02-20 22:51:11,005 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:11,005 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2020-02-20 22:51:11,009 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:51:11,009 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2020-02-20 22:51:11,103 [INFO] BoardConnectionPanel:226 - [DDR PANEL] osNameString: Linux
+2020-02-20 22:51:11,238 [INFO] BoardConnectionPanel:3472 - [DDR PANEL] STM32CubeIDE environment
+2020-02-20 22:51:11,239 [INFO] MainDdrPanel:103 - [DDR PANEL] GETTER - cubeProgrammerPath is: null
+2020-02-20 22:51:11,425 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-02-20 22:51:11,636 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-02-20 22:51:11,639 [INFO] PinOutPanel:1399 - setPackage(No Configuration,No Configuration)
+2020-02-20 22:51:11,640 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-02-20 22:51:11,643 [INFO] BoardConnectionPanel:3472 - [DDR PANEL] STM32CubeIDE environment
+2020-02-20 22:51:11,644 [INFO] MainDdrPanel:103 - [DDR PANEL] GETTER - cubeProgrammerPath is: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.linux64_1.1.0.201910081157/tools/bin
+2020-02-20 22:51:11,649 [INFO] ProgrammerExecThread:148 - [ProgrammerAPI] CubeProgrammer command construction: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.linux64_1.1.0.201910081157/tools/bin/STM32_Programmer_CLI -l
+2020-02-20 22:51:11,850 [INFO] MainDdrPanel:93 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.linux64_1.1.0.201910081157/tools/bin
+2020-02-20 22:51:11,858 [INFO] Updater:886 - Updater Version found : 5.5.0
+2020-02-20 22:51:11,881 [INFO] ApplicationProperties:181 - Using Application install path: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511
+2020-02-20 22:51:11,964 [INFO] MainUpdater:452 - Copy updater definitions from MX database
+2020-02-20 22:51:12,353 [INFO] MainUpdater:2230 - connection check result : 10
+2020-02-20 22:51:12,354 [INFO] MainUpdater:2874 - Updater definition file requires update
+2020-02-20 22:51:12,355 [INFO] MainUpdater:236 - Updater Check For Update Now.
+2020-02-20 22:51:12,356 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.50
+2020-02-20 22:51:12,477 [INFO] ServerAccessManage:348 - Download File updaters.zip
+2020-02-20 22:51:12,547 [INFO] FileExtend:225 - Unzip File : updaters.zip
+2020-02-20 22:51:12,547 [INFO] FileExtend:240 - Standard Zip Deflate
+2020-02-20 22:51:12,838 [INFO] ServerAccessManage:348 - Download File PacksControlFlags.xml
+2020-02-20 22:51:12,960 [INFO] ServerAccessManage:348 - Download File cubemx.pidx
+2020-02-20 22:51:13,316 [INFO] ServerAccessManage:348 - Download File STMicroelectronics.X-CUBE-BLE1.pdsc
+2020-02-20 22:51:13,587 [WARN] MainUpdater:1073 - Updater busy. Cannot search thirdparties
+2020-02-20 22:51:13,768 [ERROR] ServerAccessManage:947 - Problem, file not found on Server
+2020-02-20 22:51:13,942 [INFO] ServerAccessManage:348 - Download File STMicroelectronics.X-CUBE-GNSS1.pdsc
+2020-02-20 22:51:14,273 [ERROR] ServerAccessManage:947 - Problem, file not found on Server
+2020-02-20 22:51:14,515 [ERROR] ServerAccessManage:947 - Problem, file not found on Server
+2020-02-20 22:51:14,755 [ERROR] ServerAccessManage:947 - Problem, file not found on Server
+2020-02-20 22:51:14,985 [ERROR] ServerAccessManage:947 - Problem, file not found on Server
+2020-02-20 22:51:15,220 [ERROR] ServerAccessManage:947 - Problem, file not found on Server
+2020-02-20 22:51:15,465 [ERROR] ServerAccessManage:947 - Problem, file not found on Server
+2020-02-20 22:51:15,741 [INFO] ServerAccessManage:348 - Download File STMicroelectronics.X-CUBE-SUBG2.pdsc
+2020-02-20 22:51:15,963 [INFO] ServerAccessManage:348 - Download File STMicroelectronics.X-CUBE-ALGOBUILD.pdsc
+2020-02-20 22:51:16,080 [INFO] LoadServerUpdatesThread:301 - End of LoadServerUpdate Thread
+2020-02-20 22:51:16,121 [INFO] CheckServerUpdateThread:92 - End of CheckServer Thread
+2020-02-20 22:51:16,132 [INFO] ThirdPartyDb:261 - Close Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-02-20 22:51:16,165 [INFO] MainUpdater:2230 - connection check result : 10
+2020-02-20 22:51:16,166 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2020-02-20 22:51:16,195 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 9 ms. number of Sw pack : 13
+2020-02-20 22:51:16,206 [INFO] ThirdPartyDb:261 - Close Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-02-20 22:51:16,241 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 7 ms. number of Sw pack : 14
+2020-02-20 22:51:16,247 [INFO] ThirdPartyDb:261 - Close Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-02-20 22:51:16,276 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 8 ms. number of Sw pack : 15
+2020-02-20 22:51:16,278 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,279 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,280 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,280 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,280 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,280 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,280 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,280 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,280 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,281 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,281 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,281 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,281 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,281 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,281 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,282 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,282 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,282 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,282 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,282 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,282 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,282 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,282 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,283 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,283 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,283 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,283 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,283 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,283 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,283 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,284 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,284 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,284 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,284 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,284 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,284 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,284 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,284 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,285 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,285 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,285 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,285 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,285 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,285 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,285 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,285 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,286 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,286 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,286 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,286 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,286 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,286 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,286 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,286 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,287 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,287 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,287 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,287 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,287 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,287 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,287 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,287 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,287 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,288 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,288 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,288 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,288 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,288 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,288 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,288 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,288 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,289 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,289 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,289 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,289 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,289 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,289 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,289 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,289 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,289 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,290 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,290 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,290 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,290 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,290 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,290 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,290 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,290 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,291 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,291 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,291 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,291 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,291 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,291 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,291 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,291 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,291 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,292 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,292 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,292 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,292 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,292 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,293 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,293 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,293 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,293 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,294 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,294 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,294 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,294 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,294 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,294 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,294 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,294 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,294 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,295 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,295 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,295 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,295 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,295 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,296 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,296 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,296 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,296 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,296 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,296 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,296 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,296 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,297 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,297 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,297 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,297 [INFO] MxPackages:636 - 
+2020-02-20 22:51:16,300 [INFO] ThirdPartyDb:261 - Close Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-02-20 22:51:16,318 [INFO] PopulateThirdPartyThread:48 - Ending populate Thread
+2020-02-20 22:51:16,335 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 10 ms. number of Sw pack : 16
+2020-02-20 22:51:16,337 [INFO] Engine:366 - softwarePackList size : 16
+2020-02-20 22:51:16,346 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-BLE1 have been done, and update is requested
+2020-02-20 22:51:16,350 [INFO] McuFinderGlobals:40 - Set McuFinder mode to 2 (CubeIDE integrated)
+2020-02-20 22:51:16,368 [INFO] FinderPluginLoader:86 - Searching for filters in installed packs
+2020-02-20 22:51:16,369 [INFO] DbMcusXml:107 - Load MCU database from /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//mcu/families.xml
+2020-02-20 22:51:16,506 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-MEMS1 have been done, and update is requested
+2020-02-20 22:51:16,516 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-AI have been done, and update is requested
+2020-02-20 22:51:16,526 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-NFC4 have been done, and update is requested
+2020-02-20 22:51:16,534 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-GNSS1 have been done, and update is requested
+2020-02-20 22:51:16,542 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-AI have been done, and update is requested
+2020-02-20 22:51:16,549 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-BLE2 have been done, and update is requested
+2020-02-20 22:51:16,556 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-GNSS1 have been done, and update is requested
+2020-02-20 22:51:16,566 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-NFC4 have been done, and update is requested
+2020-02-20 22:51:16,572 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-SUBG2 have been done, and update is requested
+2020-02-20 22:51:16,578 [INFO] Engine:382 - compute dependency for SwPack X-CUBE-TOUCHGFX have been done, no update is requested
+2020-02-20 22:51:16,609 [INFO] Engine:378 - compute dependency for SwPack CMSIS have been done, and update is requested
+2020-02-20 22:51:16,626 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-BLE1 have been done, and update is requested
+2020-02-20 22:51:16,634 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-GNSS1 have been done, and update is requested
+2020-02-20 22:51:16,641 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-SUBG2 have been done, and update is requested
+2020-02-20 22:51:16,648 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-ALGOBUILD have been done, and update is requested
+2020-02-20 22:51:16,657 [INFO] ThirdPartyDb:261 - Close Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-02-20 22:51:16,678 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 7 ms. number of Sw pack : 17
+2020-02-20 22:51:16,679 [INFO] Engine:366 - softwarePackList size : 17
+2020-02-20 22:51:16,680 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-BLE1 have been done, and update is requested
+2020-02-20 22:51:16,835 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-MEMS1 have been done, and update is requested
+2020-02-20 22:51:16,842 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-AI have been done, and update is requested
+2020-02-20 22:51:16,850 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-NFC4 have been done, and update is requested
+2020-02-20 22:51:16,857 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-GNSS1 have been done, and update is requested
+2020-02-20 22:51:16,865 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-AI have been done, and update is requested
+2020-02-20 22:51:16,870 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-BLE2 have been done, and update is requested
+2020-02-20 22:51:16,876 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-GNSS1 have been done, and update is requested
+2020-02-20 22:51:16,884 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-NFC4 have been done, and update is requested
+2020-02-20 22:51:16,890 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-SUBG2 have been done, and update is requested
+2020-02-20 22:51:16,896 [INFO] Engine:382 - compute dependency for SwPack X-CUBE-TOUCHGFX have been done, no update is requested
+2020-02-20 22:51:16,907 [INFO] Engine:378 - compute dependency for SwPack CMSIS have been done, and update is requested
+2020-02-20 22:51:16,914 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-BLE1 have been done, and update is requested
+2020-02-20 22:51:16,921 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-GNSS1 have been done, and update is requested
+2020-02-20 22:51:16,927 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-SUBG2 have been done, and update is requested
+2020-02-20 22:51:16,934 [INFO] Engine:378 - compute dependency for SwPack X-CUBE-ALGOBUILD have been done, and update is requested
+2020-02-20 22:51:16,938 [INFO] Engine:382 - compute dependency for SwPack FreeRTOS have been done, no update is requested
+2020-02-20 22:51:16,939 [INFO] ThirdPartyDb:261 - Close Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-02-20 22:51:16,983 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 26 ms. number of Sw pack : 17
+2020-02-20 22:51:16,986 [INFO] ThirdPartyDb:261 - Close Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-02-20 22:51:16,993 [ERROR] ThirdParty:759 - Integrity check failed: pack='unknown' / reason: null
+2020-02-20 22:51:17,007 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 5.0.0
+2020-02-20 22:51:17,007 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2020-02-20 22:51:17,007 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 7 ms. number of Sw pack : 17
+2020-02-20 22:51:17,008 [ERROR] IntegrityCheckThread:100 - Unexpected exception IntegrityCheckThread Thread: null
+2020-02-20 22:51:17,009 [INFO] ThirdPartyDb:261 - Close Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-02-20 22:51:17,020 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (/home/xasin/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 7 ms. number of Sw pack : 17
+2020-02-20 22:51:17,032 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 5.0.0
+2020-02-20 22:51:17,032 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2020-02-20 22:51:17,032 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 4.1.0
+2020-02-20 22:51:17,047 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 5.0.0
+2020-02-20 22:51:17,047 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 1.1.0
+2020-02-20 22:51:17,048 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2020-02-20 22:51:17,048 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 4.1.0
+2020-02-20 22:51:17,060 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 5.0.0
+2020-02-20 22:51:17,060 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 1.1.0
+2020-02-20 22:51:17,060 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2020-02-20 22:51:17,060 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 4.1.0
+2020-02-20 22:51:17,060 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.0.0
+2020-02-20 22:51:17,351 [INFO] DbMcusJson:87 - JSON generation date=Tue Feb 11 16:02:54 CET 2020 (1581433374)
+2020-02-20 22:51:18,590 [INFO] DbMcus:192 - Found 1628 MCUs (1588 are supported by CubeMX, 1588 are visible in CubeMX)
+2020-02-20 22:51:18,591 [INFO] ApiDb:158 - Load user favorites file /home/xasin/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2020-02-20 22:51:18,591 [INFO] ApiDb:163 - User favorites MCUs=[]
+2020-02-20 22:51:18,591 [INFO] DbMcus:203 - Set 0 / 0 favorites MCUs
+2020-02-20 22:51:19,416 [INFO] DbMcusAds:130 - JSON generation date=Wed Feb 20 17:46:15 CET 2019 (1550681175)
+2020-02-20 22:51:19,418 [INFO] LoadUrlFilesThread:161 - End of LoadServerUrlFiles without Thread
+2020-02-20 22:51:19,437 [INFO] McuDetailPanel:181 - Set advertising image to /home/xasin/STM32Cube/Repository//PRSTM32MP10219-01-med.jpg
+2020-02-20 22:51:19,988 [INFO] McuFilterPanel:282 - Update 0 favorites MCUs
+2020-02-20 22:51:20,202 [INFO] DbBoardsPdsc:92 - Found 27 items
+2020-02-20 22:51:20,203 [INFO] DbBoardsPdsc:92 - Found 1 items
+2020-02-20 22:51:20,204 [INFO] DbBoardsPdsc:92 - Found 2 items
+2020-02-20 22:51:20,207 [INFO] DbBoardsPdsc:92 - Found 9 items
+2020-02-20 22:51:20,210 [INFO] DbBoardsPdsc:92 - Found 21 items
+2020-02-20 22:51:20,221 [INFO] DbBoardsPdsc:92 - Found 39 items
+2020-02-20 22:51:20,230 [INFO] DbBoardsPdsc:92 - Found 40 items
+2020-02-20 22:51:20,232 [INFO] DbBoardsPdsc:92 - Found 4 items
+2020-02-20 22:51:20,241 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2020-02-20 22:51:20,242 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2020-02-20 22:51:20,242 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=WIFI, name=, username=WIFI 802.11 a/b/g/n, n=1
+2020-02-20 22:51:20,242 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2020-02-20 22:51:20,245 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2020-02-20 22:51:20,246 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-DK: unknown feature type=WIFI, name=, username=WIFI 802.11 b/g/n, n=1
+2020-02-20 22:51:20,246 [WARN] DbBoardsPdsc:256 - Board STEVAL-IDP005V1: unknown feature type=PWRSock, name=Power Socket, username=IO-Link 4-position M12 A-coded connector, n=1
+2020-02-20 22:51:20,246 [WARN] DbBoardsPdsc:256 - Board STEVAL-IDP005V2: unknown feature type=PWRSock, name=Power Socket, username=IO-Link 4-position M12 A-coded connector, n=1
+2020-02-20 22:51:20,263 [INFO] DbBoardsJson:79 - JSON generation date=Tue Feb 11 14:53:55 CET 2020 (1581429235)
+2020-02-20 22:51:20,273 [INFO] DbBoards:120 - Found 144 boards (140 are supported by CubeMX)
+2020-02-20 22:51:20,282 [INFO] DbBoardsDocs:118 - JSON generation date=Tue Feb 11 16:02:54 CET 2020 (1581433374)
+2020-02-20 22:51:20,298 [INFO] DbBoardsDocs:57 - Found 173 boards documents
+2020-02-20 22:51:20,299 [WARN] DbBoards:130 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2020-02-20 22:51:20,299 [WARN] DbBoards:130 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2020-02-20 22:51:20,300 [WARN] DbBoards:130 - board STEVAL-BFA001V1B has no document id list !
+2020-02-20 22:51:20,300 [WARN] DbBoards:130 - board STEVAL-BFA001V2B has no document id list !
+2020-02-20 22:51:20,301 [WARN] DbBoards:130 - board NUCLEO-H743ZI2 has no document id list !
+2020-02-20 22:51:20,301 [WARN] DbBoards:130 - board NUCLEO-L4P5ZG has no document id list !
+2020-02-20 22:51:20,301 [WARN] DbBoards:130 - board STM32100E-EVAL has no document id list !
+2020-02-20 22:51:20,301 [WARN] DbBoards:130 - board STM32303C-EVAL has no document id list !
+2020-02-20 22:51:20,302 [WARN] DbBoards:130 - board STM32L152D-EVAL has no document id list !
+2020-02-20 22:51:20,302 [WARN] DbBoards:130 - board STM32H743I-EVAL2 has no document id list !
+2020-02-20 22:51:20,302 [WARN] DbBoards:130 - board STM32H753I-EVAL2 has no document id list !
+2020-02-20 22:51:20,302 [WARN] DbBoards:130 - board STM32G474E-EVAL1 has no document id list !
+2020-02-20 22:51:20,303 [WARN] DbBoards:130 - board STM32F401C-DISCO has no document id list !
+2020-02-20 22:51:20,303 [WARN] DbBoards:130 - board STM32F769I-DISC1 has no document id list !
+2020-02-20 22:51:20,304 [WARN] DbBoards:130 - board STM32L-DISCOVERY has no document id list !
+2020-02-20 22:51:20,304 [WARN] DbBoards:130 - board STM32H747I-DISC1 has no document id list !
+2020-02-20 22:51:20,305 [WARN] DbBoards:130 - board STM32MP157A-DK1 has no document id list !
+2020-02-20 22:51:20,305 [WARN] DbBoards:130 - board STM32L4P5G-DK has no document id list !
+2020-02-20 22:51:20,305 [WARN] DbBoards:130 - board STEVAL-MKSBOX1V1 has no document id list !
+2020-02-20 22:51:20,305 [WARN] DbBoards:130 - board STEVAL-STWINKT1 has no document id list !
+2020-02-20 22:51:20,305 [WARN] DbBoards:130 - board STEVAL-IDP005V1 has no document id list !
+2020-02-20 22:51:20,305 [WARN] DbBoards:130 - board STEVAL-IDP005V2 has no document id list !
+2020-02-20 22:51:20,723 [ERROR] DbBoards:192 - Image file not found for board P-NUCLEO-WB55: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//plugins/mcufinder/images/boards/p-nucleo-wb55_small.jpg
+2020-02-20 22:51:21,279 [ERROR] DbBoards:192 - Image file not found for board STM32H747I-EVAL: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//plugins/mcufinder/images/boards/stm32h747ieval_small.jpg
+2020-02-20 22:51:21,279 [ERROR] DbBoards:192 - Image file not found for board STM32H757I-EVAL: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//plugins/mcufinder/images/boards/stm32h747ieval_small.jpg
+2020-02-20 22:51:21,783 [ERROR] DbBoards:192 - Image file not found for board STM32H7B3I-DK: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db//plugins/mcufinder/images/boards/stm32h7b3i-dk_small.jpg
+2020-02-20 22:51:21,997 [INFO] ApiDb:158 - Load user favorites file /home/xasin/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2020-02-20 22:51:21,998 [INFO] ApiDb:163 - User favorites Boards=[]
+2020-02-20 22:51:21,998 [INFO] DbBoards:209 - Set 0 / 0 favorites Boards
+2020-02-20 22:51:22,102 [INFO] LoadUrlFilesThread:161 - End of LoadServerUrlFiles without Thread
+2020-02-20 22:51:22,102 [INFO] BoardDetailPanel:179 - Set advertising image to /home/xasin/STM32Cube/Repository//PRSTM32MP10219-01-med.jpg
+2020-02-20 22:51:22,134 [INFO] BoardFilterPanel:211 - Update 0 favorites Boards
+2020-02-20 22:51:22,205 [INFO] CrossSelectorPresenter:1319 - Cross Selector saved comparison directory: /home/xasin/.stmcufinder/plugins/mcufinder/mcu/cs_comparisons_mx
+2020-02-20 22:52:04,253 [INFO] DbMcusDocs:126 - JSON generation date=Tue Feb 11 16:02:54 CET 2020 (1581433374)
+2020-02-20 22:52:04,456 [INFO] DbMcusDocs:61 - Found 571 MCUs documents
+2020-02-20 22:52:22,107 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.15.1
+2020-02-20 22:52:22,108 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.15.0
+2020-02-20 22:52:26,089 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] File copied successfully!!
+2020-02-20 22:52:26,273 [INFO] MainUpdater:2230 - connection check result : 10
+2020-02-20 22:52:26,401 [INFO] MicroXplorer:390 - Change Database Path : 
+2020-02-20 22:52:26,401 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.50
+2020-02-20 22:52:26,403 [INFO] PinOutPanel:1399 - setPackage(No Configuration,No Configuration)
+2020-02-20 22:52:26,404 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 332285320 Bytes (639631360)
+2020-02-20 22:52:26,404 [INFO] MicroXplorer:390 - Change Database Path : 
+2020-02-20 22:52:26,405 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.50
+2020-02-20 22:52:26,405 [INFO] OpenFileManager:274 - Change cursor
+2020-02-20 22:52:28,848 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) Unable to find key (Mcu.ThirdPartyNb) in loaded IOC file
+2020-02-20 22:52:28,848 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) Unable to find key (Mcu.PinsNb) in loaded IOC file
+2020-02-20 22:52:28,848 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) Unable to find key (Mcu.IPNb) in loaded IOC file
+2020-02-20 22:52:29,009 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 310206368 Bytes (639631360)
+2020-02-20 22:52:29,039 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 5.0.0
+2020-02-20 22:52:29,039 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 1.1.0
+2020-02-20 22:52:29,039 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 4.1.0
+2020-02-20 22:52:29,039 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 1.0.0
+2020-02-20 22:52:29,039 [INFO] ThirdParty:899 - CMSIS Pack Vendor :ARM CMSIS 5.6.0
+2020-02-20 22:52:29,039 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 4.0.0
+2020-02-20 22:52:29,040 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.1
+2020-02-20 22:52:29,040 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2020-02-20 22:52:29,040 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2020-02-20 22:52:29,040 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2020-02-20 22:52:29,040 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.0.0
+2020-02-20 22:52:29,040 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2020-02-20 22:52:29,040 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2020-02-20 22:52:29,040 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.1.0
+2020-02-20 22:52:29,040 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.13.0
+2020-02-20 22:52:29,040 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 5.0.0
+2020-02-20 22:52:29,041 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 1.0.0
+2020-02-20 22:52:29,281 [INFO] PinOutPanel:1399 - setPackage(No Configuration,No Configuration)
+2020-02-20 22:52:29,282 [INFO] PinOutPanel:1399 - setPackage(STM32L431KBUx,UFQFPN32)
+2020-02-20 22:52:29,733 [INFO] UtilMem:74 - Before build in PCC Used Memory: 389177584 Bytes (639631360)
+2020-02-20 22:52:30,156 [INFO] SharedServices:71 - Folder for power plug-in: /home/xasin/.stm32cubemx/plugins/power
+2020-02-20 22:52:30,179 [INFO] UtilMem:74 - After build in PCC Used Memory: 420634864 Bytes (639631360)
+2020-02-20 22:52:30,206 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,206 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,206 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,206 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,207 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,207 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,207 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,208 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,208 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,208 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,208 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,208 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,209 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,209 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,209 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,209 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,210 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,210 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,210 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,210 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,211 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,211 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,211 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,211 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,212 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,212 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,212 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,212 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,212 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,213 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,213 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,213 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,213 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,213 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,214 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,214 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,214 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,215 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,215 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-02-20 22:52:30,238 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2020-02-20 22:52:30,322 [INFO] OpenFileManager:294 - Restore cursor
+2020-02-20 22:52:30,635 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 455237872 Bytes (639631360)
+2020-02-20 22:52:30,848 [INFO] ServerAccessManage:348 - Download File stm32cube_fw_l4_v1150.zip
+2020-02-20 22:57:13,798 [INFO] FileExtend:225 - Unzip File : stm32cube_fw_l4_v1150.zip
+2020-02-20 22:57:13,804 [INFO] FileExtend:240 - Standard Zip Deflate
+2020-02-20 22:57:53,602 [INFO] ServerAccessManage:348 - Download File stm32cube_fw_l4_v1151.zip
+2020-02-20 22:58:43,240 [INFO] FileExtend:225 - Unzip File : stm32cube_fw_l4_v1151.zip
+2020-02-20 22:58:43,243 [INFO] FileExtend:240 - Standard Zip Deflate
+2020-02-20 22:58:45,083 [INFO] LoadServerPackagesThread:160 - End of LoadServerPackages Thread
+2020-02-20 22:58:45,112 [INFO] CheckServerUpdateThread:92 - End of CheckServer Thread
+2020-02-20 22:58:45,128 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 225932552 Bytes (1073741824)
+2020-02-20 22:58:45,772 [INFO] BlockDiagram:2751 - set Specific Code input for plugin: NVIC
+2020-02-20 22:58:45,772 [INFO] BlockDiagram:2751 - set Specific Code input for plugin: SYS
+2020-02-20 22:58:45,773 [INFO] CodeGenerator:601 - code generatio: config db path: /opt/st/stm32cubeide_1.1.0/plugins/com.st.stm32cube.common.mx_5.5.0.201912201511//db/
+2020-02-20 22:58:46,089 [INFO] CodeEngine:193 - oldGeneratedFile, /home/xasin/Xasin/system-synth-suit/STMCubeWorkspace/MainTest/MXTmpFiles/license.tmp_save
+2020-02-20 22:58:46,450 [INFO] CodeEngine:211 - Generated code: /home/xasin/Xasin/system-synth-suit/STMCubeWorkspace/MainTest/MXTmpFiles/license.tmp
+2020-02-20 22:58:46,594 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-02-20 22:58:46,595 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-02-20 22:58:46,599 [INFO] CodeEngine:193 - oldGeneratedFile, /home/xasin/Xasin/system-synth-suit/STMCubeWorkspace/MainTest/Core/Src/stm32l4xx_it.c_save
+2020-02-20 22:58:46,771 [INFO] CodeEngine:211 - Generated code: /home/xasin/Xasin/system-synth-suit/STMCubeWorkspace/MainTest/Core/Src/stm32l4xx_it.c
+2020-02-20 22:58:46,776 [INFO] CodeEngine:193 - oldGeneratedFile, /home/xasin/Xasin/system-synth-suit/STMCubeWorkspace/MainTest/Core/Inc/stm32l4xx_it.h_save
+2020-02-20 22:58:46,878 [INFO] CodeEngine:211 - Generated code: /home/xasin/Xasin/system-synth-suit/STMCubeWorkspace/MainTest/Core/Inc/stm32l4xx_it.h
+2020-02-20 22:58:46,887 [INFO] CodeEngine:193 - oldGeneratedFile, /home/xasin/Xasin/system-synth-suit/STMCubeWorkspace/MainTest/Core/Src/stm32l4xx_hal_msp.c_save
+2020-02-20 22:58:47,035 [INFO] CodeEngine:211 - Generated code: /home/xasin/Xasin/system-synth-suit/STMCubeWorkspace/MainTest/Core/Src/stm32l4xx_hal_msp.c
+2020-02-20 22:58:47,039 [INFO] CodeEngine:193 - oldGeneratedFile, /home/xasin/Xasin/system-synth-suit/STMCubeWorkspace/MainTest/MXTmpFiles/system.tmp_save
+2020-02-20 22:58:47,133 [INFO] CodeEngine:211 - Generated code: /home/xasin/Xasin/system-synth-suit/STMCubeWorkspace/MainTest/MXTmpFiles/system.tmp
+2020-02-20 22:58:47,139 [INFO] CodeEngine:193 - oldGeneratedFile, /home/xasin/Xasin/system-synth-suit/STMCubeWorkspace/MainTest/Core/Inc/stm32l4xx_hal_conf.h_save
+2020-02-20 22:58:47,250 [INFO] CodeEngine:211 - Generated code: /home/xasin/Xasin/system-synth-suit/STMCubeWorkspace/MainTest/Core/Inc/stm32l4xx_hal_conf.h
+2020-02-20 22:58:47,310 [INFO] CodeEngine:193 - oldGeneratedFile, /home/xasin/Xasin/system-synth-suit/STMCubeWorkspace/MainTest/Core/Inc/main.h_save
+2020-02-20 22:58:47,427 [INFO] CodeEngine:211 - Generated code: /home/xasin/Xasin/system-synth-suit/STMCubeWorkspace/MainTest/Core/Inc/main.h
+2020-02-20 22:58:47,432 [INFO] CodeEngine:193 - oldGeneratedFile, /home/xasin/Xasin/system-synth-suit/STMCubeWorkspace/MainTest/Core/Src/main.c_save
+2020-02-20 22:58:47,576 [INFO] CodeEngine:211 - Generated code: /home/xasin/Xasin/system-synth-suit/STMCubeWorkspace/MainTest/Core/Src/main.c
+2020-02-20 22:58:48,312 [INFO] ProjectBuilder:1843 - Time for Copy HAL[1] : 84mS.
+2020-02-20 22:58:48,320 [INFO] ProjectBuilder:2428 - Project Generator version: 3.6.0
+2020-02-20 22:58:48,661 [INFO] ConfigFileManager:1043 - The Die is : DIE435
+2020-02-20 22:58:59,564 [INFO] ProjectBuilder:2595 - Time for Generating toolchain IDE Files: 11244mS.
+2020-02-20 22:58:59,566 [INFO] ProjectBuilder:1703 - Time for Copy CMSIS : 0mS.
+2020-02-20 22:58:59,568 [INFO] ProjectBuilder:1703 - Time for Copy CMSIS : 0mS.
+2020-02-20 23:18:14,684 [INFO] ParamManager:955 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2020-02-20 23:18:14,776 [INFO] ParamManager:955 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2020-02-20 23:18:15,189 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,029 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,030 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,030 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,031 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,031 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,031 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,032 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,032 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,032 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,033 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,033 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,033 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,033 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,034 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,034 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,034 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,034 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,035 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,035 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,165 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,230 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,231 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,231 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,231 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,232 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,232 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,232 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,233 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,233 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,233 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,234 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,234 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,234 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,234 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,234 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,235 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,235 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,235 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,235 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,253 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,255 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,256 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,257 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,259 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,260 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,261 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,262 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,264 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,265 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,266 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,268 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,269 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,271 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,272 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,273 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,275 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,276 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,276 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,277 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,278 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-02-20 23:18:17,278 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,434 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,435 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,435 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,435 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,435 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,436 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,436 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,436 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,437 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,437 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,437 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,437 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,438 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,438 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,438 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,438 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,439 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,439 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,439 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,439 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,440 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,440 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,440 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,440 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,441 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,441 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,441 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,441 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,442 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,442 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,442 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,442 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,443 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,443 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,444 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,444 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,444 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,444 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,444 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,445 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,445 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,445 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,445 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,445 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,446 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,446 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,446 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,446 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,446 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,447 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,447 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,447 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,447 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,447 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,447 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,447 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,448 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,448 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:17,501 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,915 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,915 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,916 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,916 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,917 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,917 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,918 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,918 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,919 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,920 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,920 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,921 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,921 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,921 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,922 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,922 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,923 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,923 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:25,923 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,051 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,118 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,118 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,118 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,119 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,119 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,119 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,120 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,120 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,120 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,121 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,121 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,121 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,121 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,121 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,121 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,122 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,122 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,122 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,122 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,139 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,141 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,142 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,143 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,144 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,145 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,146 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,147 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,148 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,149 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,150 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,151 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,153 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,154 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,155 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,156 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,157 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,158 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,158 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,159 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,159 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,159 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,311 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,311 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,311 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,311 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,311 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,312 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,312 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,312 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,312 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,312 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,313 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,313 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,313 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,313 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,313 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,314 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,314 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,314 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,314 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,314 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,315 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,315 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,315 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,315 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,315 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,316 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,316 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,316 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,316 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,316 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,316 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,317 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,317 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,317 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,317 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,317 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,317 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,317 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,318 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,318 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,318 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,318 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,318 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,319 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,319 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,319 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,319 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,319 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,319 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,320 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,320 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,320 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,320 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,320 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,320 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,320 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,321 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,321 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:18:26,372 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-02-20 23:25:17,249 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:25:20,625 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:25:20,741 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:25:20,803 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:25:24,763 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:25:24,884 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:25:26,572 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:25:26,645 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:25:26,809 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:25:52,319 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:25:52,497 [INFO] ParamManager:955 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2020-02-20 23:25:52,569 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:25:55,214 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:26:04,853 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:26:04,999 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:26:13,209 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:26:13,369 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:26:15,239 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:26:15,412 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:26:17,213 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:26:17,366 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2020-02-20 23:26:46,962 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 637302496 Bytes (1073741824)
