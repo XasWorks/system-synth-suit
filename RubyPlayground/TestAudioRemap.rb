@@ -98,7 +98,7 @@ def play(name)
 
 	Thread.new do
 		fork_pid = fork {
-			exec("play --volume 0.3 #{tgt_sounds.sample}");
+			exec("play --volume 0.2 #{tgt_sounds.sample}");
 		}
 		$active_threads << fork_pid;
 		Process.waitpid(fork_pid);
@@ -151,14 +151,14 @@ Thread.new do
 
 			os *= 0.01 if $outFile
 
-			os *= 0.8 + 0.2*Math.sin($samp_time);
+			os *= 0.75 + 0.25*Math.sin($samp_time);
 
-			s = os + 0.7 * (echo_buffer[-$fb_delay] + echo_buffer[-$fb_delay*2-1] + echo_buffer[-$fb_delay*2] + echo_buffer[0]*0.2)/3;
+			s = os + 0.8 * (echo_buffer[-$fb_delay] + echo_buffer[-$fb_delay*2-1] + echo_buffer[-$fb_delay*2] + echo_buffer[0]*0.2)/3;
 
 			echo_buffer.shift
 			echo_buffer.push s
 
-			out_sample_buffer.push os * 0.6 + 0.4*s;
+			out_sample_buffer.push os * 0.7 + 0.3*s;
 		end
 
 		$outFile&.write current_sample_buffer.each_slice(2).map(&:first).pack("s<*");
