@@ -14,6 +14,15 @@
 #include <math.h>
 #include <array>
 
+#include <Animation/AnimationServer.h>
+#include <Animation/NumericElement.h>
+
+Xasin::AnimationServer server = Xasin::AnimationServer();
+
+auto test_num_elem = Xasin::NumericElement(server, {1, 1});
+auto comp_elem = Xasin::NumericElement(server, {1, 2});
+auto num_smoother = Xasin::NumericElement(server, {1, 3});
+
 struct led_coord_t {
 	float x;
 	float y;
@@ -59,19 +68,38 @@ void testGlow() {
 
 	led_coord_t spin_coords = {};
 
+	test_num_elem.type = Xasin::TIMER;
+	test_num_elem.set_flt(0, "2");
+	test_num_elem.set_flt(1, "4");
+
+	comp_elem.type = Xasin::COMP;
+	comp_elem.set_flt(0, "S1M1V2");
+	comp_elem.set_flt(1, "2");
+
+	num_smoother.type = Xasin::PT1_APPROACH;
+	num_smoother.set_flt(0, "S1M2V2");
+	num_smoother.set_flt(1, "3");
+
+	float kernel_move = 0;
+
+	server.tick(1);
+
+	num_smoother.get_flt(2)->copy_ptr = &kernel_move;
+
 	while(1) {
-		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_8);
 		osDelay(10);
 
-		float kernel_move = osKernelGetTickCount() / 6.0F;
-		spin_coords = {sinf(kernel_move*0.015F), cosf(kernel_move*0.015F)};
+		server.tick(0.01);
 
-		for(int i=0; i<31; i++) {
+		spin_coords = {1, 0};
+
+		for(int i=0; i<12; i++) {
 			float led_pos = calc_position(leds[i], spin_coords);
-			if(fabsf(led_pos) < 1)
-				glow.colors[i] = Material::RED;
+
+			if(fabsf(led_pos - kernel_move*4 + 2) < 0.5)
+				glow.colors[i].merge_overlay(Xasin::Color(Material::LIME, 0.7), 0.1);
 			else
-				glow.colors[i].merge_overlay(0, 0.04);
+				glow.colors[i].merge_overlay(Xasin::Color(Material::BLUE, 0.25), 0.04);
 		}
 
 		glow.push();
