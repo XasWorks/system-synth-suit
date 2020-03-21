@@ -1,7 +1,7 @@
 Debug/
 Release/
 
-.metadata
+.metadata/
 bin/
 tmp/
 *.tmp
