@@ -1,3 +1,6 @@
 [submodule "XasCode"]
 	path = XasCode
 	url = git@github.com:XasWorks/XasCode.git
+[submodule "tef-FurComs"]
+	path = tef-FurComs
+	url = git@github.com:TheElectricFursuits/tef-FurComs.git
