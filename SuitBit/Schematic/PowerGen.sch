@@ -503,4 +503,6 @@ Wire Wire Line
 Connection ~ 3850 3800
 Wire Wire Line
 	3850 3800 4075 3800
+Text Notes 4475 3425 0    50   ~ 0
+TPS2113ADRBR\nReverse protecc\n\nAlso make this less beefy? >.>
 $EndSCHEMATC
