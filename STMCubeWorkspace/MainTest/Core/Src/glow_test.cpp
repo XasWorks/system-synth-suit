@@ -8,24 +8,25 @@
 #include "NeoController/NeoController.h"
 #include "main.h"
 
+#include "sys_funcs.h"
+
 #include "cmsis_os.h"
 
 #include <cmath>
 #include <math.h>
 #include <array>
+#include <string.h>
 
 #include <Animation/AnimationServer.h>
 #include <Animation/NumericElement.h>
 
-#include <Animation/WaveElement.h>
+#include <Animation/Box.h>
+
+#include <beat_gen.h>
 
 #include <config.h>
 
-Xasin::AnimationServer server = Xasin::AnimationServer();
-
-auto test_num_elem = Xasin::NumericElement(server, {1, 1});
-auto comp_elem = Xasin::NumericElement(server, {1, 2});
-auto num_smoother = Xasin::NumericElement(server, {1, 3});
+#include <FurComs/LLHandler.h>
 
 led_coord_t leds[31] = {
 		{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0},	// Stub 12 first LEDs
@@ -40,86 +41,94 @@ led_coord_t leds[31] = {
 		{-2.5, 5}, {-2.5, 8},
 };
 
-auto glow = Xasin::NeoController(hspi1, 31, false);
-
-Xasin::Layer l_gem = glow.colors;
-
-int flash_leds[] = {
-		21,
-		23,
-		25,
-		27,
-		29
-};
-Xasin::Color flash_colors[] = {
-		Material::GREEN,
-		Material::PURPLE,
-		Material::BLUE,
-		Material::RED,
-		Material::ORANGE,
-};
-
-uint8_t wave_num = 0;
-void start_wave(led_coord_t center_point, Xasin::Color w_color, float speed = 20) {
-	auto n_glow = new Xasin::Animation::WaveElement(server, {2, wave_num++}, glow.colors);
-
-	n_glow->wave_color = w_color;
-	n_glow->wave_color.alpha = 0.5;
-
-	n_glow->x_dir = {1, 0};
-	n_glow->y_dir = {0, 1};
-	n_glow->offset = center_point;
-
-	n_glow->circle_speed = speed;
-
-	n_glow->delete_after = server.get_synch_time() + 5;
-}
-
-float last_blep_time = 3;
+auto test_handler = TEF::FurComs::LL_Handler(USART1);
 
 extern "C" {
+void USART1_IRQHandler() {
+	test_handler.handle_isr();
+}
+
+void on_data(const char *topic, const void *data, size_t length) {
+	auto str_data = reinterpret_cast<const char*>(data);
+
+	if(strcmp(topic, "SET") == 0) {
+		HW::server.handle_set_command(str_data);
+	}
+	else if(strcmp(topic, "CSET") == 0) {
+		HW::server.handle_color_set_command(str_data);
+	}
+	else if(strcmp(topic, "DELETE") == 0) {
+		HW::server.handle_delete_command(str_data);
+	}
+	else if(strcmp(topic, "DTIME") == 0) {
+		HW::server.handle_dtime_command(str_data);
+	}
+	else if(strcmp(topic, "NEW") == 0) {
+
+		if(strncmp(str_data, "BOX", 3) == 0) {
+			Xasin::Layer * layer_refs[] = {
+					&HW::la_0,
+					&HW::la_1,
+					&HW::la_2,
+					&HW::lb_1,
+			};
+
+			int layer_no = 0;
+			auto layer_ptr = strchr(str_data, ' ');
+			if(layer_ptr != nullptr) {
+				layer_ptr = strchr(layer_ptr + 1, ' ');
+
+				if(layer_ptr != nullptr)
+					layer_no = strtol(layer_ptr + 1, nullptr, 0);
+			}
+
+			if(layer_no < 0 || layer_no > 3)
+				layer_no = 0;
+
+			auto new_box = new Xasin::Animation::Box(HW::server, HW::server.decode_value_tgt(str_data).ID, *layer_refs[layer_no]);
+
+			new_box->x_coord = {1, 0};
+			new_box->y_coord = {0, 1};
+		}
+	}
+}
+
 void testGlow() {
 	Xasin::AnimationElement::led_coordinates = leds;
+
+	HW::init();
 
 	for(int i=0; i<12; i++)
 		leds[i] = {2*cosf(M_PI*i/6.0F), 2*sinf(M_PI*i/6.0F)};
 
-	server.tick(0.01);
+	test_handler.init();
+	test_handler.on_rx = on_data;
 
-	l_gem.fill(Xasin::Color(0, 0, 0));
-	l_gem.alpha = 0.1;
+	auto test_box = new Xasin::Animation::Box(HW::server, {100, 0}, HW::la_0);
+	test_box->x_coord = {1, 0};
+	test_box->y_coord = {0, 1};
+
+	test_box->up = 3;
+	test_box->down = 3;
+	test_box->left = 3;
+	test_box->right = 3;
+
+	test_box->draw_color = 0x334455;
+
+	//start_sequence();
+
+	insert_pending_beats();
+
+	float next_blip = 0;
 
 	while(1) {
-		osDelay(10);
+		osDelay(16);
+		HW::tick(0.016);
 
-		server.tick(0.01);
-
-		if(server.get_synch_time() > last_blep_time) {
-			last_blep_time += 2;
-			if(wave_num < 5) {
-				int led_num = flash_leds[wave_num];
-				Xasin::Color flash_color = flash_colors[wave_num];
-				flash_color.bMod(0.8);
-
-				l_gem[led_num] = flash_color;
-
-				start_wave(leds[led_num], flash_color);
-			}
-			else if(wave_num == 5) {
-				wave_num = 6;
-
-				l_gem.fill(Material::YELLOW, 0, 11);
-
-				start_wave({0, 0}, Material::YELLOW, 10);
-			}
+		if(HW::server.get_synch_time() > next_blip) {
+			next_blip += 0.5;
+			HAL_GPIO_TogglePin(PIN_LED_GPIO_Port, PIN_LED_Pin);
 		}
-
-		for(int i=0; i<31; i++)
-			glow.colors[i].merge_overlay(Xasin::Color(0xE2B007, 0.3), 0.04);
-
-		glow.colors.merge_overlay(l_gem);
-
-		glow.push();
 	}
 }
 }
