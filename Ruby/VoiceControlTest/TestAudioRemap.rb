@@ -2,48 +2,41 @@
 require 'pocketsphinx-ruby'
 require 'mqtt/sub_handler'
 
-$mqtt = MQTT::SubHandler.new("mqtt://Xasin:ChocolateThings@192.168.6.111")
+require_relative '../AnimationControl/lib/tef/ProgramSelection/SoundCollection.rb'
 
-$group_scoring = {
-	'default' => 1,
-}
+$mqtt = MQTT::SubHandler.new("mqtt://localhost")
 
 ### GENERATE MEME LIST
-memeList = `find ./`.split("\n");
-$memeHash  = {}
-$groupList = [];
+$program_selector = TEF::ProgramSelection::Selector.new()
+$soundmap = TEF::ProgramSelection::SoundCollection.new($program_selector);
 
-memeList.each do |e|
-	rMatch = /^\.\/sounds\/(?<groups>(?:[a-z_]+[\/-])*)(?<effect>[a-z_]+)(?<variation>-\d+)?\.(?:ogg|mp3|wav)/.match e;
-	next unless rMatch;
-
-	effect = rMatch[:effect].gsub('_', ' ');
-	groups = rMatch[:groups].gsub('_', ' ').gsub('-','/').split('/');
-
-	groups = ["default"] if groups.empty?
-
-	$memeHash[effect] ||= {};
-	$memeHash[effect][e] = groups;
-	$groupList += groups;
-	$groupList.uniq!
-end
-
-puts "Meme Hash is: #{$memeHash}"
+$program_selector.group_weights = {
+	"announcer" => 2,
+}
 
 File.write("Control.JSGF", File.read("Control.JSGF.Template") % {
-	memes: 	$memeHash.keys.join(" | "),
-	groups: 	$groupList.join(" | ")
+	memes: 	$program_selector.all_titles.join(" | "),
+	groups: 	$program_selector.all_groups.join(" | ")
 });
 
 pocket_cfg = Pocketsphinx::Configuration::Grammar.new("Control.JSGF");
+pocket_cfg['logfn'] = "/dev/null"
 $pocket_reader = Pocketsphinx::AudioFileSpeechRecognizer.new(pocket_cfg);
 $pocket_reader.recognize('./Primer.raw');
+
+def play(name)
+	return unless effect = $program_selector.fetch_string(name)
+	$soundmap.play effect
+end
+
+10.times do
+	play("hello")
+	sleep 1.7
+end
 
 rec  = IO.popen("arecord -r 32000 -f S16_LE -R 0 --period-size 512",
 	:external_encoding=>"ASCII-8BIT");
 rec.binmode
-
-# -Dplughw:CARD=Loopback,DEV=1
 
 play = IO.popen("aplay -r 32000 -f S16_LE -R 0 --buffer-size 2048 -", "a",
 	:external_encoding=>"ASCII-8BIT");
@@ -72,42 +65,6 @@ def begin_recording()
 	$outFile = File.open("/tmp/Memeinator.raw", "wb");
 end
 
-$active_threads = [];
-def play(name)
-	program, groups = name.split(" from ");
-	groups ||= "";
-	groups = groups.split(" and ");
-
-	local_score = $group_scoring.merge(groups.map { |g| [g, 2] }.to_h);
-
-	return unless (effect = $memeHash[program]);
-
-	tgt_sounds = nil;
-	best_score = -10;
-
-	effect.each do |file, groups|
-		score = groups.sum { |g| local_score[g] || 0 }
-
-		if(score > best_score)
-			tgt_sounds = [file]
-			best_score = score;
-		elsif(score == best_score)
-			tgt_sounds << file;
-		end
-	end
-
-	Thread.new do
-		fork_pid = fork {
-			exec("play --volume 0.2 #{tgt_sounds.sample}");
-		}
-		$active_threads << fork_pid;
-		Process.waitpid(fork_pid);
-		$active_threads.delete fork_pid
-	end
-end
-
-play("hello")
-
 def end_recording()
 	myFile = $outFile;
 	$outFile = nil;
@@ -130,7 +87,6 @@ end
 
 $samp_time = 0;
 set_fb_frequency(160)
-
 
 $mqtt.subscribe_to "Test/VCTRL" do |data|
 	if(data == "1" && $outFile.nil?)

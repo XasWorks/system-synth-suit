@@ -6,5 +6,7 @@ grammar MainControl;
 
 <group_list> = <group> [and <group_list>];
 
+<core_command> = ambiance level (silent | one | two | three | four);
+
 public <commandSequence> = <meme> [from <group_list>] | select groups <group_list>
-	| kill sounds;
+	| kill sounds | computer <core_command>;

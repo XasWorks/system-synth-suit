@@ -1,0 +1,12 @@
+#JSGF V1.0;
+grammar MainControl;
+
+<meme> = red alert | three corder | blue alert | having a laugh | hello | not stopping | laugh | laughter | oh it is you | stop that | yes i see you and i do not care | long time | clap processor | i do not care | you are kidding me | if you do not succeed | yes i see you | let us act like humans | clap | power ensured | smooth jazz fake | corruption fifty | stare at the art | good | stalemate resolved | corruption hundred | power up start | corruption seventy | smooth jazz | response | interpret vague answer | explosion imminent | return to your bed | sarcasm complete | power up end | stalemate detected | hello stranger | mess with me | do not blame you | uh hello | are you still there;
+<group> = star trek | voyager | next generation | portal | wheatley | glad os | cave johnson | announcer | defective turret | turret | polite;
+
+<group_list> = <group> [and <group_list>];
+
+<core_command> = ambiance level (silent | one | two | three | four);
+
+public <commandSequence> = <meme> [from <group_list>] | select groups <group_list>
+	| kill sounds | computer <core_command>;
