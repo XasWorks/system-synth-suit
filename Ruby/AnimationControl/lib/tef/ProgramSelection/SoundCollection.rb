@@ -1,24 +1,41 @@
 
 require_relative 'ProgramSelector.rb'
 
+require 'yaml'
+
 module TEF
 	module ProgramSelection
 		class SoundCollection
 			attr_reader :silence_maps
+			attr_reader :soundmap
+			attr_reader :load_config
 
 			def initialize(program_handler)
 				@handler = program_handler
 				@soundmap = {}
 
+				@load_config  = {};
 				@silence_maps = {}
 
+				if File.file? './sounds/soundconfig.yml'
+					@load_config = YAML.load File.read './sounds/soundconfig.yml'
+				end
+
+				if File.file? './sounds/silence_maps.yml'
+					@silence_maps = YAML.load File.read './sounds/silence_maps.yml'
+				end
+
 				`find ./`.split("\n").each { |fn| add_file fn };
+
+				File.write('./sounds/silence_maps.yml', YAML.dump(@silence_maps));
 
 				@play_pids = {};
 			end
 
-			def generate_silences(fname, id)
-				ffmpeg_str = `ffmpeg -i #{fname} -af silencedetect=n=0.1:d=0.05 -f null - 2>&1`
+			def generate_silences(fname)
+				return if @silence_maps[fname]
+
+				ffmpeg_str = `ffmpeg -i #{fname} -af silencedetect=n=0.1:d=0.1 -f null - 2>&1`
 
 				out_event = {}
 
@@ -30,17 +47,16 @@ module TEF
 					end
 				end
 
-				if (k = out_event.keys[0]) < 0
+				if(out_event.empty?)
+					out_event[0.01] = 1
+				elsif (k = out_event.keys[0]) < 0
 					out_event.delete k
-					out_event[0] = 0.01
+					out_event[0.01] = 0
 				else
-					out_event[0] = 1
+					out_event[0.01] = 1
 				end
 
-				# puts "Silences for #{fname} are #{out_event}"
-				#  TODO x_logd
-
-				@silence_maps[id] = out_event
+				@silence_maps[fname] = out_event
 			end
 
 			def add_file(fname)
@@ -56,21 +72,29 @@ module TEF
 
 				@soundmap[id] = fname
 
-				generate_silences fname, id
+				generate_silences fname
 			end
 
-			def play(id)
+			def silences_for(key)
+				@silence_maps[@soundmap[key]]
+			end
+
+			def play(id, collection_id = 'default')
 				sound_name = @soundmap[id]
 				return if sound_name.nil?
 
-				Thread.new do
-					fork_pid = fork do
-						exec("play -q --volume 0.3 #{sound_name}");
-					end
+				collection_id ||= id;
 
-					@play_pids[id] = fork_pid;
+				if old_pid = @play_pids[collection_id]
+					Process.kill('QUIT', old_pid)
+				end
+
+				Thread.new do
+					fork_pid = spawn(*%W{play -q --volume 0.3 #{sound_name}});
+
+					@play_pids[collection_id] = fork_pid;
 					Process.waitpid fork_pid;
-					@play_pids.delete id
+					@play_pids.delete collection_id
 				end
 			end
 		end
