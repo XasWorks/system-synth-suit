@@ -101,7 +101,7 @@ namespace HW {
 		la_2.fill(Xasin::Color(0, 0));
 
 		lb_2.alpha = 0.07;
-		lb_2.fill(Xasin::Color(0, 0, 0));
+		lb_2.fill(Xasin::Color(0, 0, 0.5)); // TODO CAREFUL - DIM
 	}
 
 	void tick(float delta_t) {
@@ -122,8 +122,6 @@ namespace HW {
 		server.tick(delta_t);
 
 		glow.push();
-
-		music_tick();
 
 		tick_duration = SYS_CNT - tick_start;
 		if(tick_total_duration > 10)

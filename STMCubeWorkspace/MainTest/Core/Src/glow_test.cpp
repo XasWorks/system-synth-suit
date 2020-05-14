@@ -121,9 +121,22 @@ void testGlow() {
 
 	float next_blip = 0;
 
+	bool old_btn = false;
+
 	while(1) {
 		osDelay(16);
 		HW::tick(0.016);
+
+		bool current_btn = HAL_GPIO_ReadPin(BTN_INT_GPIO_Port, BTN_INT_Pin);
+
+		if(current_btn != old_btn) {
+			test_handler.start_packet("BTN");
+			const char *d_ptr = current_btn ? "UP" : "DOWN";
+			test_handler.add_packet_data(d_ptr, strlen(d_ptr));
+			test_handler.close_packet();
+
+			old_btn = current_btn;
+		}
 
 		if(HW::server.get_synch_time() > next_blip) {
 			next_blip += 0.5;
