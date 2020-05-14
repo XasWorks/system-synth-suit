@@ -1,4 +1,5 @@
 
+require 'xasin_logger'
 
 module TEF
 	module Sequencing
@@ -55,6 +56,8 @@ module TEF
 		end
 
 		class EventCollector
+			include XasLogger::Mix
+
 			attr_accessor :start_time
 			attr_reader   :event_time
 
@@ -64,6 +67,8 @@ module TEF
 				@current_events = []
 				@start_time = Time.at(0);
 				@event_time = nil;
+
+				init_x_log("Sequence Player")
 			end
 
 			def add_event(event)
@@ -86,6 +91,13 @@ module TEF
 				return unless has_events?
 
 				t_diff = @event_time - Time.now();
+
+				if t_diff < -0.5
+					x_logf('Sequence long overdue!')
+				elsif t_diff < -0.1
+					x_logw('Sequencing overdue')
+				end
+
 				sleep t_diff if t_diff > 0
 			end
 

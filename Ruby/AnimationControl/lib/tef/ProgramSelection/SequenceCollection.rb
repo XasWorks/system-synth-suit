@@ -44,7 +44,7 @@ module TEF
 
 					prog = Sequencing::SheetSequence.new(Time.now(), 1, **opts)
 				end
-				prog_key ||= self
+				prog_key ||= 'default'
 
 				@sequence_runner[prog_key] = prog
 			end

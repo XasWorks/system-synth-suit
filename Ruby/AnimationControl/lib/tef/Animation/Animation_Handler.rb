@@ -18,9 +18,6 @@ module TEF
 				@pending_creations = {}
 
 				init_x_log('Animation Handler')
-
-				# TODO REMOVE
-				@force_debug = true
 			end
 
 			def clean_key(key)
@@ -157,7 +154,7 @@ module TEF
 
 			private def update_colors
 				pending_changes = []
-				
+
 				@animation_mutex.synchronize {
 					@active_animations.each do |key, anim|
 						pending_changes += anim.get_setc_strings

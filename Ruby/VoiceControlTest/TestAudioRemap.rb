@@ -37,7 +37,6 @@ end
 rec  = IO.popen("arecord -r 32000 -f S16_LE -R 0 --period-size 512",
 	:external_encoding=>"ASCII-8BIT");
 rec.binmode
-
 play = IO.popen("aplay -r 32000 -f S16_LE -R 0 --buffer-size 2048 -", "a",
 	:external_encoding=>"ASCII-8BIT");
 play.binmode
