@@ -5,39 +5,43 @@ generic_sheet = TEF::Sequencing::Sheet.new();
 generic_sheet.sequence do
 	return unless @opts_hash[:silences]
 
-	@speech_box = (
-	$animation_core['S100M0'] ||= TEF::Animation::Box.new 0);
+	@params = TEF::ParameterStack::Override.new($parameters);
 
-	@speech_box.up = 3
-	@speech_box.left = 3;
-	@speech_box.right = 3;
-	@speech_box.down = 3;
+	if @opts_hash[:sound_id].groups.include? 'i guess'
+		@params['Palette/SpeechOn']  = 0xB09000
+		@params['Palette/SpeechOff'] = 0x505000
+	end
 
-	@speech_box.color.delay_a = 10
-	@speech_box.color = 0x006060
+	at(0.1) { @end_time = nil }
 
-	def set_level(i)
-		if i == 1
-			@speech_box.color = 0x0090B0
-		else
-			@speech_box.color = 0x006060
+	@opts_hash.dig(:extra_config, 'Overrides')&.each do |t, overrides|
+		at t do
+			overrides.each { |key, value| @params[key] = value }
 		end
 	end
 
 	@opts_hash[:silences].each do |t, l|
 		at t do
-			set_level l
+				@params['SpeechLevel'] = (l == 1)
 		end
 	end
+
+	after 0.6 do end
 end
 
 generic_sheet.teardown do
-	@speech_box.color = 0x006060
+	@params.destroy!
 end
 
-$soundmap.silence_maps.each do |id, levels|
+puts "Soundmap loaded conf is #{$soundmap.load_config}"
+
+$soundmap.soundmap.each do |id, fname|
 	next if $sheetmap[id]
 
 	$sheetmap[id] = generic_sheet;
-	$sheetmap.sheet_opts[id] = { silences: levels }
+	$sheetmap.sheet_opts[id] = {
+		sound_id: id,
+		silences: $soundmap.silence_maps[fname],
+		extra_config: $soundmap.load_config[fname] || {},
+	}
 end
