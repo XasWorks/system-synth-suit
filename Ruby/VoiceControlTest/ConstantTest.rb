@@ -31,10 +31,13 @@ File.write("Control.JSGF", File.read("Control.JSGF.Template") % {
 	groups: 	$program_selector.all_groups.join(" | ")
 });
 
-pocket_cfg = Pocketsphinx::Configuration::Grammar.new("Control.JSGF");
-pocket_cfg['logfn'] = "/dev/null"
-
-$pocket_reader = Pocketsphinx::LiveSpeechRecognizer.new(pocket_cfg);
+$pocketsphinx_pid = fork do
+	exec('ruby', 'SubprocessRecognition.rb');
+end
+at_exit do
+	Process.kill("QUIT", $pocketsphinx_pid);
+	Process.wait($pocketsphinx_pid);
+end
 
 def play(name)
 	return unless effect = $program_selector.fetch_string(name)
