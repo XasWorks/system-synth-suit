@@ -44,8 +44,12 @@ module TEF
 						out_event[$1.to_f] = 0
 					elsif line =~ /silence_end: ([\d\.-]*)/
 						out_event[$1.to_f] = 1
+					elsif line =~ /Duration: (\d+):(\d+):([\d\.]+)/
+						out_event[$1.to_f * 3600 + $2.to_f * 60 + $3.to_f] = 0
 					end
 				end
+
+				out_event = out_event.sort.to_h
 
 				if(out_event.empty?)
 					out_event[0.01] = 1
@@ -55,6 +59,8 @@ module TEF
 				else
 					out_event[0.01] = 1
 				end
+
+				out_event = out_event.sort.to_h
 
 				@silence_maps[fname] = out_event
 			end
