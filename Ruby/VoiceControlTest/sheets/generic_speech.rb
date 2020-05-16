@@ -8,11 +8,9 @@ generic_sheet.sequence do
 	@params = TEF::ParameterStack::Override.new($parameters);
 
 	if @opts_hash[:sound_id].groups.include? 'i guess'
-		@params['Palette/SpeechOn']  = 0xB09000
-		@params['Palette/SpeechOff'] = 0x505000
+		$parameters['Palette/SpeechOn']  = 0xB09000
+		$parameters['Palette/SpeechOff'] = 0x505000
 	end
-
-	at(0.1) { @end_time = nil }
 
 	@opts_hash.dig(:extra_config, 'Overrides')&.each do |t, overrides|
 		at t do
@@ -26,7 +24,11 @@ generic_sheet.sequence do
 		end
 	end
 
-	after 0.6 do end
+	after 0.4 do
+		@params['SpeechLevel'] = false
+	end
+
+	after 2 do end
 end
 
 generic_sheet.teardown do
