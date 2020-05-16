@@ -27,8 +27,13 @@ module TEF
 
 			def []=(key, new_value)
 				return if @overrides[key] == new_value
-				@overrides[key] = new_value
 
+				if new_value.nil?
+					delete(key)
+					return
+				end
+
+				@overrides[key] = new_value
 				@stack.override_claims self, key
 			end
 
