@@ -2,6 +2,8 @@
 module TEF
 	module Animation
 		class Color
+			PARAM_TYPES = [:jump, :velocity, :target, :delay_a, :delay_b];
+
 			attr_reader :ID
 
 			attr_reader :module_id
@@ -18,7 +20,7 @@ module TEF
 			def module_id=(new_id)
 				@module_id = new_id
 
-				[:jump, :velocity, :target, :delay_a, :delay_b].each do |key|
+				PARAM_TYPES.each do |key|
 					@changes[:key] = true if @current[key] != 0
 				end
 			end
@@ -27,22 +29,39 @@ module TEF
 				"#{@module_id}V#{@ID}"
 			end
 
-			[:jump, :velocity, :target, :delay_a, :delay_b].each do |key|
+			def generic_set(key, value)
+				raise ArgumentError, 'Key does not exist!' unless PARAM_TYPES.include? key
+				raise ArgumentError, "Input must be numeric!" unless value.is_a? Numeric
+
+				return if ![:jump, :velocity].include?(key) && value == @current[key]
+
+				if [:delay_a, :delay_b].include? key
+					@is_animated = true
+				end
+
+				@current[key] = value
+				@changes[key] = true
+			end
+
+			PARAM_TYPES.each do |key|
 				define_method(key.to_s) do
 					@current[key]
 				end
 
 				define_method("#{key}=") do |input|
-					raise ArgumentError, "Input must be numeric!" unless input.is_a? Numeric
+					generic_set key, input
+				end
+			end
 
-					return if ![:jump, :velocity].include?(key) && input == @current[key]
-
-					if [:delay_a, :delay_b].include? key
-						@is_animated = true
+			def configure(data)
+				if data.is_a? Numeric
+					self.target = data
+				elsif data.is_a? Hash
+					data.each do |key, value|
+						generic_set key, value
 					end
-
-					@current[key] = input
-					@changes[key] = true
+				else
+					raise ArgumentError, 'Config data must be Hash or Numeric'
 				end
 			end
 

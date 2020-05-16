@@ -29,8 +29,20 @@ module TEF
 				end
 			end
 
-			def animatable_values
+			def animatable_attributes
 				@animatable_attributes.values
+			end
+
+			def configure(data)
+				raise ArgumentError, 'Coordinate config must be a hash!' unless data.is_a? Hash
+
+				data.each do |key, value|
+					coord = @animatable_attributes[key]
+
+					raise ArgumentError, "Coordinate #{key} does not exist!" unless coord
+
+					coord.configure value
+				end
 			end
 		end
 	end

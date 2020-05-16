@@ -3,6 +3,8 @@
 module TEF
 	module Animation
 		class Value
+			PARAM_TYPES = 	[:add, :multiply, :dampen, :delay, :from, :jump, :velocity];
+
 			attr_reader :ID
 
 			attr_reader :module_id
@@ -19,7 +21,7 @@ module TEF
 			def module_id=(new_id)
 				@module_id = new_id
 
-				[:add, :multiply, :dampen, :delay, :from, :jump, :velocity].each do |key|
+				PARAM_TYPES.each do |key|
 					@changes[:key] = true if @current[key] != 0
 				end
 			end
@@ -28,22 +30,39 @@ module TEF
 				"#{@module_id}V#{@ID.to_s(16)}"
 			end
 
+			def generic_set(key, value)
+				raise ArgumentError, 'Key does not exist!' unless PARAM_TYPES.include? key
+				raise ArgumentError, "Input must be numeric!" unless value.is_a? Numeric
+
+				return if (value == @current[key] && ![:jump, :velocity].include?(key))
+
+				if [:multiply, :dampen, :delay].include? key
+					@is_animated = true
+				end
+
+				@current[key] = value
+				@changes[key] = true
+			end
+
 			[:jump, :velocity, :add, :multiply, :dampen, :delay].each do |key|
 				define_method(key.to_s) do
 					@current[key]
 				end
 
 				define_method("#{key}=") do |input|
-					raise ArgumentError, "Input must be numeric!" unless input.is_a? Numeric
+					generic_set key, input
+				end
+			end
 
-					return if (input == @current[key] && ![:jump, :velocity].include?(key))
-
-					if [:multiply, :dampen, :delay].include? key
-						@is_animated = true
+			def configure(data)
+				if data.is_a? Numeric
+					self.add = data
+				elsif data.is_a? Hash
+					data.each do |key, value|
+						generic_set key, value
 					end
-
-					@current[key] = input
-					@changes[key] = true
+				else
+					self.from = data;
 				end
 			end
 

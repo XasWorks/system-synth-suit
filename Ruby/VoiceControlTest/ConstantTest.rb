@@ -29,10 +29,7 @@ $sequencePlayer.after_exec {
 
 speech_box = $animation_core['S100M0'] = TEF::Animation::Box.new 0;
 
-speech_box.up = 3
-speech_box.left = 3;
-speech_box.right = 3;
-speech_box.down = 3;
+speech_box.configure up: 3, down: 3, left: 3, right: 3
 
 $parameters.on_recompute 'Palette/SpeechOn', 'Palette/SpeechOff', 'SpeechLevel' do
 	$parameters['SpeechColor'] = ($parameters['SpeechLevel'] ?

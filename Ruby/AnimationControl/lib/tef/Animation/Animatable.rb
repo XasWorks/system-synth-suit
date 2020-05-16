@@ -102,13 +102,29 @@ module TEF
 				self.death_time = Time.at(0)
 			end
 
+			def configure(h = nil, **opts)
+				h ||= opts;
+
+				raise ArgumentError, 'Config must be a hash!' unless h.is_a? Hash
+
+				h.each do |key, data|
+					value = 	@animatable_attributes[key] ||
+								@animatable_colors[key] ||
+								@animatable_coordinates[key]
+
+					raise ArgumentError, "Parameter #{key} does not exist!" unless value
+
+					value.configure(data);
+				end
+			end
+
 			def creation_string
 				""
 			end
 
-			def all_animatable_values
+			def all_animatable_attributes
 				out =  @animatable_attributes.values
-				out += @animatable_coordinates.values.map(&:animatable_values)
+				out += @animatable_coordinates.values.map(&:animatable_attributes)
 
 				out.flatten
 			end
@@ -118,7 +134,7 @@ module TEF
 					raise ArgumentError, 'Target must be a valid Animation Value'
 				end
 
-				all_animatable_values.each do |value|
+				all_animatable_attributes.each do |value|
 					value.module_id = new_str
 				end
 
@@ -144,7 +160,7 @@ module TEF
 
 				out_elements = []
 
-				all_animatable_values.each do |val|
+				all_animatable_attributes.each do |val|
 					o_str = val.set_string
 					next if o_str.nil?
 
