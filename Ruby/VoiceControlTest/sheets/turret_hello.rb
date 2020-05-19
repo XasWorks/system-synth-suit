@@ -8,6 +8,8 @@ TEF::ProgramSelection::ProgramSheet.new do |s|
 		@speech_box = (
 		$animation_core['S100M0'] ||= TEF::Animation::Box.new(1));
 
+		play "./sounds/portal/turret/hello-#{rand(1..4).to_i}.mp3"
+
 		at 0.1 do
 			@speech_box.color.delay_a = 2
 			@speech_box.color = 0x00A040

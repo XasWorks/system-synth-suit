@@ -9,6 +9,8 @@ TEF::ProgramSelection::ProgramSheet.new() do |s|
 		@params['Palette/SpeechOn']    = 0xFFA000
 		@params['Palette/SpeechOff']   = 0x605000
 
+		play './sounds/portal/glad_os/long_time.mp3'
+
 		def boop(time)
 			at time do
 				@params['SpeechLevel'] = true

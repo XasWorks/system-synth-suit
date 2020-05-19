@@ -12,6 +12,10 @@ generic_sheet.sequence do
 		$parameters['Palette/SpeechOff'] = 0x505000
 	end
 
+	at 0.001 do
+		play @opts_hash[:sound_fn]
+	end
+
 	@opts_hash.dig(:extra_config, 'Overrides')&.each do |t, overrides|
 		at t do
 			overrides.each { |key, value| @params[key] = value }
@@ -35,14 +39,13 @@ generic_sheet.teardown do
 	@params.destroy!
 end
 
-puts "Soundmap loaded conf is #{$soundmap.load_config}"
-
 $soundmap.soundmap.each do |id, fname|
 	next if $sheetmap[id]
 
 	$sheetmap[id] = generic_sheet;
 	$sheetmap.sheet_opts[id] = {
 		sound_id: id,
+		sound_fn: fname,
 		silences: $soundmap.silence_maps[fname],
 		extra_config: $soundmap.load_config[fname] || {},
 	}

@@ -6,6 +6,8 @@ TEF::ProgramSelection::ProgramSheet.new() do |s|
 		@speech_box = (
 		$animation_core['S100M0'] ||= TEF::Animation::Box.new 0);
 
+		play './sounds/portal/announcer/smooth_jazz.mp3'
+
 		@speech_box.up = 3
 		@speech_box.left = 3;
 		@speech_box.right = 3;
