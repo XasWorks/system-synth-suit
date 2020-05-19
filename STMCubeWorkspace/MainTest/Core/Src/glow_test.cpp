@@ -18,7 +18,6 @@
 #include <string.h>
 
 #include <Animation/AnimationServer.h>
-#include <Animation/NumericElement.h>
 
 #include <Animation/Box.h>
 

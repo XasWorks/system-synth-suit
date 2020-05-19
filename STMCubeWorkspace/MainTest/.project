@@ -33,6 +33,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>Core/Animation</name>
+			<type>2</type>
+			<location>/home/xasin/Xasin/system-synth-suit/tef-synth-animation/STM32F4</location>
+		</link>
+		<link>
 			<name>Core/FurComs</name>
 			<type>2</type>
 			<location>/home/xasin/Xasin/system-synth-suit/tef-FurComs/STM32F4</location>

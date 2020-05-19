@@ -4,3 +4,6 @@
 [submodule "tef-FurComs"]
 	path = tef-FurComs
 	url = git@github.com:TheElectricFursuits/tef-FurComs.git
+[submodule "tef-synth-animation"]
+	path = tef-synth-animation
+	url = git@github.com:TheElectricFursuits/tef-synth-animation.git
