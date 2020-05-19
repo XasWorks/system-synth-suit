@@ -41,6 +41,7 @@ module TEF
 				if prog.is_a? Sequencing::Sheet
 					opts = @sheet_opts[key] || {}
 					opts[:sheet] = prog
+					opts[:program_key] = key
 
 					prog = Sequencing::SheetSequence.new(Time.now(), 1, **opts)
 				end
