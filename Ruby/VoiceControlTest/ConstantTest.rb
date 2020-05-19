@@ -3,6 +3,7 @@ require '~/Xasin/system-synth-suit/tef-FurComs/Ruby/lib/tef/furcoms/SerialToMQTT
 require '~/Xasin/system-synth-suit/tef-FurComs/Ruby/lib/tef/furcoms/MQTT.rb'
 
 require_relative '../AnimationControl/lib/tef/Animation/Animation_Handler.rb'
+require_relative '../AnimationControl/lib/tef/Animation/Eyes.rb'
 
 require_relative '../AnimationControl/lib/tef/ParameterStack/Stack.rb'
 
@@ -28,30 +29,48 @@ $sequencePlayer.after_exec {
 }
 
 speech_box = $animation_core['S100M0'] = TEF::Animation::Box.new 0;
-
 speech_box.configure up: 3, down: 3, left: 3, right: 3
+
+eye = $animation_core['S10M0'] = TEF::Animation::Eye.new
+eye.configure({
+	outer_color: { delay_a: 10, delay_b: 10 },
+	top: { add: -3, dampen: 0.1, delay: 0.02 },
+	bottom: { add: 3, dampen: 0.1, delay: 0.02 },
+
+	iris_x: { dampen: 0.1 },
+	iris_y: { add: 3, dampen: 0.05 },
+});
 
 $parameters.on_recompute 'Palette/SpeechOn', 'Palette/SpeechOff', 'SpeechLevel' do
 	$parameters['SpeechColor'] = ($parameters['SpeechLevel'] ?
 		$parameters['Palette/SpeechOn'] : $parameters['Palette/SpeechOff']);
+	$parameters['Eye/Color'] = $parameters['Palette/SpeechOff']
+end
+$parameters.on_change 'Palette/SpeechOff' do
+	eye.outer_color = $parameters['Palette/SpeechOff']
 end
 $parameters.on_change 'Palette/SpeechDelay', 'SpeechColor' do
 	speech_box.color.delay_a = $parameters['Palette/SpeechDelay']
 	speech_box.color = $parameters['SpeechColor'] || 0xFF000000
 end
 
+$parameters.on_change('Eye/Top')    { eye.top = $parameters['Eye/Top'] }
+$parameters.on_change('Eye/Bottom') { eye.bottom = $parameters['Eye/Bottom'] }
+$parameters.on_change('Eye/IrisX') { eye.iris_x = $parameters['Eye/IrisX'] + 0.5 }
+$parameters.on_change('Eye/Color') { eye.outer_color = $parameters['Eye/Color']}
+
 $parameters['Palette/SpeechOn']  = 0x0090B0
 $parameters['Palette/SpeechOff'] = 0x005050
 $parameters['Palette/SpeechDelay'] = 10
+
+$parameters['Eye/Top'] = -3;
+$parameters['Eye/Bottom'] = 3;
+$parameters['Eye/IrisX'] = 2;
 
 $program_selector = TEF::ProgramSelection::Selector.new()
 
 $soundmap = TEF::ProgramSelection::SoundCollection.new($program_selector);
 $sheetmap = TEF::ProgramSelection::SequenceCollection.new($program_selector, $sequencePlayer)
-
-$ambiance_level = 'silent';
-
-load 'magic_play.rb'
 
 Dir.glob('sheets/**/*.rb').each { |fn| load fn }
 
@@ -70,7 +89,6 @@ end
 
 def play(name)
 	return unless effect = $program_selector.fetch_string(name)
-	$soundmap.play effect
 	$sheetmap.play effect
 end
 
@@ -107,7 +125,7 @@ end
 
 $mqtt.subscribe_to 'Pocketsphinx/Result' do |result|
 	if m = /computer ambiance level (.*)/.match(result)
-		$ambiance_level = m[1];
+		$parameters['Ambiance/Level'] = m[1];
 	else
 		play result
 	end
