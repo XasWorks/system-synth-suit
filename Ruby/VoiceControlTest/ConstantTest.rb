@@ -1,15 +1,6 @@
 
-require '~/Xasin/system-synth-suit/tef-FurComs/Ruby/lib/tef/furcoms/SerialToMQTT.rb'
-require '~/Xasin/system-synth-suit/tef-FurComs/Ruby/lib/tef/furcoms/MQTT.rb'
-
-require_relative '../AnimationControl/lib/tef/Animation/Animation_Handler.rb'
-require_relative '../AnimationControl/lib/tef/Animation/Eyes.rb'
-
-require_relative '../AnimationControl/lib/tef/ParameterStack/Stack.rb'
-
-require_relative '../AnimationControl/lib/tef/Sequencing/SequencePlayer.rb'
-require_relative '../AnimationControl/lib/tef/ProgramSelection/SoundCollection.rb'
-require_relative '../AnimationControl/lib/tef/ProgramSelection/SequenceCollection.rb'
+require 'tef/furcoms.rb'
+require 'tef/animation.rb'
 
 require 'mqtt/sub_handler'
 
