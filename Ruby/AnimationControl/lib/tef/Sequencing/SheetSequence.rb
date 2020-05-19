@@ -23,6 +23,8 @@ module TEF
 				@latest_note_time = nil;
 
 				@subprograms = []
+
+				@active_music = []
 			end
 
 			def setup()
@@ -33,7 +35,7 @@ module TEF
 				end
 
 				return unless @end_time.nil?
-				@end_time = @notes[-1][:time]
+				@end_time = (@notes[-1]&.dig(:time) || 0) + 0.01
 			end
 
 			def teardown()
@@ -44,6 +46,8 @@ module TEF
 				end
 
 				@subprograms.each(&:teardown)
+
+				@active_music.each { |pid| Process.kill('QUIT', pid); }
 
 				@subprograms = nil;
 				@notes = nil;
@@ -80,6 +84,22 @@ module TEF
 
 			def after(time, **options, &block)
 				at(time + (@latest_note_time || 0) , **options, &block);
+			end
+
+			def play(music_piece, volume = 0.3)
+				play_pid = spawn(*%W{play -q --volume #{volume} #{music_piece}});
+
+				Thread.new do
+					@active_music << play_pid
+					Process.wait(@active_music)
+					@active_music.delete play_pid
+				end
+
+				play_pid
+			end
+
+			def kill(pid)
+				Process.kill('QUIT', pid);
 			end
 
 			def overload_append_events(collector)
