@@ -10,6 +10,8 @@
 
 #include "beat_gen.h"
 
+#include <Animation/Eyes.h>
+
 uint16_t tick_total_duration = 0;
 uint16_t tick_duration = 0;
 uint16_t tick_load = 0;
@@ -17,13 +19,15 @@ uint16_t tick_load = 0;
 namespace HW {
 
 	Xasin::AnimationServer server = Xasin::AnimationServer();
-	Xasin::NeoController glow = Xasin::NeoController(hspi1, 31, false);
+	Xasin::NeoController glow = Xasin::NeoController(hspi1, 31 + 64, false);
 
 	Xasin::Layer la_0 = glow.colors;
 	Xasin::Layer la_1 = glow.colors;
 	Xasin::Layer la_2 = glow.colors;
 	Xasin::Layer lb_1 = glow.colors;
 	Xasin::Layer lb_2 = glow.colors;
+
+	Xasin::Animation::Eyes eye_module = Xasin::Animation::Eyes(server, {10, 0}, glow.colors);
 
 	uint16_t tick_start = 0;
 
