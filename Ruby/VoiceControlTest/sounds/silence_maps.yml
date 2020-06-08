@@ -1,0 +1,694 @@
+---
+"./sounds/star_trek/voyager-red_alert.mp3":
+  0.01: 0
+  0.914286: 1
+  1.46735: 0
+  3.23918: 1
+  3.79224: 0
+  5.56408: 1
+  6.11714: 0
+  7.88898: 1
+  8.44204: 0
+  10.2139: 1
+  10.7669: 0
+  12.54: 0
+"./sounds/star_trek/next_generation-three_corder-1.mp3":
+  0.01: 0
+  34.08: 0
+"./sounds/star_trek/next_generation-red_alert-1.mp3":
+  0.01: 0
+  0.48: 1
+  1.316: 0
+  2.4: 1
+  3.26: 0
+  4.344: 1
+  5.18: 0
+  6.264: 1
+  7.1: 0
+  8.208: 1
+  9.02: 0
+  10.104: 1
+  10.94: 0
+  12.024: 1
+  12.884: 0
+  13.944: 1
+  14.804: 0
+  15.864: 1
+  16.724: 0
+  17.784: 1
+  18.644: 0
+  21.48: 0
+"./sounds/star_trek/voyager-blue_alert.mp3":
+  0.01: 0
+  0.47127: 1
+  1.46841: 0
+  2.45658: 1
+  3.45372: 0
+  4.44188: 1
+  5.43902: 0
+  6.42719: 1
+  7.42433: 0
+  8.46474: 1
+  9.46188: 0
+  10.4762: 1
+  11.4733: 0
+  12.07: 0
+"./sounds/portal/wheatley/having_a_laugh.mp3":
+  0.01: 1
+  1.46735: 0
+  1.56735: 1
+  1.85: 0
+"./sounds/portal/wheatley/hello-01.mp3":
+  0.01: 0
+  0.10449: 1
+  0.579184: 0
+  0.76: 0
+"./sounds/portal/wheatley/hello-02.mp3":
+  0.01: 0
+  0.10449: 1
+  0.814286: 0
+  0.94: 0
+"./sounds/portal/wheatley/not_stopping.mp3":
+  0.01: 1
+  1.49: 0
+"./sounds/portal/wheatley/laugh.mp3":
+  0.01: 1
+  0.997143: 0
+  1.12: 0
+"./sounds/portal/wheatley/laughter.ogg":
+  0.01: 0
+  0.107392: 1
+  0.879592: 0
+  1.09569: 1
+  2.3439: 0
+  2.4439: 1
+  2.53692: 0
+  2.7298: 1
+  4.12603: 0
+  4.24925: 1
+  4.53238: 0
+  4.64689: 1
+  5.05773: 0
+  5.98785: 1
+  6.33918: 0
+  6.48562: 1
+  6.69329: 0
+  6.81: 0
+"./sounds/portal/i_guess/threat_level_moderate.mp3":
+  0.01: 0
+  0.131678: 1
+  2.59168: 0
+  2.87454: 1
+  3.47984: 0
+  3.74: 0
+"./sounds/portal/i_guess/sub_routines_unable.mp3":
+  0.01: 0
+  0.210045: 1
+  2.27821: 0
+  2.46: 0
+"./sounds/portal/i_guess/biological_scan.mp3":
+  0.01: 1
+  1.88637: 0
+  2.09: 0
+"./sounds/portal/i_guess/user_input_required.mp3":
+  0.01: 0
+  0.131678: 1
+  1.65127: 0
+  2.04: 0
+"./sounds/portal/i_guess/target_re_acquire.mp3":
+  0.01: 1
+  0.47576: 0
+  0.706372: 1
+  1.808: 0
+  2.01249: 1
+  2.43494: 0
+  2.53494: 1
+  3.19249: 0
+  3.34474: 1
+  4.99494: 0
+  5.2: 0
+"./sounds/portal/i_guess/alert_water_detected.mp3":
+  0.01: 0
+  0.183923: 1
+  0.632494: 0
+  0.967596: 1
+  3.03576: 0
+  3.27: 0
+"./sounds/portal/i_guess/alert_status_red.mp3":
+  0.01: 0
+  0.105556: 1
+  0.945964: 0
+  1.35943: 1
+  1.72964: 0
+  1.96: 0
+"./sounds/portal/i_guess/flooding_procedure_commencing.mp3":
+  0.01: 0
+  0.26229: 1
+  2.01698: 0
+  2.27: 0
+"./sounds/portal/i_guess/removing_threat.mp3":
+  0.01: 0
+  0.26229: 1
+  2.04311: 0
+  2.3: 0
+"./sounds/portal/i_guess/commencing_execution.mp3":
+  0.01: 0
+  0.183923: 1
+  2.51331: 0
+  2.74: 0
+"./sounds/portal/i_guess/intrusion_alert.mp3":
+  0.01: 1
+  1.23: 0
+"./sounds/portal/i_guess/unknown_sector_detected.mp3":
+  0.01: 0
+  0.131678: 1
+  1.86025: 0
+  2.09: 0
+"./sounds/portal/i_guess/re_calibrate_sensors.mp3":
+  0.01: 0
+  0.105556: 1
+  1.59902: 0
+  1.85: 0
+"./sounds/portal/i_guess/alert.mp3":
+  0.01: 0
+  0.131678: 1
+  0.606372: 0
+  0.84: 0
+"./sounds/portal/i_guess/target_in_elevator.mp3":
+  0.01: 1
+  2.6178: 0
+  2.93: 0
+"./sounds/portal/i_guess/activate_security_protocols.mp3":
+  0.01: 0
+  0.26229: 1
+  2.30433: 0
+  2.51: 0
+"./sounds/portal/i_guess/processing.mp3":
+  0.01: 1
+  1.15: 0
+"./sounds/portal/i_guess/commencing_termination.mp3":
+  0.01: 0
+  0.210045: 1
+  2.1476: 0
+  2.4: 0
+"./sounds/portal/i_guess/target_lost.mp3":
+  0.01: 0
+  0.105556: 1
+  1.31168: 0
+  1.46392: 1
+  1.93862: 0
+  2.09: 0
+"./sounds/portal/i_guess/reduced_processing_power.mp3":
+  0.01: 0
+  0.105556: 1
+  1.65127: 0
+  2.16923: 1
+  4.368: 0
+  4.6: 0
+"./sounds/portal/i_guess/scanning_lima_whiskey.mp3":
+  0.01: 0
+  0.131678: 1
+  1.88637: 0
+  2.01249: 1
+  3.58433: 0
+  3.84: 0
+"./sounds/portal/i_guess/server_health_failing.mp3":
+  0.01: 0
+  0.183923: 1
+  2.3827: 0
+  2.7178: 1
+  5.30841: 0
+  5.59: 0
+"./sounds/portal/i_guess/scanning_for_life_forms.mp3":
+  0.01: 0
+  0.210045: 1
+  1.67739: 0
+  1.85576: 1
+  2.98: 0
+"./sounds/portal/i_guess/generator_override.mp3":
+  0.01: 0
+  0.1578: 1
+  2.59168: 0
+  2.82: 0
+"./sounds/portal/i_guess/error.mp3":
+  0.01: 0
+  0.210045: 1
+  0.658617: 0
+  1.09821: 1
+  1.52066: 0
+  1.83: 0
+"./sounds/portal/i_guess/security_measures_seventy.mp3":
+  0.01: 1
+  1.36392: 0
+  1.49005: 1
+  3.00964: 0
+  3.21: 0
+"./sounds/portal/i_guess/threat_level_maximum.mp3":
+  0.01: 0
+  0.183923: 1
+  3.6627: 0
+  4.12841: 1
+  4.91658: 0
+  5.07: 0
+"./sounds/portal/i_guess/assuming_control.mp3":
+  0.01: 0
+  0.288413: 1
+  3.71494: 0
+  3.89: 0
+"./sounds/portal/i_guess/construction_sub_routine.mp3":
+  0.01: 1
+  2.06923: 0
+  2.38: 0
+"./sounds/portal/i_guess/unregistered_life_form_detected.mp3":
+  0.01: 1
+  2.87902: 0
+  3.11: 0
+"./sounds/portal/i_guess/server_health_critical.mp3":
+  0.01: 0
+  0.0794331: 1
+  0.710862: 0
+  0.863107: 1
+  2.56556: 0
+  2.77: 0
+"./sounds/portal/i_guess/power_to_turrets.mp3":
+  0.01: 0
+  0.105556: 1
+  2.25209: 0
+  2.50882: 1
+  4.05454: 0
+  4.36: 0
+"./sounds/portal/i_guess/server_twenty_five.mp3":
+  0.01: 0
+  0.1578: 1
+  3.45372: 0
+  3.68: 0
+"./sounds/portal/i_guess/no_vital_signs.mp3":
+  0.01: 0
+  0.340658: 1
+  1.91249: 0
+  2.38: 0
+"./sounds/portal/i_guess/target_re_acquire-1.mp3":
+  0.01: 1
+  0.501882: 0
+  0.628005: 1
+  1.39005: 0
+  1.59: 0
+"./sounds/portal/i_guess/error_organic_interference.mp3":
+  0.01: 1
+  0.528005: 0
+  1.04596: 1
+  1.52066: 0
+  1.88188: 1
+  3.45372: 0
+  3.81494: 1
+  5.85: 0
+"./sounds/portal/i_guess/countermeasures_activating.mp3":
+  0.01: 0
+  0.210045: 1
+  2.04: 0
+"./sounds/portal/i_guess/searching_for_defense.mp3":
+  0.01: 0
+  0.1578: 1
+  2.87: 0
+"./sounds/portal/i_guess/neutralizing_target.mp3":
+  0.01: 1
+  0.945964: 0
+  1.35943: 1
+  2.27821: 0
+  2.46: 0
+"./sounds/portal/i_guess/alert_status_hundred.mp3":
+  0.01: 0
+  0.183923: 1
+  1.02433: 0
+  1.33331: 1
+  2.3827: 0
+  2.72: 0
+"./sounds/portal/i_guess/detecting_power_surge.mp3":
+  0.01: 1
+  3.8978: 0
+  4.15: 0
+"./sounds/portal/i_guess/seeking_target.mp3":
+  0.01: 0
+  0.183923: 1
+  2.25209: 0
+  2.37821: 1
+  3.27086: 0
+  3.55372: 1
+  5.02107: 0
+  5.2: 0
+"./sounds/portal/i_guess/error_test_successful.mp3":
+  0.01: 1
+  0.580249: 0
+  0.967596: 1
+  1.49454: 0
+  1.80351: 1
+  3.53209: 0
+  3.76: 0
+"./sounds/portal/glad_os/oh_it_is_you.mp3":
+  0.01: 0
+  0.313469: 1
+  0.683673: 0
+  1.17551: 1
+  1.96367: 0
+  2.0898: 1
+  2.19: 0
+"./sounds/portal/glad_os/stop_that-1.mp3":
+  0.01: 1
+  1.93755: 0
+  2.03755: 1
+  2.04204: 0
+  2.35102: 1
+  2.48612: 0
+  2.61224: 1
+  2.79959: 0
+  2.97796: 1
+  3.53102: 0
+  3.63102: 1
+  4.10571: 0
+  4.28: 0
+"./sounds/portal/glad_os/yes_i_see_you_and_i_do_not_care.mp3":
+  0.01: 0
+  0.10449: 1
+  0.605306: 0
+  0.757551: 1
+  1.59796: 0
+  1.80245: 1
+  2.51224: 0
+  2.76898: 1
+  3.74: 0
+  4.1: 0
+"./sounds/portal/glad_os/long_time.mp3":
+  0.01: 0
+  0.339592: 1
+  2.32939: 0
+  3.18694: 1
+  4.23633: 0
+  4.57: 0
+"./sounds/portal/glad_os/stop_that-3.mp3":
+  0.01: 0
+  0.156735: 1
+  1.6502: 0
+  1.91: 0
+"./sounds/portal/glad_os/clap_processor.mp3":
+  0.01: 1
+  0.265714: 0
+  0.391837: 1
+  0.97102: 0
+  1.33224: 1
+  2.09429: 0
+  2.22041: 1
+  4.07959: 0
+  4.44082: 1
+  5.56: 0
+"./sounds/portal/glad_os/i_do_not_care.ogg":
+  0.01: 0
+  0.0986848: 1
+  1.05084: 0
+  1.39: 0
+"./sounds/portal/glad_os/stop_that.mp3":
+  0.01: 0
+  0.130612: 1
+  1.4151: 0
+  2.63837: 1
+  4.52367: 0
+  4.99: 0
+"./sounds/portal/glad_os/you_are_kidding_me.mp3":
+  0.01: 0
+  0.130612: 1
+  1.25837: 0
+  1.38449: 1
+  2.25102: 0
+  2.74: 0
+"./sounds/portal/glad_os/if_you_do_not_succeed.mp3":
+  0.01: 1
+  1.75469: 0
+  2.27265: 1
+  3.76612: 0
+  4.08: 0
+"./sounds/portal/glad_os/stop_that-2.mp3":
+  0.01: 0
+  0.20898: 1
+  0.709796: 0
+  0.91: 0
+"./sounds/portal/glad_os/yes_i_see_you.ogg":
+  0.01: 0
+  0.110295: 1
+  0.616916: 0
+  0.763356: 1
+  1.60522: 0
+  1.78: 0
+"./sounds/portal/glad_os/let_us_act_like_humans.mp3":
+  0.01: 0
+  0.10449: 1
+  0.892653: 0
+  1.14939: 1
+  2.38163: 0
+  2.87347: 1
+  3.55714: 0
+  3.89224: 1
+  4.26245: 0
+  4.36245: 1
+  5.28122: 0
+  5.82531: 1
+  9.53918: 0
+  9.67: 0
+"./sounds/portal/glad_os/laugh.mp3":
+  0.01: 0
+  0.0783673: 1
+  0.213469: 0
+  0.365714: 1
+  0.422449: 0
+  0.522449: 1
+  0.579184: 0
+  0.731429: 1
+  0.788163: 0
+  1.1: 0
+"./sounds/portal/glad_os/clap.mp3":
+  0.01: 1
+  0.135102: 0
+  1.22776: 1
+  1.36286: 0
+  2.37714: 1
+  2.56: 0
+"./sounds/portal/cave_johnson/laugh.mp3":
+  0.01: 0
+  0.20898: 1
+  0.448571: 0
+  0.57: 0
+"./sounds/portal/announcer/power_ensured.mp3":
+  0.01: 1
+  2.9302: 0
+  3.21306: 1
+  5.09837: 0
+  5.48571: 1
+  9.33: 0
+"./sounds/portal/announcer/smooth_jazz_fake.mp3":
+  0.01: 0
+  0.10449: 1
+  0.840408: 0
+  0.966531: 1
+  2.09429: 0
+  2.45551: 1
+  3.66163: 0
+  3.76163: 1
+  5.28122: 0
+  5.66857: 1
+  7.21429: 0
+  7.54939: 1
+  8.15469: 0
+  8.69878: 1
+  9.04286: 0
+  9.61306: 1
+  24.7163: 0
+  24.84: 0
+"./sounds/portal/announcer/corruption_fifty.mp3":
+  0.01: 1
+  0.448571: 0
+  0.862041: 1
+  1.57184: 0
+  1.69796: 1
+  2.64286: 0
+  2.85: 0
+"./sounds/portal/announcer/stare_at_the_art.mp3":
+  0.01: 0
+  0.182857: 1
+  0.448571: 0
+  0.600816: 1
+  0.997143: 0
+  1.72408: 1
+  2.6951: 0
+  3.0302: 1
+  3.76612: 0
+  4.20571: 1
+  4.94163: 0
+  5.40735: 1
+  6.37: 0
+"./sounds/portal/announcer/good.mp3":
+  0.01: 1
+  0.265714: 0
+  0.44: 0
+"./sounds/portal/announcer/stalemate_resolved.mp3":
+  0.01: 1
+  1.15388: 0
+  1.33: 0
+"./sounds/portal/announcer/corruption_hundred.mp3":
+  0.01: 0
+  0.10449: 1
+  0.474694: 0
+  0.862041: 1
+  1.54571: 0
+  1.69796: 1
+  2.77347: 0
+  2.95: 0
+"./sounds/portal/announcer/power_up_start.mp3":
+  0.01: 1
+  1.10163: 0
+  1.49: 0
+"./sounds/portal/announcer/corruption_seventy.mp3":
+  0.01: 0
+  0.130612: 1
+  0.500816: 0
+  0.809796: 1
+  1.4151: 0
+  1.54122: 1
+  2.74735: 0
+  2.87: 0
+"./sounds/portal/announcer/smooth_jazz.mp3":
+  0.01: 0
+  0.105556: 1
+  0.841474: 0
+  0.967596: 1
+  2.09535: 0
+  2.45658: 1
+  3.6627: 0
+  3.7627: 1
+  5.28229: 0
+  5.66964: 1
+  7.21535: 0
+  7.52433: 1
+  8.15576: 0
+  8.69984: 1
+  9.04392: 0
+  9.61413: 1
+  9.95821: 0
+  10.3194: 1
+  14.2423: 0
+  14.6: 0
+"./sounds/portal/announcer/response.mp3":
+  0.01: 1
+  0.657551: 0
+  0.91: 0
+"./sounds/portal/announcer/interpret_vague_answer.mp3":
+  0.01: 0
+  0.10449: 1
+  1.96367: 0
+  2.12: 0
+"./sounds/portal/announcer/explosion_imminent.mp3":
+  0.01: 1
+  1.20612: 0
+  1.41061: 1
+  3.19143: 0
+  4.02: 0
+"./sounds/portal/announcer/return_to_your_bed.mp3":
+  0.01: 0
+  0.10449: 1
+  0.291837: 0
+  0.783673: 1
+  2.2249: 0
+  2.4: 0
+"./sounds/portal/announcer/glad_os-sarcasm_complete.mp3":
+  0.01: 1
+  1.83: 0
+"./sounds/portal/announcer/power_up_end.mp3":
+  0.01: 1
+  0.866531: 0
+  1.23: 0
+"./sounds/portal/announcer/stalemate_detected.mp3":
+  0.01: 0
+  0.10449: 1
+  1.04939: 0
+  1.25: 0
+"./sounds/portal/turret/defective_turret-hello_stranger.mp3":
+  0.01: 1
+  1.07: 0
+"./sounds/portal/turret/defective_turret-mess_with_me.mp3":
+  0.01: 1
+  1.2: 0
+"./sounds/portal/turret/hello-1.mp3":
+  0.01: 1
+  1.07551: 0
+  1.21: 0
+"./sounds/portal/turret/hello-3.mp3":
+  0.01: 1
+  0.422449: 0
+  0.55: 0
+"./sounds/portal/turret/defective_turret-hello-1.mp3":
+  0.01: 1
+  0.37: 0
+"./sounds/portal/turret/polite-stop_that.mp3":
+  0.01: 1
+  0.81: 0
+"./sounds/portal/turret/do_not_blame_you.mp3":
+  0.01: 0
+  0.261224: 1
+  1.4151: 0
+  2.19: 0
+"./sounds/portal/turret/defective_turret-hello-2.mp3":
+  0.01: 1
+  0.71: 0
+"./sounds/portal/turret/hello-4.mp3":
+  0.01: 0
+  0.287347: 1
+  0.814286: 0
+  1.07: 0
+"./sounds/portal/turret/uh_hello.mp3":
+  0.01: 0
+  0.0783673: 1
+  0.291837: 0
+  0.600816: 1
+  0.997143: 0
+  1.2: 0
+"./sounds/portal/turret/hello-2.mp3":
+  0.01: 1
+  0.55: 0
+"./sounds/portal/turret/are_you_still_there.mp3":
+  0.01: 0
+  0.10449: 1
+  1.4151: 0
+  1.68: 0
+"./sounds/furry/furry_communication_protocol.mp3":
+  0.01: 0
+  0.12: 1
+  28.868: 0
+  28.992: 1
+  29.732: 0
+  29.88: 1
+  30.572: 0
+  30.672: 1
+  32.156: 0
+  32.28: 1
+  32.612: 0
+  32.76: 1
+  32.804: 0
+  35.81: 0
+"./sounds/furry/furry_sound-2.mp3":
+  0.01: 0
+  0.131678: 1
+  1.83413: 0
+  2.04: 0
+"./sounds/furry/furry_sound-3.mp3":
+  0.01: 1
+  1.02433: 0
+  1.2: 0
+"./sounds/furry/furry_sound-4.mp3":
+  0.01: 0
+  0.131678: 1
+  1.52: 0
+"./sounds/furry/furry_sound-1.mp3":
+  0.01: 1
+  1.04: 0
+"./sounds/star_trek/discovery-black_alert.mp3":
+  0.01: 0
+  0.336979: 1
+  1.22098: 0
+  2.06: 0
