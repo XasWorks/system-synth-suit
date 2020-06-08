@@ -126,6 +126,8 @@ void testGlow() {
 		osDelay(16);
 		HW::tick(0.016);
 
+	    ITM_SendChar('a');
+
 		bool current_btn = HAL_GPIO_ReadPin(BTN_INT_GPIO_Port, BTN_INT_Pin);
 
 		if(current_btn != old_btn) {

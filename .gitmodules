@@ -7,3 +7,6 @@
 [submodule "tef-synth-animation"]
 	path = tef-synth-animation
 	url = git@github.com:TheElectricFursuits/tef-synth-animation.git
+[submodule "tef-hub75"]
+	path = tef-hub75
+	url = git@github.com:TheElectricFursuits/tef-hub75.git
