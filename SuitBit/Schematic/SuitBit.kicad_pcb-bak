@@ -3487,8 +3487,8 @@
       (net 1 +5V) (solder_mask_margin 0.07))
   )
 
-  (gr_arc (start 119.25253 136.9822) (end 119.30333 139.7254) (angle -88.9) (layer Edge.Cuts) (width 0.4))
-  (gr_arc (start 80.4926 137.210415) (end 77.952601 137.159616) (angle -91.7) (layer Edge.Cuts) (width 0.4))
+  (gr_arc (start 119.25253 136.9822) (end 119.2984 139.7272) (angle -90) (layer Edge.Cuts) (width 0.4) (tstamp 5E709704))
+  (gr_arc (start 80.4884 137.2072) (end 77.9484 137.1572) (angle -92.02994519) (layer Edge.Cuts) (width 0.4))
   (gr_arc (start 100 100) (end 78.1558 119.38) (angle -96.311404) (layer F.SilkS) (width 0.4))
   (gr_text "C Hi\n" (at 87.376 125.5522 90) (layer B.SilkS) (tstamp 5E5033CE)
     (effects (font (size 1.2 1.2) (thickness 0.24)) (justify mirror))
@@ -3591,9 +3591,9 @@
   )
   (gr_line (start 79.7052 107.1372) (end 120.2944 107.1372) (layer F.SilkS) (width 0.15))
   (gr_line (start 120.3452 106.8324) (end 79.6036 106.8324) (layer F.SilkS) (width 0.15))
-  (gr_line (start 121.9962 136.9568) (end 122 100) (layer Edge.Cuts) (width 0.4))
-  (gr_line (start 80.4926 139.7508) (end 119.3038 139.7254) (layer Edge.Cuts) (width 0.4))
-  (gr_line (start 78.0034 99.9744) (end 77.9526 137.1346) (layer Edge.Cuts) (width 0.4))
+  (gr_line (start 121.9984 136.9372) (end 122 100) (layer Edge.Cuts) (width 0.4))
+  (gr_line (start 80.5284 139.7472) (end 119.2984 139.7272) (layer Edge.Cuts) (width 0.4))
+  (gr_line (start 78 100) (end 77.9484 137.1572) (layer Edge.Cuts) (width 0.4))
   (gr_circle (center 100 100) (end 121.6 100) (layer F.SilkS) (width 0.4))
   (gr_arc (start 100 100) (end 122 100) (angle -180) (layer Edge.Cuts) (width 0.4))
 

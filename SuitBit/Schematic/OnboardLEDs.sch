@@ -501,4 +501,6 @@ Wire Wire Line
 	1450 2150 1725 2150
 Wire Wire Line
 	1925 2150 2150 2150
+Text Notes 900  2450 0    50   ~ 0
+Skip the amp here, it works <.<
 $EndSCHEMATC
