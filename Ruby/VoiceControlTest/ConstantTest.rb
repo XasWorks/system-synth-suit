@@ -19,7 +19,7 @@ $sequencePlayer.after_exec {
 	$animation_core.update_tick
 }
 
-speech_box = $animation_core['S100M0'] = TEF::Animation::Box.new 0;
+speech_box = $animation_core['S100M0'] = TEF::Animation::Box.new 2;
 speech_box.configure up: 3, down: 3, left: 3, right: 3
 
 eye = $animation_core['S10M0'] = TEF::Animation::Eye.new
@@ -83,6 +83,12 @@ def play(name)
 	$sheetmap.play effect
 end
 
+sleep 0.5
+
+play("pipe dream")
+
+sleep 50
+
 play("power up start")
 
 $port.on_message "BTN" do |data|
@@ -121,6 +127,8 @@ $mqtt.subscribe_to 'Pocketsphinx/Result' do |result|
 		play result
 	end
 end
+
+sleep 3
 
 rec  = IO.popen("arecord -r 16000 -f S16_LE -R 0 --period-size 512",
 	:external_encoding=>"ASCII-8BIT");
