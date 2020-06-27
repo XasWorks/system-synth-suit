@@ -21,8 +21,6 @@
 
 #include <Animation/Box.h>
 
-#include <beat_gen.h>
-
 #include <config.h>
 
 #include <FurComs/LLHandler.h>
@@ -114,10 +112,6 @@ void testGlow() {
 
 	test_box->draw_color = 0x334455;
 
-	//start_sequence();
-
-	insert_pending_beats();
-
 	float next_blip = 0;
 
 	bool old_btn = false;
@@ -125,8 +119,6 @@ void testGlow() {
 	while(1) {
 		osDelay(16);
 		HW::tick(0.016);
-
-	    ITM_SendChar('a');
 
 		bool current_btn = HAL_GPIO_ReadPin(BTN_INT_GPIO_Port, BTN_INT_Pin);
 
