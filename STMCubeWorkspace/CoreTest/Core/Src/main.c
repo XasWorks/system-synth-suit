@@ -47,15 +47,17 @@ TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim4;
 DMA_HandleTypeDef hdma_tim1_ch1;
 
+UART_HandleTypeDef huart4;
+
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
   .name = "defaultTask",
   .priority = (osPriority_t) osPriorityNormal,
-  .stack_size = 128 * 4
+  .stack_size = 1280 * 4
 };
 /* USER CODE BEGIN PV */
-
+void matrix_task();
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -64,6 +66,7 @@ static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_TIM4_Init(void);
 static void MX_TIM1_Init(void);
+static void MX_UART4_Init(void);
 void StartDefaultTask(void *argument);
 
 /* USER CODE BEGIN PFP */
@@ -84,6 +87,7 @@ int main(void)
   /* USER CODE BEGIN 1 */
 	__HAL_DBGMCU_FREEZE_TIM10();
 	__HAL_DBGMCU_FREEZE_TIM1();
+	__HAL_DBGMCU_FREEZE_TIM4();
   /* USER CODE END 1 */
 
   /* Enable I-Cache---------------------------------------------------------*/
@@ -113,6 +117,7 @@ int main(void)
   MX_DMA_Init();
   MX_TIM4_Init();
   MX_TIM1_Init();
+  MX_UART4_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -167,6 +172,7 @@ void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+  RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
 
   /** Configure the main internal regulator output voltage 
   */
@@ -206,6 +212,12 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+  PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_UART4;
+  PeriphClkInitStruct.Uart4ClockSelection = RCC_UART4CLKSOURCE_PCLK1;
+  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
+  {
+    Error_Handler();
+  }
 }
 
 /**
@@ -233,7 +245,7 @@ static void MX_TIM1_Init(void)
   htim1.Init.CounterMode = TIM_COUNTERMODE_DOWN;
   htim1.Init.Period = 200;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-  htim1.Init.RepetitionCounter = 32;
+  htim1.Init.RepetitionCounter = 0;
   htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim1) != HAL_OK)
   {
@@ -312,9 +324,9 @@ static void MX_TIM4_Init(void)
 
   /* USER CODE END TIM4_Init 1 */
   htim4.Instance = TIM4;
-  htim4.Init.Prescaler = 10;
+  htim4.Init.Prescaler = 0;
   htim4.Init.CounterMode = TIM_COUNTERMODE_DOWN;
-  htim4.Init.Period = 7500;
+  htim4.Init.Period = 7000;
   htim4.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim4.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim4) != HAL_OK)
@@ -337,24 +349,52 @@ static void MX_TIM4_Init(void)
     Error_Handler();
   }
   sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 30;
-  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-  sConfigOC.OCFastMode = TIM_OCFAST_ENABLE;
-  if (HAL_TIM_PWM_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sConfigOC.Pulse = 7400;
+  sConfigOC.Pulse = 6000;
   sConfigOC.OCPolarity = TIM_OCPOLARITY_LOW;
+  sConfigOC.OCFastMode = TIM_OCFAST_ENABLE;
   if (HAL_TIM_PWM_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
   {
     Error_Handler();
   }
   /* USER CODE BEGIN TIM4_Init 2 */
-  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
   HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);
   /* USER CODE END TIM4_Init 2 */
   HAL_TIM_MspPostInit(&htim4);
+
+}
+
+/**
+  * @brief UART4 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_UART4_Init(void)
+{
+
+  /* USER CODE BEGIN UART4_Init 0 */
+
+  /* USER CODE END UART4_Init 0 */
+
+  /* USER CODE BEGIN UART4_Init 1 */
+
+  /* USER CODE END UART4_Init 1 */
+  huart4.Instance = UART4;
+  huart4.Init.BaudRate = 115200;
+  huart4.Init.WordLength = UART_WORDLENGTH_8B;
+  huart4.Init.StopBits = UART_STOPBITS_1;
+  huart4.Init.Parity = UART_PARITY_NONE;
+  huart4.Init.Mode = UART_MODE_RX;
+  huart4.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart4.Init.OverSampling = UART_OVERSAMPLING_16;
+  huart4.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+  huart4.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+  if (HAL_UART_Init(&huart4) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN UART4_Init 2 */
+
+  /* USER CODE END UART4_Init 2 */
 
 }
 
@@ -384,8 +424,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOE_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOE_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOG_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
@@ -396,6 +436,9 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOG, GPIO_PIN_9|GPIO_PIN_10|GPIO_PIN_11|GPIO_PIN_12, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : PD0 PD1 PD2 PD3 
                            PD4 PD5 */
@@ -413,20 +456,17 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOG, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : PB5 */
-  GPIO_InitStruct.Pin = GPIO_PIN_5;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  /*Configure GPIO pin : PB6 */
+  GPIO_InitStruct.Pin = GPIO_PIN_6;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-  GPIO_InitStruct.Alternate = GPIO_AF2_TIM3;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 }
 
 /* USER CODE BEGIN 4 */
-uint8_t test_data[] = { 1, 2, 3, 4, 5, 6, 7,
-		8, 9, 10, 11, 12, 13, 14, 15, 16, 16
-};
+
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_StartDefaultTask */
@@ -440,28 +480,7 @@ void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
-
-	htim1.Instance->DIER |= (TIM_DMA_CC1);
-
-	HAL_DMA_Start(&hdma_tim1_ch1, test_data, &GPIOD->ODR, 16);
-	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-
-	osDelay(100);
-
-	for(;;)
-  {
-    osDelay(10);
-    DMA2->LIFCR = 0x3FU << 6;
-    hdma_tim1_ch1.Instance->NDTR = 16;
-    hdma_tim1_ch1.Instance->PAR = &GPIOD->ODR;
-    hdma_tim1_ch1.Instance->M0AR = test_data;
-    hdma_tim1_ch1.Instance->CR |= 1;
-
-    htim1.Instance->RCR = 15;
-	htim1.Instance->CCER |= 1<<TIM_CHANNEL_1;
-	htim1.Instance->BDTR |= 1<<15;
-    htim1.Instance->CR1 |= 1;
-  }
+	matrix_task();
   /* USER CODE END 5 */ 
 }
 

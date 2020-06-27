@@ -29,5 +29,23 @@
 		<nature>com.st.stm32cube.ide.mcu.MCURootProjectNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>Core/tef-Animation</name>
+			<type>2</type>
+			<locationURI>$%7BPARENT-2-PROJECT_LOC%7D/tef-synth-animation/STM32F4</locationURI>
+		</link>
+		<link>
+			<name>Core/tef-FurComs</name>
+			<type>2</type>
+			<locationURI>$%7BPARENT-2-PROJECT_LOC%7D/tef-FurComs/STM32F4</locationURI>
+		</link>
+		<link>
+			<name>Core/tef-led-magic</name>
+			<type>2</type>
+			<location>/home/xasin/Xasin/system-synth-suit/tef-led-magic/STM32M4</location>
+		</link>
+	</linkedResources>
 </projectDescription>

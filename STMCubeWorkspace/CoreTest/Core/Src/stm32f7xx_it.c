@@ -54,12 +54,14 @@
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void matrix_isr_tick();
 
+extern DMA_HandleTypeDef hdma_tim1_ch1;
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-extern DMA_HandleTypeDef hdma_tim1_ch1;
 extern TIM_HandleTypeDef htim1;
+extern TIM_HandleTypeDef htim4;
 extern TIM_HandleTypeDef htim10;
 
 /* USER CODE BEGIN EV */
@@ -178,17 +180,20 @@ void TIM1_UP_TIM10_IRQHandler(void)
 }
 
 /**
-  * @brief This function handles DMA2 stream1 global interrupt.
+  * @brief This function handles TIM4 global interrupt.
   */
-void DMA2_Stream1_IRQHandler(void)
+void TIM4_IRQHandler(void)
 {
-  /* USER CODE BEGIN DMA2_Stream1_IRQn 0 */
-	// __HAL_TIM_DISABLE(&htim1);
-  /* USER CODE END DMA2_Stream1_IRQn 0 */
-  HAL_DMA_IRQHandler(&hdma_tim1_ch1);
-  /* USER CODE BEGIN DMA2_Stream1_IRQn 1 */
+  /* USER CODE BEGIN TIM4_IRQn 0 */
+	if(__HAL_TIM_GET_IT_SOURCE(&htim4, TIM_IT_UPDATE)) {
+		matrix_isr_tick();
+	}
 
-  /* USER CODE END DMA2_Stream1_IRQn 1 */
+  /* USER CODE END TIM4_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim4);
+  /* USER CODE BEGIN TIM4_IRQn 1 */
+
+  /* USER CODE END TIM4_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */

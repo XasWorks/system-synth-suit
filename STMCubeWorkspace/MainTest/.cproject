@@ -79,6 +79,7 @@
 									<listOptionValue builtIn="false" value="../../../tef-synth-animation/STM32F4/include"/>
 									<listOptionValue builtIn="false" value="../../../XasCode/STM32F4"/>
 									<listOptionValue builtIn="false" value="../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MainTest/Core/tef-led-magic/include}&quot;"/>
 								</option>
 								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.warnings.w_switch_enum.1182873405" name="Warn if switch is used on an enum type and the switch statement lacks case for some enumerations (-Wswitch-enum)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.warnings.w_switch_enum" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.input.cpp.979941214" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.input.cpp"/>
