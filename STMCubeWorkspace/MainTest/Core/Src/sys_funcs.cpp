@@ -8,26 +8,28 @@
 #include "main.h"
 #include "sys_funcs.h"
 
-#include "beat_gen.h"
-
-#include <Animation/Eyes.h>
+#include <config.h>
 
 uint16_t tick_total_duration = 0;
 uint16_t tick_duration = 0;
 uint16_t tick_load = 0;
 
+extern led_coord_t leds[];
+
 namespace HW {
 
-	Xasin::AnimationServer server = Xasin::AnimationServer();
-	Xasin::NeoController glow = Xasin::NeoController(hspi1, 31 + 64, false);
+	TEF::Animation::AnimationServer server = TEF::Animation::AnimationServer();
+	TEF::LED::NeoController glow = TEF::LED::NeoController(hspi1, ANIM_LED_COUNT, false);
 
-	Xasin::Layer la_0 = glow.colors;
-	Xasin::Layer la_1 = glow.colors;
-	Xasin::Layer la_2 = glow.colors;
-	Xasin::Layer lb_1 = glow.colors;
-	Xasin::Layer lb_2 = glow.colors;
+	const uint32_t rg_swap_map[] = {
+			0b11U<<30, 131071U
+	};
 
-	Xasin::Animation::Eyes eye_module = Xasin::Animation::Eyes(server, {10, 0}, glow.colors);
+	TEF::LED::Layer la_0 = glow.colours;
+	TEF::LED::Layer la_1 = glow.colours;
+	TEF::LED::Layer la_2 = glow.colours;
+	TEF::LED::Layer lb_1 = glow.colours;
+	TEF::LED::Layer lb_2 = glow.colours;
 
 	uint16_t tick_start = 0;
 
@@ -100,12 +102,14 @@ namespace HW {
 	}
 
 	void init() {
-		la_1.alpha = 0.03;
-		la_2.alpha = 0.01;
-		la_2.fill(Xasin::Color(0, 0));
+		// glow.rg_swap_map = rg_swap_map;
+
+		la_1.alpha = 0.01;
+		la_2.alpha = 0.005;
+		la_2.fill(TEF::LED::Colour(0, 0));
 
 		lb_2.alpha = 0.07;
-		lb_2.fill(Xasin::Color(0, 0, 0.5)); // TODO CAREFUL - DIM
+		lb_2.fill(TEF::LED::Colour(0x000000, 1, 0.6)); // TODO CAREFUL - DIM
 	}
 
 	void tick(float delta_t) {
@@ -114,14 +118,14 @@ namespace HW {
 
 		note_tick(delta_t);
 
-		glow.colors = la_0;
+		glow.colours = la_0;
 
 		la_1.merge_transition(la_2);
 		la_0.merge_transition(la_1);
 
 		lb_1.merge_transition(lb_2);
 
-		glow.colors.merge_overlay(lb_1);
+		glow.colours.merge_overlay(lb_1);
 
 		server.tick(delta_t);
 

@@ -43,9 +43,9 @@
 			<location>/home/xasin/Xasin/system-synth-suit/tef-FurComs/STM32F4</location>
 		</link>
 		<link>
-			<name>Core/STM32F4</name>
+			<name>Core/tef-led-magic</name>
 			<type>2</type>
-			<locationURI>$%7BPARENT-2-PROJECT_LOC%7D/XasCode/STM32F4</locationURI>
+			<locationURI>$%7BPARENT-2-PROJECT_LOC%7D/tef-led-magic/STM32M4</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

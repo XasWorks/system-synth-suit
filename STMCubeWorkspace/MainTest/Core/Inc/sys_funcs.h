@@ -9,25 +9,27 @@
 #define INC_SYS_FUNCS_H_
 
 #include "main.h"
+
+#include <tef/led/NeoController.h>
+
 #include <Animation/AnimationServer.h>
-#include <NeoController/NeoController.h>
 
 #include <vector>
 #define SYS_CNT TIM2->CNT
 
 namespace HW {
 
-extern Xasin::AnimationServer server;
-extern Xasin::NeoController   glow;
+extern TEF::Animation::AnimationServer server;
+extern TEF::LED::NeoController glow;
 
 // Slow-rolling set, provides very smoothed effects
-extern Xasin::Layer la_0;
-extern Xasin::Layer la_1;
-extern Xasin::Layer la_2;
+extern TEF::LED::Layer la_0;
+extern TEF::LED::Layer la_1;
+extern TEF::LED::Layer la_2;
 
 // Fast flashing layers for juicy kicks and similar
-extern Xasin::Layer lb_1;
-extern Xasin::Layer lb_2;
+extern TEF::LED::Layer lb_1;
+extern TEF::LED::Layer lb_2;
 
 struct note_config_t {
 	float swap_dur;
