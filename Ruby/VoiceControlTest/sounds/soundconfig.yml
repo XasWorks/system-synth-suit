@@ -1,15 +1,14 @@
 "./sounds/portal/glad_os/stop_that-1.mp3":
    Overrides:
       1:
-         Eye/IrisX: 5
+         Eye/IrisX: 8
       2.48612:
          Palette/SpeechOn:  0xBBB500
          Palette/SpeechOff: 0x407000
          Palette/SpeechDelay: 13
-         Eye/Top: -2
-         Eye/Bottom: 2
-         Eye/IrisX: 2
+         Eye/Mood: angry
          Eye/Color: 0xBB2200
+         Eye/IrisX: 1
       3.3:
          Palette/SpeechOn:  0xBB2200
       3.6:

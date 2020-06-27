@@ -7,7 +7,7 @@ require 'mqtt/sub_handler'
 $mqtt = MQTT::SubHandler.new('localhost');
 
 $direct_port = TEF::FurComs::SerialToMQTT.new('/dev/ttyACM0', $mqtt);
-$port = TEF::FurComs::MQTT.new($mqtt);
+$port = TEF::FurComs::MQTT.new($mqtt, 'FurComs/ttyACM0/');
 
 $animation_core = TEF::Animation::Handler.new($port)
 
@@ -22,20 +22,19 @@ $sequencePlayer.after_exec {
 speech_box = $animation_core['S100M0'] = TEF::Animation::Box.new 2;
 speech_box.configure up: 3, down: 3, left: 3, right: 3
 
-eye = $animation_core['S10M0'] = TEF::Animation::Eye.new
+eye = $animation_core['S1M0'] = TEF::Animation::Eye.new
 eye.configure({
 	outer_color: { delay_a: 10, delay_b: 10 },
-	top: { add: -3, dampen: 0.1, delay: 0.02 },
-	bottom: { add: 3, dampen: 0.1, delay: 0.02 },
-
 	iris_x: { dampen: 0.1 },
-	iris_y: { add: 3, dampen: 0.05 },
 });
+
+$animation_core['S1M1'] = TEF::Animation::StringDisplay.new;
 
 $parameters.on_recompute 'Palette/SpeechOn', 'Palette/SpeechOff', 'SpeechLevel' do
 	$parameters['SpeechColor'] = ($parameters['SpeechLevel'] ?
 		$parameters['Palette/SpeechOn'] : $parameters['Palette/SpeechOff']);
-	$parameters['Eye/Color'] = $parameters['Palette/SpeechOff']
+
+	$parameters['Eye/Color'] = $parameters['Palette/SpeechOn']
 end
 $parameters.on_change 'Palette/SpeechOff' do
 	eye.outer_color = $parameters['Palette/SpeechOff']
@@ -45,17 +44,16 @@ $parameters.on_change 'Palette/SpeechDelay', 'SpeechColor' do
 	speech_box.color = $parameters['SpeechColor'] || 0xFF000000
 end
 
-$parameters.on_change('Eye/Top')    { eye.top = $parameters['Eye/Top'] }
-$parameters.on_change('Eye/Bottom') { eye.bottom = $parameters['Eye/Bottom'] }
-$parameters.on_change('Eye/IrisX') { eye.iris_x = $parameters['Eye/IrisX'] + 0.5 }
-$parameters.on_change('Eye/Color') { eye.outer_color = $parameters['Eye/Color']}
+$parameters.on_change('Eye/Mood') do
+	eye.set_mood($parameters['Eye/Mood'])
+end
+$parameters.on_change('Eye/IrisX')  { eye.iris_x = $parameters['Eye/IrisX'] }
+$parameters.on_change('Eye/Color')  { eye.outer_color = $parameters['Eye/Color']}
 
 $parameters['Palette/SpeechOn']  = 0x0090B0
 $parameters['Palette/SpeechOff'] = 0x005050
 $parameters['Palette/SpeechDelay'] = 10
 
-$parameters['Eye/Top'] = -3;
-$parameters['Eye/Bottom'] = 3;
 $parameters['Eye/IrisX'] = 2;
 
 $program_selector = TEF::ProgramSelection::Selector.new()
@@ -64,6 +62,18 @@ $soundmap = TEF::ProgramSelection::SoundCollection.new($program_selector);
 $sheetmap = TEF::ProgramSelection::SequenceCollection.new($program_selector, $sequencePlayer)
 
 Dir.glob('sheets/**/*.rb').each { |fn| load fn }
+
+$parameters.process_changes
+$animation_core.update_tick
+
+sleep 10
+
+def play(name)
+	return unless effect = $program_selector.fetch_string(name)
+	$sheetmap.play effect
+end
+
+play("you are cute")
 
 File.write("Control.JSGF", File.read("Control.JSGF.Template") % {
 	memes: 	$program_selector.all_titles.join(" | "),
@@ -78,18 +88,7 @@ at_exit do
 	Process.wait($pocketsphinx_pid);
 end
 
-def play(name)
-	return unless effect = $program_selector.fetch_string(name)
-	$sheetmap.play effect
-end
-
-sleep 0.5
-
-play("pipe dream")
-
 sleep 50
-
-play("power up start")
 
 $port.on_message "BTN" do |data|
 	btn_state = (data != "UP");
