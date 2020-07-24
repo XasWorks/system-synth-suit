@@ -7,10 +7,9 @@ require 'mqtt/sub_handler'
 $mqtt = MQTT::SubHandler.new('localhost');
 
 $direct_port = TEF::FurComs::SerialToMQTT.new('/dev/ttyACM0', $mqtt);
-$port = TEF::FurComs::MQTT.new($mqtt, 'FurComs/ttyACM0/');
+$port = $direct_port; #TEF::FurComs::MQTT.new($mqtt, 'FurComs/ttyACM0/');
 
 $animation_core = TEF::Animation::Handler.new($port)
-
 $parameters = TEF::ParameterStack::Stack.new();
 
 $sequencePlayer = TEF::Sequencing::Player.new();
@@ -19,42 +18,7 @@ $sequencePlayer.after_exec {
 	$animation_core.update_tick
 }
 
-speech_box = $animation_core['S100M0'] = TEF::Animation::Box.new 2;
-speech_box.configure up: 3, down: 3, left: 3, right: 3
-
-eye = $animation_core['S1M0'] = TEF::Animation::Eye.new
-eye.configure({
-	outer_color: { delay_a: 10, delay_b: 10 },
-	iris_x: { dampen: 0.1 },
-});
-
-$animation_core['S1M1'] = TEF::Animation::StringDisplay.new;
-
-$parameters.on_recompute 'Palette/SpeechOn', 'Palette/SpeechOff', 'SpeechLevel' do
-	$parameters['SpeechColor'] = ($parameters['SpeechLevel'] ?
-		$parameters['Palette/SpeechOn'] : $parameters['Palette/SpeechOff']);
-
-	$parameters['Eye/Color'] = $parameters['Palette/SpeechOn']
-end
-$parameters.on_change 'Palette/SpeechOff' do
-	eye.outer_color = $parameters['Palette/SpeechOff']
-end
-$parameters.on_change 'Palette/SpeechDelay', 'SpeechColor' do
-	speech_box.color.delay_a = $parameters['Palette/SpeechDelay']
-	speech_box.color = $parameters['SpeechColor'] || 0xFF000000
-end
-
-$parameters.on_change('Eye/Mood') do
-	eye.set_mood($parameters['Eye/Mood'])
-end
-$parameters.on_change('Eye/IrisX')  { eye.iris_x = $parameters['Eye/IrisX'] }
-$parameters.on_change('Eye/Color')  { eye.outer_color = $parameters['Eye/Color']}
-
-$parameters['Palette/SpeechOn']  = 0x0090B0
-$parameters['Palette/SpeechOff'] = 0x005050
-$parameters['Palette/SpeechDelay'] = 10
-
-$parameters['Eye/IrisX'] = 2;
+load 'ParameterInit.rb'
 
 $program_selector = TEF::ProgramSelection::Selector.new()
 
@@ -66,14 +30,10 @@ Dir.glob('sheets/**/*.rb').each { |fn| load fn }
 $parameters.process_changes
 $animation_core.update_tick
 
-sleep 10
-
 def play(name)
 	return unless effect = $program_selector.fetch_string(name)
 	$sheetmap.play effect
 end
-
-play("you are cute")
 
 File.write("Control.JSGF", File.read("Control.JSGF.Template") % {
 	memes: 	$program_selector.all_titles.join(" | "),
@@ -88,7 +48,10 @@ at_exit do
 	Process.wait($pocketsphinx_pid);
 end
 
-sleep 50
+Thread.new() do
+	sleep 3
+	play("hello from turret")
+end
 
 $port.on_message "BTN" do |data|
 	btn_state = (data != "UP");
@@ -126,8 +89,6 @@ $mqtt.subscribe_to 'Pocketsphinx/Result' do |result|
 		play result
 	end
 end
-
-sleep 3
 
 rec  = IO.popen("arecord -r 16000 -f S16_LE -R 0 --period-size 512",
 	:external_encoding=>"ASCII-8BIT");
