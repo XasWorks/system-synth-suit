@@ -10,3 +10,6 @@
 [submodule "tef-led-magic"]
 	path = tef-led-magic
 	url = git@github.com:TheElectricFursuits/tef-led-magic.git
+[submodule "tef-audio-magic"]
+	path = tef-audio-magic
+	url = git@github.com:TheElectricFursuits/tef-audio-magic.git
